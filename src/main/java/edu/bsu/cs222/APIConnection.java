@@ -23,6 +23,7 @@ public class APIConnection {
 
     //need method encodeSynonymsQuery
     // https://www.dictionaryapi.com/api/v3/references/thesaurus/json/%s?key=your-api-key is thesaurus requestURL
+    //key for thesaurus URL: 2c139559-35fb-4943-9ab6-5ffbf25d3bf8
 
     private InputStream fetchDefinitionInputStream() throws IOException{
         try{
