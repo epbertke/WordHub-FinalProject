@@ -1,0 +1,216 @@
+Index: src/main/java/edu/bsu/cs222/RandomWord.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package edu.bsu.cs222;\n\nimport java.io.IOException;\nimport java.util.ArrayList;\n\npublic class RandomWord {\n    private final String randomWord;\n    private final String randomWordDefinition;\n    public RandomWord() throws IOException {\n        this.randomWord = fetchRandomWord();\n        this.randomWordDefinition = fetchRandomWordDefinition();\n    }\n    public String getRandomWord(){\n        return randomWord;\n    }\n    public String getRandomWordDefinition(){\n        return randomWordDefinition;\n    }\n    public String[] getRandomWordAndDefinition(){\n        String[] randomWordAndDefinition = new String[2];\n        randomWordAndDefinition[0] = randomWord;\n        randomWordAndDefinition[1] = randomWordDefinition;\n        return randomWordAndDefinition;\n    }\n    //the rest of the words available in the dictionary we are using must be added to allWordsInDictionary\n    //there is a list I found in a doc in the folder for our group with our pitch and project plan\n    private ArrayList<String> generateWordsInDictionary(){\n        String allWordsInDictionary = \"A, an, ability, able, above, abroad, absent, absolutely, accent, accept, access, accident, accommodation, accompany,\\n\" +\n                \"according, account, accountant, accurate, ache, achieve, across, act, action, active, activity, actor, actress, actually,\\n\" +\n                \"agency, ago, agree, ahead, aim, air, air conditioning, air force, airline, airport, alarm, alarm clock, album, alike, alive,\\n\" +\n                \"all, alright, allow, almost, alone, along, aloud, alphabet, already, also, although, altogether always, am, amazed, amazing,\\n\" +\n                \"ambition, ambulance, among, amongst, amount, amusing, an, ancient, ad, advertisement, add, addition, address, admire,\\n\" +\n                \"admission, admit, adult, advance, advanced, advantage, adventure, advert, advertise, advice, aeroplane, airplane, afford,\\n\" +\n                \"afraid, alter, afternoon, afterwards, again, against, age, aged, and, angry, animal, ankle, anniversary, announce,\\n\" +\n                \"announcement, annoy, annual, another, answer, answerphone, ant, antique, anxious, any, anybody, anymore, anyone, anything,\\n\" +\n                \"anyway, anywhere, apart, apart from, apartment, apartment building, apologise, apology, appear, appearance, apple,\\n\" +\n                \"application, apply, appointment, approach, approve, architect, architecture, area, argue, argument, arm, armchair, army,\\n\" +\n                \"around, arrange, arrangement, arrest, arrival, arrive, art, article, artist,as, ashamed, ask, asleep, aspirin, assistant,\\n\" +\n                \"at, athlete, athletics atmosphere, attach, attack, attempt, attend,\\n\" +\n                \"attention, attitude, attract, attraction, attractive, audience, aunt, author, autumn, available, average,\\n\" +\n                \"avoid, awake, away, awful\";\n        String[] wordsArray = allWordsInDictionary.split(\",\");\n        ArrayList<String> wordsInDictionary = new ArrayList<>();\n        for(String word : wordsArray){\n            wordsInDictionary.add(word.strip());\n        }\n        return wordsInDictionary;\n    }\n    private int getRandomNumber(int min, int max) {\n        return (int) ((Math.random() * (max - min)) + min);\n    }\n    private String fetchRandomWord(){\n        ArrayList<String> wordsArray = generateWordsInDictionary();\n        int randomWordIndex = getRandomNumber(0, wordsArray.size());\n        return wordsArray.get(randomWordIndex);\n    }\n    private String fetchRandomWordDefinition() throws IOException {\n        APIConnection randomWordConnection = new APIConnection(this.randomWord);\n        DefinitionParser randomWordDefinitionFetcher = new DefinitionParser(randomWordConnection.getDefinitionsInputStream());\n        return randomWordDefinitionFetcher.fetchDefinition();\n    }\n\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/edu/bsu/cs222/RandomWord.java b/src/main/java/edu/bsu/cs222/RandomWord.java
+--- a/src/main/java/edu/bsu/cs222/RandomWord.java	(revision ad70f40665776348b0aae9fedddc73c8686ba63a)
++++ b/src/main/java/edu/bsu/cs222/RandomWord.java	(date 1678586794061)
+@@ -22,29 +22,8 @@
+         randomWordAndDefinition[1] = randomWordDefinition;
+         return randomWordAndDefinition;
+     }
+-    //the rest of the words available in the dictionary we are using must be added to allWordsInDictionary
+-    //there is a list I found in a doc in the folder for our group with our pitch and project plan
+     private ArrayList<String> generateWordsInDictionary(){
+-        String allWordsInDictionary = "A, an, ability, able, above, abroad, absent, absolutely, accent, accept, access, accident, accommodation, accompany,\n" +
+-                "according, account, accountant, accurate, ache, achieve, across, act, action, active, activity, actor, actress, actually,\n" +
+-                "agency, ago, agree, ahead, aim, air, air conditioning, air force, airline, airport, alarm, alarm clock, album, alike, alive,\n" +
+-                "all, alright, allow, almost, alone, along, aloud, alphabet, already, also, although, altogether always, am, amazed, amazing,\n" +
+-                "ambition, ambulance, among, amongst, amount, amusing, an, ancient, ad, advertisement, add, addition, address, admire,\n" +
+-                "admission, admit, adult, advance, advanced, advantage, adventure, advert, advertise, advice, aeroplane, airplane, afford,\n" +
+-                "afraid, alter, afternoon, afterwards, again, against, age, aged, and, angry, animal, ankle, anniversary, announce,\n" +
+-                "announcement, annoy, annual, another, answer, answerphone, ant, antique, anxious, any, anybody, anymore, anyone, anything,\n" +
+-                "anyway, anywhere, apart, apart from, apartment, apartment building, apologise, apology, appear, appearance, apple,\n" +
+-                "application, apply, appointment, approach, approve, architect, architecture, area, argue, argument, arm, armchair, army,\n" +
+-                "around, arrange, arrangement, arrest, arrival, arrive, art, article, artist,as, ashamed, ask, asleep, aspirin, assistant,\n" +
+-                "at, athlete, athletics atmosphere, attach, attack, attempt, attend,\n" +
+-                "attention, attitude, attract, attraction, attractive, audience, aunt, author, autumn, available, average,\n" +
+-                "avoid, awake, away, awful";
+-        String[] wordsArray = allWordsInDictionary.split(",");
+-        ArrayList<String> wordsInDictionary = new ArrayList<>();
+-        for(String word : wordsArray){
+-            wordsInDictionary.add(word.strip());
+-        }
+-        return wordsInDictionary;
++        return Dictionary.generateWordsInDictionary();
+     }
+     private int getRandomNumber(int min, int max) {
+         return (int) ((Math.random() * (max - min)) + min);
+@@ -60,5 +39,4 @@
+         return randomWordDefinitionFetcher.fetchDefinition();
+     }
+ 
+-
+ }
+Index: src/main/java/edu/bsu/cs222/APIConnection.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package edu.bsu.cs222;\nimport java.io.IOException;\nimport java.io.InputStream;\nimport java.net.MalformedURLException;\nimport java.net.URL;\nimport java.net.URLConnection;\nimport java.net.URLEncoder;\nimport java.nio.charset.Charset;\npublic class APIConnection {\n    private final String definitionQuery;\n    private final InputStream definitionsInputStream;\n\n    public APIConnection(String wordSearch) throws IOException {\n        this.definitionQuery = encodeDefinitionQuery(wordSearch);\n        this.definitionsInputStream = fetchDefinitionInputStream();\n    }\n    public String getDefinitionQuery() {\n        return definitionQuery;\n    }\n    private String encodeDefinitionQuery(String wordSearch){\n        return String.format(\"https://www.dictionaryapi.com/api/v3/references/collegiate/json/%s?key=df32fa24-ccf9-45de-86df-33495904b479\", URLEncoder.encode(wordSearch, Charset.defaultCharset()));\n    }\n\n    //need method encodeSynonymsQuery\n    // https://www.dictionaryapi.com/api/v3/references/thesaurus/json/%s?key=your-api-key is thesaurus requestURL\n    //key for thesaurus URL: 2c139559-35fb-4943-9ab6-5ffbf25d3bf8\n\n    private InputStream fetchDefinitionInputStream() throws IOException{\n        try{\n            URLConnection connection = new URL(this.definitionQuery).openConnection();\n            connection.setRequestProperty(\"Ellie-Bertke\",\"Learn The Dictionary (elliebertke@gmail.com)\");\n            return connection.getInputStream();\n        } catch (MalformedURLException e) {\n            throw new RuntimeException(e);\n        }\n    }\n\n    //need method getSynonymsInputStream\n    //will need getter as well to use in SynonymParser class\n\n    public InputStream getDefinitionsInputStream(){\n        return this.definitionsInputStream;\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/edu/bsu/cs222/APIConnection.java b/src/main/java/edu/bsu/cs222/APIConnection.java
+--- a/src/main/java/edu/bsu/cs222/APIConnection.java	(revision ad70f40665776348b0aae9fedddc73c8686ba63a)
++++ b/src/main/java/edu/bsu/cs222/APIConnection.java	(date 1678565944958)
+@@ -23,7 +23,6 @@
+ 
+     //need method encodeSynonymsQuery
+     // https://www.dictionaryapi.com/api/v3/references/thesaurus/json/%s?key=your-api-key is thesaurus requestURL
+-    //key for thesaurus URL: 2c139559-35fb-4943-9ab6-5ffbf25d3bf8
+ 
+     private InputStream fetchDefinitionInputStream() throws IOException{
+         try{
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"GradleSettings\">\n    <option name=\"linkedExternalProjectsSettings\">\n      <GradleProjectSettings>\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"modules\">\n          <set>\n            <option value=\"$PROJECT_DIR$\" />\n          </set>\n        </option>\n      </GradleProjectSettings>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision ad70f40665776348b0aae9fedddc73c8686ba63a)
++++ b/.idea/gradle.xml	(date 1678586958022)
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+Index: src/main/java/edu/bsu/cs222/Dictionary.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/edu/bsu/cs222/Dictionary.java b/src/main/java/edu/bsu/cs222/Dictionary.java
+new file mode 100644
+--- /dev/null	(date 1678586872163)
++++ b/src/main/java/edu/bsu/cs222/Dictionary.java	(date 1678586872163)
+@@ -0,0 +1,22 @@
++package edu.bsu.cs222;
++import java.util.ArrayList;
++
++public class Dictionary {
++    protected static ArrayList<String> generateWordsInDictionary(){
++        String[] wordsArray = randomWordList.split(",");
++        ArrayList<String> wordsInDictionary = new ArrayList<>();
++        for(String word : wordsArray){
++            wordsInDictionary.add(word.strip());
++        }
++        return wordsInDictionary;
++    }
++
++    
++    //the rest of the words available in the dictionary we are using must be added to allWordsInDictionary
++    //there is a list I found in a doc in the folder for our group with our pitch and project plan
++    private static String randomWordList = "A, an, ability, able, above, abroad, absent, absolutely, accent, accept, access, accident, accommodation, accompany, according, account, accountant, accurate, ache, achieve, across, act, action, active, activity, actor, actress, actually, agency, ago, agree, ahead, aim, air, air conditioning, air force, airline, airport, alarm, alarm clock, album, alike, alive, all, alright, allow, almost, alone, along, aloud, alphabet, already, also, although, altogether always, am, amazed, amazing, ambition, ambulance, among, amongst, amount, amusing, an, ancient, ad, advertisement, add, addition, address, admire, admission, admit, adult, advance, advanced, advantage, adventure, advert, advertise, advice, aeroplane, airplane, afford, afraid, alter, afternoon, afterwards, again, against, age, aged, and, angry, animal, ankle, anniversary, announce, announcement, annoy, annual, another, answer, answerphone, ant, antique, anxious, any, anybody, anymore, anyone, anything, anyway, anywhere, apart, apart from, apartment, apartment building, apologise, apology, appear, appearance, apple, application, apply, appointment, approach, approve, architect, architecture, area, argue, argument, arm, armchair, army, around, arrange, arrangement, arrest, arrival, arrive, art, article, artist,as, ashamed, ask, asleep, aspirin, assistant, at, athlete, athletics atmosphere, attach, attack, attempt, attend, attention, attitude, attract, audience, aunt, author, autumn, available, average, avoid, awake, away, awful,\n" +
++            "baby, babysit, babysitter, balcony, bald, ball, ballet, balloon, banana, band, bandage, bank, bank account, banking, back, background, backpack, backpacker, backpacking, backwards, bad, badly, badminton, bag, baggage, bake, baker, bar, barbecue, baseball, base, basic, basin, basket, basketball, bat, bath, bathing suit, bathroom, bathtub, battery, battle, bay, be, beach, bear, beard, beat, beautiful, beauty, because, become, bed, bedroom , bee, bee, beef, begin, before, begin, beginner, beginning, behave, behavior, between, beyond, bicycle, big, bike, bill, behind, believe, bell, belong, below, belt, beneath, benefit, belt, beside, besides, best, better, bin, biography, biology, blood, blouse, blow, blue, board, board game, boarding pass, boat, body, boil, boiled, bold, bomb, bone, book, bookcase, booking, bird, birth, birthday, biscuit, bit, bite, bitter, black, blackboard, blame, blank, blanket, bleed, blind, block, blog, blogger, blond, bookshelf, bookstore, boot, border, bored, boring, born, borrow, boss, both, bother, bottle, bottom, bowl, box, boy, boyfriend, bracelet, brain, brake, branch, brand, brave, bread, break, break down, breakfast, break in, break up, brush, bucket, bug, build, building, bury, bus, business, businessman, businesswoman, bus station, bus stop, busy, but, butcher, butter, butterfly, button, buy, buyer, by, bye, by hand, breath, breathe, breeze, bride, bridge, brief, bright, brilliant, bring, bring up, broad, broccoli, brochure, broken, brother, brown,\n" +
++            "cab, cabbage, cabin, cabinet, cable, cafe, cafeteria, cage, cake, calculator, calendar, calf, call, calm, camel, candidate, candle, candy, canteen, cap, capital, captain, car, card, credit card, cardboard, care, career, careful, carefully, careless, carpet, carrot, carry, carry on, carry out, cartoon, case, cash, cashpoint, castle, casual, cat, catch, cathedral, cattle, cave, cd, cd player, ceiling, celebrate, celebration, celebrity, cell phone, cent, centimeter, central, center, century, cereal, ceremony, certain, certainly, certificate, certification, chain, chair, challenge, challenging, champion, championship, chance, change, changing room, channel, chapter, character, charge, charity, charming, chat, chatroom, cheap, cheat, check, check in, check out, cheek, cheerful, cheers, cheese, chef, chemist, chemistry, cheque, chess, chicken, child, chili, chin, chip, chocolate, choice, choose,e cinema, circle, circus, city, clap, class, classmate, classroom, clean, cleaner, clear, clearly, clever, click, cliff, climate, climb, climbing, clinic, clock, close, closed, clothes, cloud, cloudy, clown, club, coach, coast, coat, coconut, cod, coffee, coin, cola, cold, collar, colleague, collect, collection, college, color, colorful, comb, come, comedy, come on, comfort, comfortable, comic, comma, common, communicate, communication, company, compare, compete, competition, competitor, complain, complaint, complete, complicated, composition, computer, concentrate, concert, conclusion, condition, convenient, confused, conversation, convince, cook, cooker, cookie, cooking, cool, copy, corn, corner, correct, correction, cost, costume, cozy,cottage, cotton, cough, could,  count, country, countryside, couple, courage, course, of course, court, cousin, cover, cow, crash, crazy, cream, create, creative, creature, credit, cv, cycle, cycling, cyclist, credit card, crew, cricket, crime, criminal, crop, cross, crossing, crossroads, crowd, crowded, cruel, cruise, cry, cucumber, cultural, culture, cup, cupboard, cure, curious, curiously, curly (adj) currency (n) curriculum (n) curry (n) curtain (n) cushion (n) custom (n) customer (n) customs (n pi) cut (n & v) cute (adj) \n" +
++            "dad, daily, damage, damaged, dance, dancer, dancing, danger, dangerous, dark, date, daughter, day, dead, deaf, deal, deal with, dear, death, decide, decision, declare, decorate, decrease, deep, defeat, defense, defend, definitely, degree, delay, diet, difference, different, difficult, difficulty, dig, digital, dining room, dinner, dinosaur, diploma, direct, direction, directly, director, dirt, dirty, disabled, disadvantage, disagree, disappear, disappoint, disappointed, disappointing, disappointment, disk, disco, discount, discover, discuss, discussion, disease, disgusting, dish, delete, delicious, delighted, deliver, delivery, demand, dentist, depart, department, department store, departure, depend, deposit, depressed, depth, describe, description, desert, deserve, design, designer, desk, despite, dessert, destination, destroy, detail, detective, develop, development, diagram, dial, diary, dictionary, die, dishwasher, disk, dislike, display, distance, district, disturb, dive, diver, divide, diving, OJ, do, doctor, document, documentary, dog, doll, dollar, dolphin, donkey, door, dot, double, doubt, down, download, downstairs, dozen, drag, drama, draw, drawer, drawing, dream, dress, dressed, drink, drive, driver, driving license, drop, drugstore, drum, dry, duck, due, due to, dull, during, dust, dusty, duty, duvet, DVD,\n" +
++            "each, ear, earache, early, earn, earring, earth, east, eastern, easily, easy, easygoing, eat, economics, edge, education, effect, efficient, effort, egg, either, elbow, elder, elderly, election, electric, electrical, email, embarrassed, embarrassing, embassy, emergency, every, everybody, everyone, everything, everywhere, exact, else, elevator, electronic, elementary, elephant, exactly, examination, examiner, example, excellent, except, exchange, ever, event, evening, even, escape, especially, essay, essential, euro, exit, expect, expedition, expensive, employ, employee, employer, employment, empty, encourage, end, exist, excuse, exercise, exhausted, exhibition, exciting, excitement, excited, entry, entertain, entertainment, entrance, enter, enquiry, enormous, enjoy, engineer, engineering, engine, engaged, ending, end up, enemy, energy, eraser, experience, experienced, experiment, expert, explain, explanation, equipment, envelope, environment, environmental, equal, \n";
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"d8e26b78-33fc-4340-b2a2-343255a84b4c\" name=\"Changes\" comment=\"Add initial classes and tests&#10;Classes added were DefinitionParser, RandomWord, APIConnection, LearnTheDictionary, and CLI. Comments were added on what still needs completed for iteration 1.\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/edu/bsu/cs222/APIConnection.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/edu/bsu/cs222/APIConnection.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\n      <list>\n        <option value=\"Ellie Bertke &lt;elliebertke@gmail.com&gt;\" />\n      </list>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2MkXL9tO6nM93uZ26Pdv8GcwAlR\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;last.edited.regexp&quot;: &quot;&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.55517244&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src/main/resources\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Application.CLI\">\n    <configuration name=\"CLI\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"edu.bsu.cs222.CLI\" />\n      <module name=\"LearnTheDictionary.main\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"edu.bsu.cs222.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"LearnTheDictionaryTests\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" value=\"\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\":test\" />\n            <option value=\"--tests\" />\n            <option value=\"&quot;LearnTheDictionaryTests&quot;\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"LearnTheDictionaryTests.apiConnectionCorrectlyFormatsURL\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" value=\"\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\":test\" />\n            <option value=\"--tests\" />\n            <option value=\"&quot;LearnTheDictionaryTests.apiConnectionCorrectlyFormatsURL&quot;\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Gradle.LearnTheDictionaryTests\" />\n        <item itemvalue=\"Gradle.LearnTheDictionaryTests.apiConnectionCorrectlyFormatsURL\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"d8e26b78-33fc-4340-b2a2-343255a84b4c\" name=\"Changes\" comment=\"\" />\n      <created>1678312502837</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1678312502837</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Add initial classes and tests&#10;Classes added were DefinitionParser, RandomWord, APIConnection, LearnTheDictionary, and CLI. Comments were added on what still needs completed for iteration 1.\">\n      <created>1678511041395</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1678511041395</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Add initial classes and tests&#10;Classes added were DefinitionParser, RandomWord, APIConnection, LearnTheDictionary, and CLI. Comments were added on what still needs completed for iteration 1.\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Add initial classes and tests&#10;Classes added were DefinitionParser, RandomWord, APIConnection, LearnTheDictionary, and CLI. Comments were added on what still needs completed for iteration 1.\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ad70f40665776348b0aae9fedddc73c8686ba63a)
++++ b/.idea/workspace.xml	(date 1678586958012)
+@@ -4,9 +4,11 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Add initial classes and tests&#10;Classes added were DefinitionParser, RandomWord, APIConnection, LearnTheDictionary, and CLI. Comments were added on what still needs completed for iteration 1.">
++    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Add needed API key in comments">
++      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/Dictionary.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/APIConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/APIConnection.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/RandomWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/RandomWord.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -17,6 +19,16 @@
+     <projectState path="$PROJECT_DIR$">
+       <ProjectState />
+     </projectState>
++  </component>
++  <component name="ExternalProjectsManager">
++    <system id="GRADLE">
++      <state>
++        <task path="$PROJECT_DIR$">
++          <activation />
++        </task>
++        <projects_view />
++      </state>
++    </system>
+   </component>
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+@@ -29,6 +41,7 @@
+     <option name="PREVIOUS_COMMIT_AUTHORS">
+       <list>
+         <option value="Ellie Bertke &lt;elliebertke@gmail.com&gt;" />
++        <option value="elliebertke &lt;elliebertke@gmail.com&gt;" />
+       </list>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -141,7 +154,42 @@
+       <option name="project" value="LOCAL" />
+       <updated>1678511041395</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Add needed API key in comments">
++      <created>1678565758597</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1678565758597</updated>
++    </task>
++    <task id="LOCAL-00003" summary="Add needed API key in comments">
++      <created>1678565835433</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1678565835434</updated>
++    </task>
++    <task id="LOCAL-00004" summary="Add needed API key in comments">
++      <created>1678565862113</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1678565862113</updated>
++    </task>
++    <task id="LOCAL-00005" summary="Add needed API key in comments">
++      <created>1678565890066</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1678565890066</updated>
++    </task>
++    <task id="LOCAL-00006" summary="Add needed API key in comments">
++      <created>1678565903863</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1678565903863</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -157,6 +205,7 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Add initial classes and tests&#10;Classes added were DefinitionParser, RandomWord, APIConnection, LearnTheDictionary, and CLI. Comments were added on what still needs completed for iteration 1." />
+-    <option name="LAST_COMMIT_MESSAGE" value="Add initial classes and tests&#10;Classes added were DefinitionParser, RandomWord, APIConnection, LearnTheDictionary, and CLI. Comments were added on what still needs completed for iteration 1." />
++    <MESSAGE value="Add needed API key in comments" />
++    <option name="LAST_COMMIT_MESSAGE" value="Add needed API key in comments" />
+   </component>
+ </project>
+\ No newline at end of file
