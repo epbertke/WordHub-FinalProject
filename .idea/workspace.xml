@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Add initial classes and tests&#10;Classes added were DefinitionParser, RandomWord, APIConnection, LearnTheDictionary, and CLI. Comments were added on what still needs completed for iteration 1.">
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Add Dictionary class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/APIConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/APIConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/RandomWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/RandomWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dictionary_words" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
