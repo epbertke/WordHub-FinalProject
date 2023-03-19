@@ -1,5 +1,4 @@
 package edu.bsu.cs222;
-
 import java.io.IOException;
 import java.util.Locale;
 import java.util.Objects;
@@ -19,14 +18,14 @@ public class LearnTheDictionary {
         Scanner scanner = new Scanner(System.in);
         return scanner.next().toLowerCase(Locale.ROOT);
     }
-    private String[] fetchSearchedWordDefinition() throws IOException {
+    private String[] fetchSearchedWordInformation() throws IOException {
         APIConnection wordConnection = new APIConnection(userInput);
         DefinitionParser definitionFetcher = new DefinitionParser(wordConnection.getDefinitionsInputStream());
-        //searchedWordArray will need to be expanded to length of 3 to implement SynonymParser class as well
-        //with the third element being the synonym output for userInput
-        String[] searchedWordArray = new String[2];
+        SynonymParser synonymFetcher = new SynonymParser(wordConnection.getSynonymsInputStream());
+        String[] searchedWordArray = new String[3];
         searchedWordArray[0] = userInput;
         searchedWordArray[1] = definitionFetcher.fetchDefinition();
+        searchedWordArray[2] = synonymFetcher.fetchSynonyms();
         return searchedWordArray;
     }
 
@@ -34,14 +33,13 @@ public class LearnTheDictionary {
         String[] arrayForOutput;
         if(Objects.equals(userInput, "r")){
             RandomWord randomWord = new RandomWord();
-            arrayForOutput = randomWord.getRandomWordAndDefinition();
+            arrayForOutput = randomWord.getRandomWordInformation();
         }else{
-            arrayForOutput = fetchSearchedWordDefinition();
+            arrayForOutput = fetchSearchedWordInformation();
         }
         return formOutput(arrayForOutput);
     }
     private String formOutput(String[] arrayForOutput){
-        //this will need updated to include SynonymParser output as well
-        return "Your word : "+arrayForOutput[0]+"\n"+"Your definition : "+arrayForOutput[1];
+        return "Your word : "+arrayForOutput[0]+"\n"+"Your definition : "+arrayForOutput[1]+"\n"+"Synonyms : "+arrayForOutput[2];
     }
 }

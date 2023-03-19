@@ -1,7 +1,4 @@
-import edu.bsu.cs222.APIConnection;
-import edu.bsu.cs222.DefinitionParser;
-import edu.bsu.cs222.LearnTheDictionary;
-import edu.bsu.cs222.RandomWord;
+import edu.bsu.cs222.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;
@@ -19,25 +16,29 @@ public class LearnTheDictionaryTests {
     }
     @Test
     public void randomWordGeneratesRandomWordTest() throws IOException {
-        String word = new RandomWord().getRandomWord();
-        boolean result = !word.isEmpty();
-        Assertions.assertTrue(result);
+        boolean result = new RandomWord().getRandomWord().isEmpty();
+        Assertions.assertFalse(result);
     }
     @Test
     public void randomWordGeneratesRandomWordDefinitionTest() throws IOException {
-        String definition = new RandomWord().getRandomWordDefinition();
-        boolean result = !definition.isEmpty();
-        Assertions.assertTrue(result);
+        boolean result = new RandomWord().getRandomWordDefinition().isEmpty();
+        Assertions.assertFalse(result);
     }
     @Test
-    public void learnTheDictionaryFormsOutputForWordSearch() throws IOException {
+    public void learnTheDictionaryFormsOutputForWordSearchTest() throws IOException {
         LearnTheDictionary dictionary = new LearnTheDictionary("happy");
-        Assertions.assertEquals("Your word : happy"+"\n"+"Your definition : [\"favored by luck or fortune : fortunate\",\"notably fitting, effective, or well adapted : felicitous\",\"enjoying or characterized by well-being and contentment\"]", dictionary.getOutputForUser());
+        Assertions.assertEquals("Your word : happy\n" +
+                "Your definition : [\"favored by luck or fortune : fortunate\",\"notably fitting, effective, or well adapted : felicitous\",\"enjoying or characterized by well-being and contentment\"]\n" +
+                "Synonyms : [[\"affable\",\"breezy\",\"devil-may-care\",\"easygoing\",\"laid-back\",\"low-pressure\",\"mellow\"],[\"blithe\",\"carefree\",\"debonair\",\"devil-may-care\",\"gay\",\"insouciant\",\"lighthearted\",\"lightsome\",\"slaphappy\",\"unconcerned\"]]", dictionary.getOutputForUser());
     }
     @Test
-    public void learnTheDictionaryFormsOutputForRandomWord() throws IOException {
-        LearnTheDictionary dictionary = new LearnTheDictionary(new RandomWord().getRandomWord());
-        boolean result = !dictionary.getOutputForUser().isEmpty();
-        Assertions.assertTrue(result);
+    public void learnTheDictionaryFormsOutputForRandomWordTest() throws IOException {
+        boolean result = new LearnTheDictionary(new RandomWord().getRandomWord()).getOutputForUser().isEmpty();
+        Assertions.assertFalse(result);
+    }
+    @Test
+    public void synonymParserGivesSynonymsTest() throws IOException {
+        SynonymParser parser = new SynonymParser(new APIConnection("happy").getSynonymsInputStream());
+        Assertions.assertEquals("[[\"affable\",\"breezy\",\"devil-may-care\",\"easygoing\",\"laid-back\",\"low-pressure\",\"mellow\"],[\"blithe\",\"carefree\",\"debonair\",\"devil-may-care\",\"gay\",\"insouciant\",\"lighthearted\",\"lightsome\",\"slaphappy\",\"unconcerned\"]]", parser.fetchSynonyms());
     }
 }

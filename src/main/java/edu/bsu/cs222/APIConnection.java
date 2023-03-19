@@ -7,24 +7,28 @@ import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.nio.charset.Charset;
 public class APIConnection {
+    private final String synonymQuery;
+    private final InputStream synonymInputStream;
     private final String definitionQuery;
     private final InputStream definitionsInputStream;
-
     public APIConnection(String wordSearch) throws IOException {
         this.definitionQuery = encodeDefinitionQuery(wordSearch);
         this.definitionsInputStream = fetchDefinitionInputStream();
+        this.synonymQuery = encodeSynonymsQuery(wordSearch);
+        this.synonymInputStream = fetchSynonymInputStream();
     }
     public String getDefinitionQuery() {
         return definitionQuery;
     }
+    public InputStream getSynonymsInputStream(){
+        return this.synonymInputStream;
+    }
     private String encodeDefinitionQuery(String wordSearch){
         return String.format("https://www.dictionaryapi.com/api/v3/references/collegiate/json/%s?key=df32fa24-ccf9-45de-86df-33495904b479", URLEncoder.encode(wordSearch, Charset.defaultCharset()));
     }
-
-    //need method encodeSynonymsQuery
-    // https://www.dictionaryapi.com/api/v3/references/thesaurus/json/%s?key=your-api-key is thesaurus requestURL
-    //key for thesaurus URL: 2c139559-35fb-4943-9ab6-5ffbf25d3bf8
-
+    private String encodeSynonymsQuery(String wordSearch){
+        return String.format("https://www.dictionaryapi.com/api/v3/references/thesaurus/json/%s?key=2c139559-35fb-4943-9ab6-5ffbf25d3bf8", URLEncoder.encode(wordSearch, Charset.defaultCharset()));
+    }
     private InputStream fetchDefinitionInputStream() throws IOException{
         try{
             URLConnection connection = new URL(this.definitionQuery).openConnection();
@@ -34,11 +38,19 @@ public class APIConnection {
             throw new RuntimeException(e);
         }
     }
-
-    //need method getSynonymsInputStream
-    //will need getter as well to use in SynonymParser class
-
+    private InputStream fetchSynonymInputStream() throws IOException{
+        try{
+            URLConnection connection = new URL(this.synonymQuery).openConnection();
+            connection.setRequestProperty("Ellie-Bertke", "Learn The Dictionary(elliebertke@gmail.com)");
+            return connection.getInputStream();
+        }catch (MalformedURLException e){
+            throw new RuntimeException(e);
+        }
+    }
     public InputStream getDefinitionsInputStream(){
         return this.definitionsInputStream;
+    }
+    public InputStream getSynonymInputStream(){
+        return this.synonymInputStream;
     }
 }
