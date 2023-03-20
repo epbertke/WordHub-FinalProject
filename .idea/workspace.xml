@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Add OutputFormatter and WordNotFoundError&#10;Refactor tests">
-      <change afterPath="$PROJECT_DIR$/src/test/java/FormatterTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_11_23__3_15_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_11_23__3_15_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_11_23__9_09_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_11_23__9_09_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/OutputFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/OutputFormatter.java" afterDir="false" />
-    </list>
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Added Formatter Tests for Synonym and Definition." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679308475462</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Formatter Tests for Synonym and Definition.">
+      <created>1679343489047</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679343489047</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +224,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add initial classes and tests&#10;Classes added were DefinitionParser, RandomWord, APIConnection, LearnTheDictionary, and CLI. Comments were added on what still needs completed for iteration 1." />
     <MESSAGE value="Add OutputFormatter and WordNotFoundError&#10;Refactor tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add OutputFormatter and WordNotFoundError&#10;Refactor tests" />
+    <MESSAGE value="Added Formatter Tests for Synonym and Definition." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Formatter Tests for Synonym and Definition." />
   </component>
 </project>
