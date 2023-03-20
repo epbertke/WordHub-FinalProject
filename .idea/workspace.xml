@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Added Formatter Tests for Synonym and Definition." />
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Remove 2 not needed methods from WordNotFoundError">
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/WordNotFoundError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/WordNotFoundError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WordSearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WordSearchTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +17,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,7 +69,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CLI">
+  <component name="RunManager" selected="Gradle.WordSearchTests.invalidWordSearchGivesErrorTest">
     <configuration name="CLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.CLI" />
       <module name="LearnTheDictionary.main" />
@@ -93,27 +106,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'LearnTheDictionary.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="WordSearchTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -128,6 +120,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;WordSearchTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="WordSearchTests.invalidWordSearchGivesErrorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;WordSearchTests.invalidWordSearchGivesErrorTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -162,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.WordSearchTests.invalidWordSearchGivesErrorTest" />
         <item itemvalue="Application.CLI" />
         <item itemvalue="Gradle.WordSearchTests.wordSearchGivesWordNotFoundWhenNoSearchIsProvidedTest" />
         <item itemvalue="Gradle.WordSearchTests" />
         <item itemvalue="Gradle.ParserTests" />
-        <item itemvalue="Gradle.Tests in 'LearnTheDictionary.test'" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +222,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679343489047</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Remove un-needed method from WordNotFoundError.">
+      <created>1679344176090</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679344176090</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Remove 2 not needed methods from WordNotFoundError">
+      <created>1679344219722</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679344219722</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +254,8 @@
     <MESSAGE value="Add initial classes and tests&#10;Classes added were DefinitionParser, RandomWord, APIConnection, LearnTheDictionary, and CLI. Comments were added on what still needs completed for iteration 1." />
     <MESSAGE value="Add OutputFormatter and WordNotFoundError&#10;Refactor tests" />
     <MESSAGE value="Added Formatter Tests for Synonym and Definition." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Formatter Tests for Synonym and Definition." />
+    <MESSAGE value="Remove un-needed method from WordNotFoundError." />
+    <MESSAGE value="Remove 2 not needed methods from WordNotFoundError" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove 2 not needed methods from WordNotFoundError" />
   </component>
 </project>

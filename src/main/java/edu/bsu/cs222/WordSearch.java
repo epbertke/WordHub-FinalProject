@@ -11,9 +11,6 @@ public class WordSearch {
         searchedWordArray[0] = searchedWord;
         searchedWordArray[1] = new DefinitionParser(wordConnection.getDefinitionsInputStream()).parseForDefinition();
         searchedWordArray[2] = new SynonymParser(wordConnection.getSynonymsInputStream()).parseForSynonyms();
-        if(!WordNotFoundError.checkForUserInput(searchedWord)){
-            WordNotFoundError.throwSearchNotProvidedError();
-        }
         return searchedWordArray;
     }
 }
