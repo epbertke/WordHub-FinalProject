@@ -1,5 +1,7 @@
 package edu.bsu.cs222;
 import java.io.IOException;
+import java.net.MalformedURLException;
+
 public class CLI {
     public static void main(String[] args) throws IOException {
         printWelcomeStatement();
@@ -12,6 +14,6 @@ public class CLI {
                 "If you would like to search a specific word; Enter the word");
     }
     private static void printExitStatement(){
-        System.out.println("\n"+"------------------------"+"\n"+ "Re-run program to learn another word."+"\n"+"------------------------"+"\n");
+        System.out.println("\n" + "------------------------" + "\n" + "Re-run program to learn another word." + "\n" + "------------------------" + "\n");
     }
 }

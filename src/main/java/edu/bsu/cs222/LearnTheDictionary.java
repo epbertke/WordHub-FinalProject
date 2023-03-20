@@ -10,6 +10,9 @@ public class LearnTheDictionary {
     protected static String fetchOutputForUser() throws IOException {
         String[] arrayForOutput;
         try{
+            if(!WordNotFoundError.isNetworkConnected()){
+                WordNotFoundError.isNetworkConnected();
+            }
             String userInput = getUserInput().toLowerCase();
             if(Objects.equals(userInput, "r")){
                 arrayForOutput = new RandomWord().getRandomWordInformation();
@@ -17,7 +20,7 @@ public class LearnTheDictionary {
                 arrayForOutput = new WordSearch(userInput).getSearchedWordInformation();
             }
         }catch(Error e){
-            return "\n"+e.getMessage();
+            return "\n"+e.getMessage()+"\n";
         }
         return new OutputFormatter(arrayForOutput).formOutput();
     }

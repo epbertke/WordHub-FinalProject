@@ -5,7 +5,6 @@ public class RandomWord {
     private String randomWord;
     public RandomWord() throws IOException {
         randomWord = generateRandomWord();
-
     }
     public String[] getRandomWordInformation() throws IOException {
         String[] randomWordInformation = new String[3];
