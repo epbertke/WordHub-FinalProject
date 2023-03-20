@@ -1,6 +1,5 @@
 package edu.bsu.cs222;
 import java.io.IOException;
-import java.util.Locale;
 import java.util.Objects;
 import java.util.Scanner;
 public class LearnTheDictionary {
@@ -18,7 +17,7 @@ public class LearnTheDictionary {
                 arrayForOutput = new WordSearch(userInput).getSearchedWordInformation();
             }
         }catch(Error e){
-            return e.getMessage();
+            return "\n"+e.getMessage();
         }
         return new OutputFormatter(arrayForOutput).formOutput();
     }
