@@ -1,8 +1,11 @@
 package edu.bsu.cs222;
 import java.util.Objects;
 public class OutputFormatter {
-    private final String[] outputArray;
-    public OutputFormatter(String[] output) { this.outputArray = output; }
+    private  String[] outputArray = new String[3];
+    public OutputFormatter(String[] output) {
+        this.outputArray = output;
+    }
+    public OutputFormatter(){}
     protected String formOutput() {
         return "Your word : "+outputArray[0]+"\n"+"Your definition : "+formatOutputForUser(outputArray[1])+"\n"+"Synonyms : "+formatOutputForUser(getSynonymsOutput());
     }
@@ -11,7 +14,7 @@ public class OutputFormatter {
             return "none";
         }return outputArray[2];
     }
-    private String formatOutputForUser(String wordOutput){
+    public String formatOutputForUser(String wordOutput){
         StringBuilder output = new StringBuilder();
         for(int i=0; i<=wordOutput.length()-1; i++){
             if(!(wordOutput.charAt(i)==']')&&!(wordOutput.charAt(i)=='[')&&!(wordOutput.charAt(i)=='"')){
