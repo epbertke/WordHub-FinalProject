@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Refactor output format">
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Remove unused import statement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/WordNotFoundError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/WordNotFoundError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/OutputFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/OutputFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FormatterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FormatterTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WordSearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WordSearchTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +71,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CLI">
+  <component name="RunManager" selected="Gradle.Tests in 'LearnTheDictionary.test'">
     <configuration name="CLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.CLI" />
       <module name="LearnTheDictionary.main" />
@@ -85,7 +85,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParserTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FormatterTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -98,7 +98,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ParserTests&quot;" />
+            <option value="&quot;FormatterTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -108,7 +108,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WordSearchTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FormatterTests.outputFormatterFormatsSynonymTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -121,7 +121,28 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;WordSearchTests&quot;" />
+            <option value="&quot;FormatterTests.outputFormatterFormatsSynonymTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'LearnTheDictionary.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -154,36 +175,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WordSearchTests.wordSearchGivesWordNotFoundWhenNoSearchIsProvidedTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;WordSearchTests.wordSearchGivesWordNotFoundWhenNoSearchIsProvidedTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'LearnTheDictionary.test'" />
+        <item itemvalue="Gradle.FormatterTests.outputFormatterFormatsSynonymTest" />
+        <item itemvalue="Gradle.FormatterTests" />
         <item itemvalue="Application.CLI" />
         <item itemvalue="Gradle.WordSearchTests.invalidWordSearchGivesErrorTest" />
-        <item itemvalue="Gradle.WordSearchTests.wordSearchGivesWordNotFoundWhenNoSearchIsProvidedTest" />
-        <item itemvalue="Gradle.WordSearchTests" />
-        <item itemvalue="Gradle.ParserTests" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +250,35 @@
       <option name="project" value="LOCAL" />
       <updated>1679346445965</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add method in error class to check for network connection">
+      <created>1679348257500</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679348257500</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add method in error class to check for network connection">
+      <created>1679348265730</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679348265730</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Remove unused import statement">
+      <created>1679348351954</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679348351954</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Remove unused import statement">
+      <created>1679348355957</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679348355957</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,6 +299,8 @@
     <MESSAGE value="Remove un-needed method from WordNotFoundError." />
     <MESSAGE value="Remove 2 not needed methods from WordNotFoundError" />
     <MESSAGE value="Refactor output format" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor output format" />
+    <MESSAGE value="Add method in error class to check for network connection" />
+    <MESSAGE value="Remove unused import statement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unused import statement" />
   </component>
 </project>

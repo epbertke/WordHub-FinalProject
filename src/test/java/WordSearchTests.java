@@ -21,6 +21,6 @@ public class WordSearchTests {
     }
     @Test
     public void invalidWordSearchGivesErrorTest() throws IOException {
-        Assertions.assertEquals("This word was not found in the dicitonary. Re-run program and try again with a new word or different spelling.", WordNotFoundError.checkForWordNotFoundError("jkfndsajnfdsa"));
+        Assertions.assertEquals("This word was not found in the dictionary. Re-run program and try again with a new word or different spelling.", WordNotFoundError.checkForWordNotFoundError("jkfndsajnfdsa"));
     }
 }

@@ -19,6 +19,9 @@ public class OutputFormatter {
         for(int i=0; i<=wordOutput.length()-1; i++){
             if(!(wordOutput.charAt(i)==']')&&!(wordOutput.charAt(i)=='[')&&!(wordOutput.charAt(i)=='"')){
                 output.append(wordOutput.charAt(i));
+                if(wordOutput.charAt(i)==','){
+                    output.append(" ");
+                }
             }
         }return output.toString();
     }
