@@ -4,8 +4,7 @@ import java.io.IOException;
 public class CLI {
     public static void main(String[] args) throws IOException {
         printWelcomeStatement();
-        LearnTheDictionary application = new LearnTheDictionary();
-        System.out.println(application.getOutputForUser());
+        System.out.println(LearnTheDictionary.fetchOutputForUser());
     }
     private static void printWelcomeStatement(){
         System.out.println("------------------------"+"\n"+ "Learn The Dictionary"+"\n"+"------------------------");
