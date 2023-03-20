@@ -1,7 +1,5 @@
 package edu.bsu.cs222;
 import java.io.IOException;
-import java.net.MalformedURLException;
-
 public class CLI {
     public static void main(String[] args) throws IOException {
         printWelcomeStatement();
