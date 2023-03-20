@@ -6,12 +6,12 @@ import java.util.Scanner;
 public class LearnTheDictionary {
     private static String getUserInput() {
         Scanner scanner = new Scanner(System.in);
-        return scanner.next().toLowerCase(Locale.ROOT);
+        return scanner.next();
     }
     protected static String fetchOutputForUser() throws IOException {
         String[] arrayForOutput;
         try{
-            String userInput = getUserInput();
+            String userInput = getUserInput().toLowerCase();
             if(Objects.equals(userInput, "r")){
                 arrayForOutput = new RandomWord().getRandomWordInformation();
             }else{

@@ -1,6 +1,5 @@
 package edu.bsu.cs222;
 import java.io.IOException;
-
 public class CLI {
     public static void main(String[] args) throws IOException {
         printWelcomeStatement();
@@ -11,5 +10,4 @@ public class CLI {
         System.out.println("If you would like to learn a random word; Enter R"+"\n"+
                 "If you would like to search a specific word; Enter the word");
     }
-
 }

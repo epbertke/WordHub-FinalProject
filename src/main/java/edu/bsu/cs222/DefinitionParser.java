@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 public class DefinitionParser {
     private final InputStream definitionsInputStream;
-    public DefinitionParser(InputStream json) throws IOException {
+    public DefinitionParser(InputStream json) {
         this.definitionsInputStream = json;
     }
     public String parseForDefinition() throws IOException {

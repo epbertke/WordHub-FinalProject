@@ -7,7 +7,7 @@ public class WordNotFoundError {
         throw new Error("No response was provided. Re-run program and try again.");
     }
     protected static boolean checkForUserInput(String userInput){
-        if(userInput.isBlank()||userInput.isEmpty()){
+        if(userInput.isBlank()){
             return false;
         }return true;
     }
