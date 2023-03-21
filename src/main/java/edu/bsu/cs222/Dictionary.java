@@ -8,9 +8,6 @@ public class Dictionary {
         return allWordsInDictionary;
     }
     private void generateWordsInDictionary() {
-        createDictionaryWordsByLetterList();
-    }
-    private void createDictionaryWordsByLetterList(){
         String[] wordsListByLetter = {aWordsRaw, bWordsRaw, cWordsRaw, dWordsRaw, eWordsRaw, fWordsRaw, gWordsRaw, hWordsRaw, iWordsRaw, jWordsRaw, kWordsRaw, lWordsRaw, mWordsRaw, nWordsRaw, oWordsRaw, pWordsRaw, qWordsRaw, rWordsRaw, sWordsRaw, tWordsRaw, uWordsRaw, vWordsRaw, wWordsRaw, xWordsRaw, yWordsRaw, zWordsRaw};
         setAllWordsInDictionary(wordsListByLetter);
     }
