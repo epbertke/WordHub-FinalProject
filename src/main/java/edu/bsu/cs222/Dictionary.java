@@ -8,215 +8,40 @@ public class Dictionary {
         return allWordsInDictionary;
     }
     private void generateWordsInDictionary() {
-        setAWordsInDictionary();
-        setBWordsInDictionary();
-        setCWordsInDictionary();
-        setDWordsInDictionary();
-        setEWordsInDictionary();
-        setFWordsInDictionary();
-        setGWordsInDictionary();
-        setHWordsInDictionary();
-        setIWordsInDictionary();
-        setJWordsInDictionary();
-        setKWordsInDictionary();
-        setLWordsInDictionary();
-        setMWordsInDictionary();
-        setNWordsInDictionary();
-        setOWordsInDictionary();
-        setPWordsInDictionary();
-        setQWordsInDictionary();
-        setRWordsInDictionary();
-        setSWordsInDictionary();
-        setTWordsInDictionary();
-        setUWordsInDictionary();
-        setVWordsInDictionary();
-        setWWordsInDictionary();
-        setXWordsInDictionary();
-        setYWordsInDictionary();
-        setZWordsInDictionary();
+        setAllWordsInDictionary(aWordsRaw);
+        setAllWordsInDictionary(bWordsRaw);
+        setAllWordsInDictionary(cWordsRaw);
+        setAllWordsInDictionary(dWordsRaw);
+        setAllWordsInDictionary(eWordsRaw);
+        setAllWordsInDictionary(fWordsRaw);
+        setAllWordsInDictionary(gWordsRaw);
+        setAllWordsInDictionary(hWordsRaw);
+        setAllWordsInDictionary(iWordsRaw);
+        setAllWordsInDictionary(jWordsRaw);
+        setAllWordsInDictionary(kWordsRaw);
+        setAllWordsInDictionary(lWordsRaw);
+        setAllWordsInDictionary(mWordsRaw);
+        setAllWordsInDictionary(nWordsRaw);
+        setAllWordsInDictionary(oWordsRaw);
+        setAllWordsInDictionary(pWordsRaw);
+        setAllWordsInDictionary(qWordsRaw);
+        setAllWordsInDictionary(rWordsRaw);
+        setAllWordsInDictionary(sWordsRaw);
+        setAllWordsInDictionary(tWordsRaw);
+        setAllWordsInDictionary(uWordsRaw);
+        setAllWordsInDictionary(vWordsRaw);
+        setAllWordsInDictionary(wWordsRaw);
+        setAllWordsInDictionary(xWordsRaw);
+        setAllWordsInDictionary(yWordsRaw);
+        setAllWordsInDictionary(zWordsRaw);
     }
-    private void setAWordsInDictionary() {
-        String[] wordsArray = aWordsRaw.split("\n");
-        ArrayList<String> aWordsList = new ArrayList<>();
+    private void setAllWordsInDictionary(String letterWordsArray){
+        String[] wordsArray = letterWordsArray.split("\n");
+        ArrayList<String> letterWordList = new ArrayList<>();
         for(String word : wordsArray){
-            aWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(aWordsList);
-    }
-    private void setBWordsInDictionary() {
-        String[] wordsArray = bWordsRaw.split("\n");
-        ArrayList<String> bWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            bWordsList.add(word.strip());
+            letterWordList.add(word.strip());
         }
-        allWordsInDictionary.addAll(bWordsList);
-    }
-    private void setCWordsInDictionary() {
-        String[] wordsArray = cWordsRaw.split("\n");
-        ArrayList<String> cWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            cWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(cWordsList);
-    }
-    private void setDWordsInDictionary() {
-        String[] wordsArray = dWordsRaw.split("\n");
-        ArrayList<String> dWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            dWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(dWordsList);
-    }
-    private void setEWordsInDictionary() {
-        String[] wordsArray = eWordsRaw.split("\n");
-        ArrayList<String> eWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            eWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(eWordsList);
-    }
-    private void setFWordsInDictionary() {
-        String[] wordsArray = fWordsRaw.split("\n");
-        ArrayList<String> fWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            fWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(fWordsList);
-    }
-    private void setGWordsInDictionary() {
-        String[] wordsArray = gWordsRaw.split("\n");
-        ArrayList<String> gWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            gWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(gWordsList);
-    }
-    private void setHWordsInDictionary() {
-        String[] wordsArray = hWordsRaw.split("\n");
-        ArrayList<String> hWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            hWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(hWordsList);
-    }
-    private void setIWordsInDictionary() {
-        String[] wordsArray = iWordsRaw.split("\n");
-        ArrayList<String> iWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            iWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(iWordsList);
-    }
-    private void setJWordsInDictionary() {
-        String[] wordsArray = jWordsRaw.split("\n");
-        ArrayList<String> jWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            jWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(jWordsList);
-    }
-    private void setKWordsInDictionary() {
-        String[] wordsArray = kWordsRaw.split("\n");
-        ArrayList<String> kWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            kWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(kWordsList);
-    }
-    private void setLWordsInDictionary() {
-        String[] wordsArray = lWordsRaw.split("\n");
-        ArrayList<String> lWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            lWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(lWordsList);
-    }
-    private void setMWordsInDictionary() {
-        String[] wordsArray = mWordsRaw.split("\n");
-        ArrayList<String> mWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            mWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(mWordsList);
-    }
-    private void setNWordsInDictionary() {
-        String[] wordsArray = nWordsRaw.split("\n");
-        ArrayList<String> nWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            nWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(nWordsList);
-    }
-    private void setOWordsInDictionary() {
-        String[] wordsArray = oWordsRaw.split("\n");
-        ArrayList<String> oWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            oWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(oWordsList);
-    }
-    private void setPWordsInDictionary() {
-        String[] wordsArray = pWordsRaw.split("\n");
-        ArrayList<String> pWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            pWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(pWordsList);
-    }
-    private void setQWordsInDictionary() {
-        String[] wordsArray = qWordsRaw.split("\n");
-        ArrayList<String> qWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            qWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(qWordsList);
-    }
-    private void setRWordsInDictionary() {
-        String[] wordsArray = rWordsRaw.split("\n");
-        ArrayList<String> rWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            rWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(rWordsList);
-    }
-    private void setSWordsInDictionary() {
-        String[] wordsArray = sWordsRaw.split("\n");
-        ArrayList<String> sWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            sWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(sWordsList);
-    }
-    private void setTWordsInDictionary() {
-        String[] wordsArray = tWordsRaw.split("\n");
-        ArrayList<String> tWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            tWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(tWordsList);
-    }
-    private void setUWordsInDictionary() {
-        String[] wordsArray = uWordsRaw.split("\n");
-        ArrayList<String> uWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            uWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(uWordsList);
-    }
-    private void setVWordsInDictionary() {
-        String[] wordsArray = vWordsRaw.split("\n");
-        ArrayList<String> vWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            vWordsList.add(word.strip());
-        }allWordsInDictionary.addAll (vWordsList);
-    }
-    private void setWWordsInDictionary() {
-        String[] wordsArray = wWordsRaw.split("\n");
-        ArrayList<String> wWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            wWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(wWordsList);
-    }
-    private void setXWordsInDictionary() {
-        String[] wordsArray = xWordsRaw.split("\n");
-        ArrayList<String> xWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            xWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(xWordsList);
-    }
-    private void setYWordsInDictionary() {
-        String[] wordsArray = yWordsRaw.split("\n");
-        ArrayList<String> yWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            yWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(yWordsList);
-    }
-    private void setZWordsInDictionary() {
-        String[] wordsArray = zWordsRaw.split("\n");
-        ArrayList<String> zWordsList = new ArrayList<>();
-        for(String word : wordsArray){
-            zWordsList.add(word.strip());
-        }allWordsInDictionary.addAll(zWordsList);
+        allWordsInDictionary.addAll(letterWordList);
     }
     String zWordsRaw = "zag\nzaire\nzambezi\nzambia\nzambian\nzambians\nzaniest\nzany\nzanzibar\nzap\nzapping\nzappy\nzaps\nzeal\nzealot\nzealotry\nzealots\nzealous\nzealously\nzealousness\nzeal\nzebra\nzebras\nzebu\nzebus\nzenith\nzeniths\nzeolite\nzeolites\nzephyr\nzephyrs\nzeppelin\nzero\nzeroed\nzeroing\nzest\nzestfully\nzesty\nzeta\nzeus\nzig\nzigzag\nzigzagged\nzigzagging\nzigzags\nzillion\nzillions\nzimbabwe\nzinc\nzion\nzionism\nzionist\nzionists\nzip\nzipped\nzipper\nzippers\nzipping\nzombie\nzonal\nzone\nzoned\nzones\nzoning\nzoo\nzookeepers\nzoological\nzoologist,\nzoologists\nzoology\nzoom\nzoomed\nzooming\nzooms\nzooplankton\nzoos\nzulu";
     String yWordsRaw = "yacht\nyachting\nyachts\nyachtsman\nyachtsmen\nyak\nyaks\nyale\nyalelock\nyam\nyams\nyank\nyankee\nyankees\nyanks\nyap\nyapping\nyaps\nyard\nyardage\nyards\nyardstick\nyardsticks\nyarn\nyarns\nyaw\nyawed\nyawl\nyawls\nyawn\nyawned\nyawning\nyawningly\nyawns\nyaws\nye\nyea\nyeah\nyeaned\nyear\nyearbook\nyearbooks\nyearling\nyearlings\nyearlong\nyearly\nyearn\nyearned\nyearning\nyearningly\nyearnings\nyearns\nyears\nyeas\nyeast\nyeasts\nyeasty\nyell\nyelled\nyelling\nyellow\nyellowed\nyellower\nyellowing\nyellowish\nyellows\nyellowy\nyells\nyelp\nyelped\nyelping\nyelps\nyemen\nyen\nyens\nyeoman\nyeomanry\nyeomen\nyep\nyes\nyesterday\nyesterdays\nyesteryear\nyet\nyeti\nyetis\nyew\nyews\nyiddish\nyield\nyielded\nyielding\nyields\nyip\nyippee\nyodel\nyodelled\nyodeller\nyodelling\nyodels\nyoga\nyogi\nyoke\nyoked\nyokel\nyokels\nyokes\nyolk\nyolks\nyon\nyonder\nyore\nyork\nyorker\nyorkers\nyou\nyoung\nyounger\nyoungest\nyoungish\nyoungster\nyoungsters\nyour\nyours\nyourself\nyourselves\nyouth\nyouthful\nyouthfulness\nyouths\nyowl\nyoyo\nyrs\nyttrium\nyuck\nyukon\nyule\nyuletide\nyummiest\nyummy\nyuppie\nyuppies";
