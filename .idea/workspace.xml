@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Refactor CLI welcome and exit messages">
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Refactor Dictionary class to reduce duplication">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/Dictionary.java" afterDir="false" />
     </list>
@@ -304,7 +304,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679349388315</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Refactor Dictionary class to reduce duplication">
+      <created>1679416114848</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679416114848</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Refactor Dictionary class to reduce duplication">
+      <created>1679416119917</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1679416119917</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,6 +343,7 @@
     <MESSAGE value="Remove unused import statement" />
     <MESSAGE value="Refactor OutputFormatter and FormatterTests" />
     <MESSAGE value="Refactor CLI welcome and exit messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor CLI welcome and exit messages" />
+    <MESSAGE value="Refactor Dictionary class to reduce duplication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor Dictionary class to reduce duplication" />
   </component>
 </project>

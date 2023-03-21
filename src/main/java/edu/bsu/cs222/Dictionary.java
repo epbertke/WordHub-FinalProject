@@ -8,40 +8,21 @@ public class Dictionary {
         return allWordsInDictionary;
     }
     private void generateWordsInDictionary() {
-        setAllWordsInDictionary(aWordsRaw);
-        setAllWordsInDictionary(bWordsRaw);
-        setAllWordsInDictionary(cWordsRaw);
-        setAllWordsInDictionary(dWordsRaw);
-        setAllWordsInDictionary(eWordsRaw);
-        setAllWordsInDictionary(fWordsRaw);
-        setAllWordsInDictionary(gWordsRaw);
-        setAllWordsInDictionary(hWordsRaw);
-        setAllWordsInDictionary(iWordsRaw);
-        setAllWordsInDictionary(jWordsRaw);
-        setAllWordsInDictionary(kWordsRaw);
-        setAllWordsInDictionary(lWordsRaw);
-        setAllWordsInDictionary(mWordsRaw);
-        setAllWordsInDictionary(nWordsRaw);
-        setAllWordsInDictionary(oWordsRaw);
-        setAllWordsInDictionary(pWordsRaw);
-        setAllWordsInDictionary(qWordsRaw);
-        setAllWordsInDictionary(rWordsRaw);
-        setAllWordsInDictionary(sWordsRaw);
-        setAllWordsInDictionary(tWordsRaw);
-        setAllWordsInDictionary(uWordsRaw);
-        setAllWordsInDictionary(vWordsRaw);
-        setAllWordsInDictionary(wWordsRaw);
-        setAllWordsInDictionary(xWordsRaw);
-        setAllWordsInDictionary(yWordsRaw);
-        setAllWordsInDictionary(zWordsRaw);
+        createDictionaryWordsByLetterList();
     }
-    private void setAllWordsInDictionary(String letterWordsArray){
-        String[] wordsArray = letterWordsArray.split("\n");
-        ArrayList<String> letterWordList = new ArrayList<>();
-        for(String word : wordsArray){
-            letterWordList.add(word.strip());
+    private void createDictionaryWordsByLetterList(){
+        String[] wordsListByLetter = {aWordsRaw, bWordsRaw, cWordsRaw, dWordsRaw, eWordsRaw, fWordsRaw, gWordsRaw, hWordsRaw, iWordsRaw, jWordsRaw, kWordsRaw, lWordsRaw, mWordsRaw, nWordsRaw, oWordsRaw, pWordsRaw, qWordsRaw, rWordsRaw, sWordsRaw, tWordsRaw, uWordsRaw, vWordsRaw, wWordsRaw, xWordsRaw, yWordsRaw, zWordsRaw};
+        setAllWordsInDictionary(wordsListByLetter);
+    }
+    private void setAllWordsInDictionary(String[] letterWordsArray){
+        for(String wordsOfAlphabetLetter : letterWordsArray){
+            String[] wordsArray = wordsOfAlphabetLetter.split("\n");
+            ArrayList<String> letterWordList = new ArrayList<>();
+            for(String word : wordsArray){
+                letterWordList.add(word.strip());
+            }
+            allWordsInDictionary.addAll(letterWordList);
         }
-        allWordsInDictionary.addAll(letterWordList);
     }
     String zWordsRaw = "zag\nzaire\nzambezi\nzambia\nzambian\nzambians\nzaniest\nzany\nzanzibar\nzap\nzapping\nzappy\nzaps\nzeal\nzealot\nzealotry\nzealots\nzealous\nzealously\nzealousness\nzeal\nzebra\nzebras\nzebu\nzebus\nzenith\nzeniths\nzeolite\nzeolites\nzephyr\nzephyrs\nzeppelin\nzero\nzeroed\nzeroing\nzest\nzestfully\nzesty\nzeta\nzeus\nzig\nzigzag\nzigzagged\nzigzagging\nzigzags\nzillion\nzillions\nzimbabwe\nzinc\nzion\nzionism\nzionist\nzionists\nzip\nzipped\nzipper\nzippers\nzipping\nzombie\nzonal\nzone\nzoned\nzones\nzoning\nzoo\nzookeepers\nzoological\nzoologist,\nzoologists\nzoology\nzoom\nzoomed\nzooming\nzooms\nzooplankton\nzoos\nzulu";
     String yWordsRaw = "yacht\nyachting\nyachts\nyachtsman\nyachtsmen\nyak\nyaks\nyale\nyalelock\nyam\nyams\nyank\nyankee\nyankees\nyanks\nyap\nyapping\nyaps\nyard\nyardage\nyards\nyardstick\nyardsticks\nyarn\nyarns\nyaw\nyawed\nyawl\nyawls\nyawn\nyawned\nyawning\nyawningly\nyawns\nyaws\nye\nyea\nyeah\nyeaned\nyear\nyearbook\nyearbooks\nyearling\nyearlings\nyearlong\nyearly\nyearn\nyearned\nyearning\nyearningly\nyearnings\nyearns\nyears\nyeas\nyeast\nyeasts\nyeasty\nyell\nyelled\nyelling\nyellow\nyellowed\nyellower\nyellowing\nyellowish\nyellows\nyellowy\nyells\nyelp\nyelped\nyelping\nyelps\nyemen\nyen\nyens\nyeoman\nyeomanry\nyeomen\nyep\nyes\nyesterday\nyesterdays\nyesteryear\nyet\nyeti\nyetis\nyew\nyews\nyiddish\nyield\nyielded\nyielding\nyields\nyip\nyippee\nyodel\nyodelled\nyodeller\nyodelling\nyodels\nyoga\nyogi\nyoke\nyoked\nyokel\nyokels\nyokes\nyolk\nyolks\nyon\nyonder\nyore\nyork\nyorker\nyorkers\nyou\nyoung\nyounger\nyoungest\nyoungish\nyoungster\nyoungsters\nyour\nyours\nyourself\nyourselves\nyouth\nyouthful\nyouthfulness\nyouths\nyowl\nyoyo\nyrs\nyttrium\nyuck\nyukon\nyule\nyuletide\nyummiest\nyummy\nyuppie\nyuppies";
