@@ -18,4 +18,5 @@ public class TranslatorTests {
     public void invalidWordSearchGivesErrorTestEnglishToSpanish() throws IOException, InterruptedException {
         Assertions.assertEquals("This word was not found in the dictionary. Re-run program and try again with a new word or different spelling.", new EnglishToSpanishTranslator("dlkfaoec").getTranslatedWordInSpanish());
     }
+
 }

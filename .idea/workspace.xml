@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Remove unnecessary method in Dictionary class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/EnglishToSpanishTranslator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/SpanishToEnglishTranslator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/TranslationConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TranslatorTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/APIConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/APIConnection.java" afterDir="false" />
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Add Spanish Translator Classes and Tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheLanguage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/WordNotFoundError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/WordNotFoundError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/APIConnectionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APIConnectionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TranslatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TranslatorTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,9 +178,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.TranslatorTests" />
+        <item itemvalue="Application.CLI" />
         <item itemvalue="Gradle.EnglishToSpanishTranslatorTests" />
         <item itemvalue="Gradle.Tests in 'LearnTheDictionary.test'" />
-        <item itemvalue="Application.CLI" />
         <item itemvalue="Gradle.FormatterTests.outputFormatterFormatsSynonymTest" />
       </list>
     </recent_temporary>
@@ -346,7 +341,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679418908672</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add Spanish Translator Classes and Tests">
+      <created>1679596806911</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1679596806911</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Add Spanish Translator Classes and Tests">
+      <created>1679596815602</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1679596815602</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -373,6 +382,7 @@
     <MESSAGE value="Refactor CLI welcome and exit messages" />
     <MESSAGE value="Refactor Dictionary class to reduce duplication" />
     <MESSAGE value="Remove unnecessary method in Dictionary class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove unnecessary method in Dictionary class" />
+    <MESSAGE value="Add Spanish Translator Classes and Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Spanish Translator Classes and Tests" />
   </component>
 </project>

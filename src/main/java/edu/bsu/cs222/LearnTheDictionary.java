@@ -7,7 +7,7 @@ public class LearnTheDictionary {
         Scanner scanner = new Scanner(System.in);
         return scanner.next();
     }
-    protected static String fetchOutputForUser() throws IOException {
+    protected static String fetchOutputForUser() throws IOException, InterruptedException {
         String[] arrayForOutput;
         try{
             if(!WordNotFoundError.isNetworkConnected()){
@@ -16,6 +16,8 @@ public class LearnTheDictionary {
             String userInput = getUserInput().toLowerCase();
             if(Objects.equals(userInput, "r")){
                 arrayForOutput = new RandomWord().getRandomWordInformation();
+            }else if(Objects.equals(userInput, "t")){
+                return new LearnTheLanguage().openTranslationApplication();
             }else{
                 arrayForOutput = new WordSearch(userInput).getSearchedWordInformation();
             }

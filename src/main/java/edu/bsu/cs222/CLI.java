@@ -1,7 +1,7 @@
 package edu.bsu.cs222;
 import java.io.IOException;
 public class CLI {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
         printWelcomeStatement();
         System.out.println(LearnTheDictionary.fetchOutputForUser());
         printExitStatement();
