@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Refactor Dictionary class to reduce duplication">
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Remove unnecessary method in Dictionary class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/EnglishToSpanishTranslator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/SpanishToEnglishTranslator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/TranslationConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TranslatorTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/APIConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/APIConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/CLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/WordNotFoundError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/WordNotFoundError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/APIConnectionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APIConnectionTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +65,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last.edited.regexp&quot;: &quot;&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.55517244&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
@@ -69,7 +76,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CLI">
+  <component name="RunManager" selected="Gradle.TranslatorTests">
     <configuration name="CLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.CLI" />
       <module name="LearnTheDictionary.main" />
@@ -83,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FormatterTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EnglishToSpanishTranslatorTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -96,7 +103,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;FormatterTests&quot;" />
+            <option value="&quot;EnglishToSpanishTranslatorTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -150,7 +157,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WordSearchTests.invalidWordSearchGivesErrorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TranslatorTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -163,7 +170,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;WordSearchTests.invalidWordSearchGivesErrorTest&quot;" />
+            <option value="&quot;TranslatorTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -175,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CLI" />
+        <item itemvalue="Gradle.TranslatorTests" />
+        <item itemvalue="Gradle.EnglishToSpanishTranslatorTests" />
         <item itemvalue="Gradle.Tests in 'LearnTheDictionary.test'" />
+        <item itemvalue="Application.CLI" />
         <item itemvalue="Gradle.FormatterTests.outputFormatterFormatsSynonymTest" />
-        <item itemvalue="Gradle.FormatterTests" />
-        <item itemvalue="Gradle.WordSearchTests.invalidWordSearchGivesErrorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -318,7 +325,28 @@
       <option name="project" value="LOCAL" />
       <updated>1679416119917</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Refactor Dictionary class to reduce duplication">
+      <created>1679418569189</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1679418569189</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Refactor Dictionary class to reduce duplication">
+      <created>1679418574816</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1679418574816</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Remove unnecessary method in Dictionary class">
+      <created>1679418908672</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1679418908672</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -344,6 +372,7 @@
     <MESSAGE value="Refactor OutputFormatter and FormatterTests" />
     <MESSAGE value="Refactor CLI welcome and exit messages" />
     <MESSAGE value="Refactor Dictionary class to reduce duplication" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor Dictionary class to reduce duplication" />
+    <MESSAGE value="Remove unnecessary method in Dictionary class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unnecessary method in Dictionary class" />
   </component>
 </project>

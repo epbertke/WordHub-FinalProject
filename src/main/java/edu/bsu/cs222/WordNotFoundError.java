@@ -20,7 +20,6 @@ public class WordNotFoundError {
         String definition;
         try{
             definition = new DefinitionParser(new APIConnection(wordSearch).getDefinitionsInputStream()).parseForDefinition();
-
         }catch(Error e){
             return e.getMessage();
         }return definition;

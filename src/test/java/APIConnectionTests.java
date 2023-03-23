@@ -15,8 +15,7 @@ public class APIConnectionTests {
     }
     @Test
     public void apiConnectionOpensDefinitionInputStreamTest() throws IOException {
-        boolean result  = new APIConnection("watermelon").getDefinitionsInputStream().toString().isEmpty();
-        Assertions.assertFalse(result);
+        Assertions.assertFalse(new APIConnection("watermelon").getDefinitionsInputStream().toString().isEmpty());
     }
     @Test
     public void apiConnectionOpensSynonymsInputStreamTest() throws IOException {

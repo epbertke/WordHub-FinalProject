@@ -17,12 +17,6 @@ public class APIConnection {
         this.synonymQuery = encodeSynonymsQuery(wordSearch);
         this.synonymInputStream = fetchSynonymInputStream();
     }
-    public String getDefinitionQuery() {
-        return definitionQuery;
-    }
-    public String getSynonymQuery() {
-        return synonymQuery;
-    }
     private String encodeDefinitionQuery(String wordSearch){
         return String.format("https://www.dictionaryapi.com/api/v3/references/collegiate/json/%s?key=df32fa24-ccf9-45de-86df-33495904b479", URLEncoder.encode(wordSearch, Charset.defaultCharset()));
     }
@@ -41,7 +35,7 @@ public class APIConnection {
     private InputStream fetchSynonymInputStream() throws IOException{
         try{
             URLConnection connection = new URL(this.synonymQuery).openConnection();
-            connection.setRequestProperty("Ellie-Bertke", "Learn The Dictionary(elliebertke@gmail.com)");
+            connection.setRequestProperty("Ellie-Bertke", "Learn The Dictionary (elliebertke@gmail.com)");
             return connection.getInputStream();
         }catch (MalformedURLException e){
             throw new RuntimeException(e);
@@ -52,5 +46,11 @@ public class APIConnection {
     }
     public InputStream getSynonymsInputStream(){
         return this.synonymInputStream;
+    }
+    public String getDefinitionQuery() {
+        return definitionQuery;
+    }
+    public String getSynonymQuery() {
+        return synonymQuery;
     }
 }
