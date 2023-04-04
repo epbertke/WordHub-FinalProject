@@ -40,6 +40,7 @@ public class EnglishToSpanishTranslator {
         }
     }
     public String getTranslatedWordInSpanish(){
+
         return wordTranslatedToSpanish;
     }
 }

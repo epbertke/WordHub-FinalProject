@@ -11,10 +11,12 @@ public class LearnTheLanguage {
     protected String openTranslationApplication() throws IOException, InterruptedException {
         System.out.println("What language would you like to be your source language (translate from) ?"+"\n"+
                 "Spanish - enter S"+"\n"+
+                "German - enter G"+"\n"+
                 "English - enter E");
         getUserSourceLanguage();
         System.out.println("What language would you like to be your target language (translate to) ?"+"\n"+
                 "Spanish - enter S"+"\n"+
+                "German - enter G"+"\n"+
                 "English - enter E");
         getUserTargetLanguage();
         System.out.println("Enter the word you would like to translate :");
@@ -37,8 +39,12 @@ public class LearnTheLanguage {
         String translation = null;
         if(sourceLanguage.equals("s")&&targetLanguage.equals("e")){
             translation = new SpanishToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
-        }else if(sourceLanguage.equalsIgnoreCase("e")&&targetLanguage.equalsIgnoreCase("s")){
+        }else if(sourceLanguage.equalsIgnoreCase("e")&&targetLanguage.equalsIgnoreCase("s")) {
             translation = new EnglishToSpanishTranslator(wordToTranslate).getTranslatedWordInSpanish();
+        }else if(sourceLanguage.equals("g")&&targetLanguage.equals("e")){
+            translation = new GermanToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
+        }else if(sourceLanguage.equalsIgnoreCase("e")&&targetLanguage.equalsIgnoreCase("g")){
+            translation = new EnglishToGermanTranslator(wordToTranslate).getTranslatedWordInGerman();
         }return translation;
     }
 }
