@@ -12,11 +12,13 @@ public class LearnTheLanguage {
         System.out.println("What language would you like to be your source language (translate from) ?"+"\n"+
                 "Spanish - enter S"+"\n"+
                 "German - enter G"+"\n"+
+                "French - enter F"+"\n"+
                 "English - enter E");
         getUserSourceLanguage();
         System.out.println("What language would you like to be your target language (translate to) ?"+"\n"+
                 "Spanish - enter S"+"\n"+
                 "German - enter G"+"\n"+
+                "French - enter F"+"\n"+
                 "English - enter E");
         getUserTargetLanguage();
         System.out.println("Enter the word you would like to translate :");
@@ -45,6 +47,9 @@ public class LearnTheLanguage {
             translation = new GermanToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
         }else if(sourceLanguage.equalsIgnoreCase("e")&&targetLanguage.equalsIgnoreCase("g")){
             translation = new EnglishToGermanTranslator(wordToTranslate).getTranslatedWordInGerman();
-        }return translation;
+        }else if(sourceLanguage.equalsIgnoreCase("f")&&targetLanguage.equalsIgnoreCase("e")){
+            translation = new EnglishToFrenchTranslator(wordToTranslate).getTranslatedWordInFrench();
+        }
+        return translation;
     }
 }

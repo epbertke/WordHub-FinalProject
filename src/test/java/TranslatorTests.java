@@ -30,5 +30,12 @@ public class TranslatorTests {
         GermanToEnglishTranslator translator = new GermanToEnglishTranslator("banane");
         Assertions.assertEquals("banana", translator.getTranslatedWordInEnglish());
     }
+    @Test
+    public void englishToEnglishTranslatorGivesWordInFrench() throws IOException, InterruptedException{
+        EnglishToFrenchTranslator translator = new EnglishToFrenchTranslator("car");
+        Assertions.assertEquals("voiture", translator.getTranslatedWordInFrench);
+
+    }
+
 
 }
