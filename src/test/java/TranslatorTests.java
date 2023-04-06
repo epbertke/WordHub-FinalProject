@@ -1,7 +1,4 @@
-import edu.bsu.cs222.EnglishToGermanTranslator;
-import edu.bsu.cs222.EnglishToSpanishTranslator;
-import edu.bsu.cs222.GermanToEnglishTranslator;
-import edu.bsu.cs222.SpanishToEnglishTranslator;
+import edu.bsu.cs222.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;
@@ -33,8 +30,13 @@ public class TranslatorTests {
     @Test
     public void englishToEnglishTranslatorGivesWordInFrench() throws IOException, InterruptedException{
         EnglishToFrenchTranslator translator = new EnglishToFrenchTranslator("car");
-        Assertions.assertEquals("voiture", translator.getTranslatedWordInFrench);
+        Assertions.assertEquals("voiture", translator.getTranslatedWordInFrench());
 
+    }
+    @Test
+    public void frenchToEnglishTranslatorGivesWordInEnglish() throws IOException, InterruptedException{
+        FrenchToEnglishTranslator translator = new FrenchToEnglishTranslator("voiture");
+        Assertions.assertEquals("car", translator.getTranslatedWordInEnglish());
     }
 
 
