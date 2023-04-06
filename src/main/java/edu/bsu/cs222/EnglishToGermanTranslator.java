@@ -38,7 +38,7 @@ public class EnglishToGermanTranslator {
              if (jsonResultArray.get(0).toString().equals(englishWordToTranslateToGerman)) {
                  WordNotFoundError.throwWordNotFoundError();
              }
-             return responseWord;
+             return responseWord.toLowerCase();
 
          } catch (Error e) {
              return e.getMessage();
