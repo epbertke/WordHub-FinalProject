@@ -38,7 +38,7 @@ public class LearnTheLanguage {
         wordToTranslate = wordToTranslateScanner.next().toLowerCase();
     }
     private String processUserRequest() throws IOException, InterruptedException {
-        String translation = null;
+        String translation = " ";
         if(sourceLanguage.equals("s")&&targetLanguage.equals("e")){
             translation = new SpanishToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
         }else if(sourceLanguage.equalsIgnoreCase("e")&&targetLanguage.equalsIgnoreCase("s")) {
@@ -47,7 +47,9 @@ public class LearnTheLanguage {
             translation = new GermanToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
         }else if(sourceLanguage.equalsIgnoreCase("e")&&targetLanguage.equalsIgnoreCase("g")){
             translation = new EnglishToGermanTranslator(wordToTranslate).getTranslatedWordInGerman();
-        }else if(sourceLanguage.equalsIgnoreCase("f")&&targetLanguage.equalsIgnoreCase("e")){
+        }else if(sourceLanguage.equals("f")&&targetLanguage.equals("e")){
+            translation = new FrenchToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
+        }else if(sourceLanguage.equalsIgnoreCase("e")&&targetLanguage.equalsIgnoreCase("f")){
             translation = new EnglishToFrenchTranslator(wordToTranslate).getTranslatedWordInFrench();
         }
         return translation;
