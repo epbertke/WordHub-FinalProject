@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Fixed French to English and English To French Translator.">
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Fixed capitalization error causing test to fail">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/TranslationProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TranslatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TranslatorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheLanguage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TranslatorTests.frenchToEnglishTranslatorGivesWordInEnglish">
+  <component name="RunManager" selected="Application.CLI">
     <configuration name="CLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.CLI" />
       <module name="LearnTheDictionary.main" />
@@ -182,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CLI" />
+        <item itemvalue="Gradle.TranslatorTests" />
         <item itemvalue="Gradle.TranslatorTests.frenchToEnglishTranslatorGivesWordInEnglish" />
         <item itemvalue="Gradle.TranslatorTests.englishToEnglishTranslatorGivesWordInFrench" />
-        <item itemvalue="Application.CLI" />
         <item itemvalue="Gradle.TranslatorTests.englishToGermanTranslatorGivesWordInGerman" />
-        <item itemvalue="Gradle.TranslatorTests" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +368,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680801251571</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Fixed capitalization error causing test to fail">
+      <created>1680802027849</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1680802027849</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Fixed capitalization error causing test to fail">
+      <created>1680802037033</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1680802037033</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -396,6 +411,7 @@
     <MESSAGE value="Remove unnecessary method in Dictionary class" />
     <MESSAGE value="Add Spanish Translator Classes and Tests" />
     <MESSAGE value="Fixed French to English and English To French Translator." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed French to English and English To French Translator." />
+    <MESSAGE value="Fixed capitalization error causing test to fail" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed capitalization error causing test to fail" />
   </component>
 </project>
