@@ -49,6 +49,16 @@ public class TranslatorTests {
         PolishToEnglishTranslator translator = new PolishToEnglishTranslator("uniwersytet");
         Assertions.assertEquals("university", translator.getTranslatedWordInEnglish());
     }
+    @Test
+    public void englishToPortugueseTranslatorGivesWordInPortuguese() throws IOException, InterruptedException {
+        EnglishToPortugueseTranslator translator = new EnglishToPortugueseTranslator("tomato");
+        Assertions.assertEquals("tomate", translator.getTranslatedWordInPortuguese());
+    }
+    @Test
+    public void portugueseToEnglishTranslatorGivesWordInPortuguese() throws IOException, InterruptedException {
+        PortugueseToEnglishTranslator translator = new PortugueseToEnglishTranslator("tomate");
+        Assertions.assertEquals("tomato", translator.getTranslatedWordInEnglish());
+    }
 
 
 

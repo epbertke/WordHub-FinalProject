@@ -44,33 +44,38 @@ public class LearnTheLanguage {
         wordToTranslate = wordToTranslateScanner.next().toLowerCase();
     }
     public String processUserRequest() throws IOException, InterruptedException {
-        String englishDefinitionOutput = "\n"+"Definition : ";
+        String englishDefinitionOutput = "\n" + "Definition : ";
         String translation = " ";
         String definition = " ";
-        if(sourceLanguage.equals("s")&&targetLanguage.equals("e")){
+        if (sourceLanguage.equals("s") && targetLanguage.equals("e")) {
             translation = new SpanishToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
             definition = new TranslationProcessor(translation).fetchDefinitionForTranslatedWord();
-            definition = englishDefinitionOutput+definition;
-        }else if(sourceLanguage.equalsIgnoreCase("e")&&targetLanguage.equalsIgnoreCase("s")) {
+            definition = englishDefinitionOutput + definition;
+        } else if (sourceLanguage.equalsIgnoreCase("e") && targetLanguage.equalsIgnoreCase("s")) {
             translation = new EnglishToSpanishTranslator(wordToTranslate).getTranslatedWordInSpanish();
-        }else if(sourceLanguage.equals("g")&&targetLanguage.equals("e")){
+        } else if (sourceLanguage.equals("g") && targetLanguage.equals("e")) {
             translation = new GermanToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
             definition = new TranslationProcessor(translation).fetchDefinitionForTranslatedWord();
-            definition = englishDefinitionOutput+definition;
-        }else if(sourceLanguage.equalsIgnoreCase("e")&&targetLanguage.equalsIgnoreCase("g")){
+            definition = englishDefinitionOutput + definition;
+        } else if (sourceLanguage.equalsIgnoreCase("e") && targetLanguage.equalsIgnoreCase("g")) {
             translation = new EnglishToGermanTranslator(wordToTranslate).getTranslatedWordInGerman();
-        }else if(sourceLanguage.equals("f")&&targetLanguage.equals("e")){
+        } else if (sourceLanguage.equals("f") && targetLanguage.equals("e")) {
             translation = new FrenchToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
             definition = new TranslationProcessor(translation).fetchDefinitionForTranslatedWord();
-            definition = englishDefinitionOutput+definition;
-        }else if(sourceLanguage.equalsIgnoreCase("e")&&targetLanguage.equalsIgnoreCase("f")){
+            definition = englishDefinitionOutput + definition;
+        } else if (sourceLanguage.equalsIgnoreCase("e") && targetLanguage.equalsIgnoreCase("f")) {
             translation = new EnglishToFrenchTranslator(wordToTranslate).getTranslatedWordInFrench();
-        }else if(sourceLanguage.equals("p")&&targetLanguage.equals("p")){
+        } else if (sourceLanguage.equals("p") && targetLanguage.equals("e")) {
             translation = new PolishToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
             definition = new TranslationProcessor(translation).fetchDefinitionForTranslatedWord();
-            definition = englishDefinitionOutput+definition;
-        }else if(sourceLanguage.equals("e")&&targetLanguage.equalsIgnoreCase("p")){
+            definition = englishDefinitionOutput + definition;
+        } else if (sourceLanguage.equals("e") && targetLanguage.equalsIgnoreCase("p")) {
             translation = new EnglishToPolishTranslator(wordToTranslate).getTranslatedWordInPolish();
-        } return translation+definition;
+        }else if(sourceLanguage.equals("t") && targetLanguage.equals("e")){
+            translation = new PortugueseToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
+        }else if(sourceLanguage.equals("e") && targetLanguage.equals("t")){
+            translation = new EnglishToPortugueseTranslator(wordToTranslate).getTranslatedWordInPortuguese();
+        }
+        return translation+definition;
     }
 }

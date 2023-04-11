@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Fixed capitalization error causing test to fail">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToPolishTranslator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/PolishToEnglishTranslator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToPortugueseTranslator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/PortugueseToEnglishTranslator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/EnglishToFrenchTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToFrenchTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/EnglishToGermanTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToGermanTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/EnglishToSpanishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToSpanishTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/FrenchToEnglishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/FrenchToEnglishTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GermanToEnglishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/GermanToEnglishTranslator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheLanguage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/SpanishToEnglishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/SpanishToEnglishTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/WordNotFoundError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/WordNotFoundError.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TranslatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TranslatorTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,11 +56,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -102,7 +95,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CLI">
+  <component name="RunManager" selected="Gradle.TranslatorTests.portugueseToEnglishTranslatorGivesWordInPortuguese">
     <configuration name="CLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.CLI" />
       <module name="LearnTheDictionary.main" />
@@ -139,7 +132,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TranslatorTests.englishToPolishTranslatorGivesWordInPolish" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TranslatorTests.englishToPortugueseTranslatorGivesWordInPortuguese" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -152,30 +145,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TranslatorTests.englishToPolishTranslatorGivesWordInPolish&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TranslatorTests.frenchToEnglishTranslatorGivesWordInEnglish" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;TranslatorTests.frenchToEnglishTranslatorGivesWordInEnglish&quot;" />
+            <option value="&quot;TranslatorTests.englishToPortugueseTranslatorGivesWordInPortuguese&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -208,13 +178,36 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="TranslatorTests.portugueseToEnglishTranslatorGivesWordInPortuguese" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TranslatorTests.portugueseToEnglishTranslatorGivesWordInPortuguese&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TranslatorTests.portugueseToEnglishTranslatorGivesWordInPortuguese" />
+        <item itemvalue="Gradle.TranslatorTests.englishToPortugueseTranslatorGivesWordInPortuguese" />
         <item itemvalue="Application.CLI" />
         <item itemvalue="Gradle.TranslatorTests.polishToEnglishTranslatorGivesWordInPolish" />
         <item itemvalue="Gradle.TranslatorTests" />
-        <item itemvalue="Gradle.TranslatorTests.englishToPolishTranslatorGivesWordInPolish" />
-        <item itemvalue="Gradle.TranslatorTests.frenchToEnglishTranslatorGivesWordInEnglish" />
       </list>
     </recent_temporary>
   </component>
