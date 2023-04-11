@@ -1,5 +1,7 @@
-package edu.bsu.cs222;
+package edu.bsu.cs222.translators;
 import com.jayway.jsonpath.JsonPath;
+import edu.bsu.cs222.TranslationConnection;
+import edu.bsu.cs222.WordNotFoundError;
 import net.minidev.json.JSONArray;
 import java.io.IOException;
 import java.net.URI;

@@ -1,5 +1,7 @@
 package edu.bsu.cs222;
 
+import edu.bsu.cs222.translators.*;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -14,6 +16,7 @@ public class LearnTheLanguage {
                 Spanish - enter S
                 German - enter G
                 French - enter F
+                Polish - enter P
                 English - enter E""");
         getUserSourceLanguage();
         System.out.println("""
@@ -21,11 +24,12 @@ public class LearnTheLanguage {
                 Spanish - enter S
                 German - enter G
                 French - enter F
+                Polish - enter P
                 English - enter E""");
         getUserTargetLanguage();
         System.out.println("Enter the word you would like to translate :");
         getUserWordToTranslate();
-        return "Original : "+wordToTranslate.toLowerCase()+"\n"+"Translation : "+processUserRequest();
+        return "Original : "+wordToTranslate+"\n"+"Translation : "+processUserRequest();
     }
     private void getUserSourceLanguage(){
         Scanner sourceLanguageScanner = new Scanner(System.in);
@@ -39,10 +43,10 @@ public class LearnTheLanguage {
         Scanner wordToTranslateScanner = new Scanner(System.in);
         wordToTranslate = wordToTranslateScanner.next().toLowerCase();
     }
-    private String processUserRequest() throws IOException, InterruptedException {
+    public String processUserRequest() throws IOException, InterruptedException {
         String englishDefinitionOutput = "\n"+"Definition : ";
         String translation = " ";
-        String definition = "";
+        String definition = " ";
         if(sourceLanguage.equals("s")&&targetLanguage.equals("e")){
             translation = new SpanishToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
             definition = new TranslationProcessor(translation).fetchDefinitionForTranslatedWord();
@@ -61,7 +65,12 @@ public class LearnTheLanguage {
             definition = englishDefinitionOutput+definition;
         }else if(sourceLanguage.equalsIgnoreCase("e")&&targetLanguage.equalsIgnoreCase("f")){
             translation = new EnglishToFrenchTranslator(wordToTranslate).getTranslatedWordInFrench();
-        }
-        return translation+definition;
+        }else if(sourceLanguage.equals("p")&&targetLanguage.equals("p")){
+            translation = new PolishToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
+            definition = new TranslationProcessor(translation).fetchDefinitionForTranslatedWord();
+            definition = englishDefinitionOutput+definition;
+        }else if(sourceLanguage.equals("e")&&targetLanguage.equalsIgnoreCase("p")){
+            translation = new EnglishToPolishTranslator(wordToTranslate).getTranslatedWordInPolish();
+        } return translation+definition;
     }
 }

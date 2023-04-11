@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
 public class WordNotFoundError {
-    protected static Error throwWordNotFoundError(){
+    public static Error throwWordNotFoundError(){
         throw new Error("This word was not found in the dictionary. Re-run program and try again with a new word or different spelling.");
     }
     public static boolean isNetworkConnected() {

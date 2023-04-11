@@ -1,4 +1,5 @@
-import edu.bsu.cs222.*;
+import edu.bsu.cs222.translators.EnglishToFrenchTranslator;
+import edu.bsu.cs222.translators.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;
@@ -28,7 +29,7 @@ public class TranslatorTests {
         Assertions.assertEquals("banana", translator.getTranslatedWordInEnglish());
     }
     @Test
-    public void englishToEnglishTranslatorGivesWordInFrench() throws IOException, InterruptedException{
+    public void englishToFrenchTranslatorGivesWordInFrench() throws IOException, InterruptedException{
         EnglishToFrenchTranslator translator = new EnglishToFrenchTranslator("car");
         Assertions.assertEquals("voiture", translator.getTranslatedWordInFrench());
 
@@ -38,6 +39,17 @@ public class TranslatorTests {
         FrenchToEnglishTranslator translator = new FrenchToEnglishTranslator("voiture");
         Assertions.assertEquals("car", translator.getTranslatedWordInEnglish());
     }
+    @Test
+    public void englishToPolishTranslatorGivesWordInPolish() throws IOException, InterruptedException{
+        EnglishToPolishTranslator translator = new EnglishToPolishTranslator("university");
+        Assertions.assertEquals("uniwersytet", translator.getTranslatedWordInPolish());
+    }
+    @Test
+    public void polishToEnglishTranslatorGivesWordInPolish() throws IOException, InterruptedException{
+        PolishToEnglishTranslator translator = new PolishToEnglishTranslator("uniwersytet");
+        Assertions.assertEquals("university", translator.getTranslatedWordInEnglish());
+    }
+
 
 
 }
