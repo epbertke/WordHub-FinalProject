@@ -53,28 +53,40 @@ public class LearnTheLanguage {
             definition = englishDefinitionOutput + definition;
         } else if (sourceLanguage.equalsIgnoreCase("e") && targetLanguage.equalsIgnoreCase("s")) {
             translation = new EnglishToSpanishTranslator(wordToTranslate).getTranslatedWordInSpanish();
+            definition = new TranslationProcessor(wordToTranslate).fetchDefinitionForTranslatedWord();
+            definition = englishDefinitionOutput+definition;
         } else if (sourceLanguage.equals("g") && targetLanguage.equals("e")) {
             translation = new GermanToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
             definition = new TranslationProcessor(translation).fetchDefinitionForTranslatedWord();
             definition = englishDefinitionOutput + definition;
         } else if (sourceLanguage.equalsIgnoreCase("e") && targetLanguage.equalsIgnoreCase("g")) {
             translation = new EnglishToGermanTranslator(wordToTranslate).getTranslatedWordInGerman();
+            definition = new TranslationProcessor(wordToTranslate).fetchDefinitionForTranslatedWord();
+            definition = englishDefinitionOutput+definition;
         } else if (sourceLanguage.equals("f") && targetLanguage.equals("e")) {
             translation = new FrenchToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
             definition = new TranslationProcessor(translation).fetchDefinitionForTranslatedWord();
             definition = englishDefinitionOutput + definition;
         } else if (sourceLanguage.equalsIgnoreCase("e") && targetLanguage.equalsIgnoreCase("f")) {
             translation = new EnglishToFrenchTranslator(wordToTranslate).getTranslatedWordInFrench();
+            definition = new TranslationProcessor(wordToTranslate).fetchDefinitionForTranslatedWord();
+            definition = englishDefinitionOutput+definition;
         } else if (sourceLanguage.equals("p") && targetLanguage.equals("e")) {
             translation = new PolishToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
             definition = new TranslationProcessor(translation).fetchDefinitionForTranslatedWord();
             definition = englishDefinitionOutput + definition;
         } else if (sourceLanguage.equals("e") && targetLanguage.equalsIgnoreCase("p")) {
             translation = new EnglishToPolishTranslator(wordToTranslate).getTranslatedWordInPolish();
+            definition = new TranslationProcessor(wordToTranslate).fetchDefinitionForTranslatedWord();
+            definition = englishDefinitionOutput+definition;
         }else if(sourceLanguage.equals("t") && targetLanguage.equals("e")){
             translation = new PortugueseToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
+            definition = new TranslationProcessor(wordToTranslate).fetchDefinitionForTranslatedWord();
+            definition = englishDefinitionOutput+definition;
         }else if(sourceLanguage.equals("e") && targetLanguage.equals("t")){
             translation = new EnglishToPortugueseTranslator(wordToTranslate).getTranslatedWordInPortuguese();
+            definition = new TranslationProcessor(wordToTranslate).fetchDefinitionForTranslatedWord();
+            definition = englishDefinitionOutput+definition;
         }
         return translation+definition;
     }

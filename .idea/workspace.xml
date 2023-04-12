@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Fixed capitalization error causing test to fail">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToPortugueseTranslator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/PortugueseToEnglishTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheLanguage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TranslatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TranslatorTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Fixed capitalization error causing test to fail" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,12 +23,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="LearnTheDictionary" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -84,8 +73,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last.edited.regexp&quot;: &quot;&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15332031&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.55517244&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
@@ -95,10 +84,12 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TranslatorTests.portugueseToEnglishTranslatorGivesWordInPortuguese">
+  <component name="RunManager" selected="Application.CLI">
     <configuration name="CLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-19 (2)" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.CLI" />
-      <module name="LearnTheDictionary.main" />
+      <module name="org.example.LearnTheDictionary.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="edu.bsu.cs222.*" />
@@ -203,9 +194,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CLI" />
         <item itemvalue="Gradle.TranslatorTests.portugueseToEnglishTranslatorGivesWordInPortuguese" />
         <item itemvalue="Gradle.TranslatorTests.englishToPortugueseTranslatorGivesWordInPortuguese" />
-        <item itemvalue="Application.CLI" />
         <item itemvalue="Gradle.TranslatorTests.polishToEnglishTranslatorGivesWordInPolish" />
         <item itemvalue="Gradle.TranslatorTests" />
       </list>
