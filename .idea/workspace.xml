@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Fixed capitalization error causing test to fail" />
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Added definition output for english to target language.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/ChineseToEnglishTranslator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToChineseTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheLanguage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToPolishTranslator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/PolishToEnglishTranslator.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -393,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680802037033</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added definition output for english to target language.">
+      <created>1681317487549</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1681317487549</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -423,6 +437,7 @@
     <MESSAGE value="Add Spanish Translator Classes and Tests" />
     <MESSAGE value="Fixed French to English and English To French Translator." />
     <MESSAGE value="Fixed capitalization error causing test to fail" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed capitalization error causing test to fail" />
+    <MESSAGE value="Added definition output for english to target language." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added definition output for english to target language." />
   </component>
 </project>

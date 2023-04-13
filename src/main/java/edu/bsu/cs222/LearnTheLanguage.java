@@ -16,7 +16,8 @@ public class LearnTheLanguage {
                 Spanish - enter S
                 German - enter G
                 French - enter F
-                Polish - enter P
+                Portuguese - enter P
+                Chinese - enter C
                 English - enter E""");
         getUserSourceLanguage();
         System.out.println("""
@@ -24,7 +25,8 @@ public class LearnTheLanguage {
                 Spanish - enter S
                 German - enter G
                 French - enter F
-                Polish - enter P
+                Portuguese - enter P
+                Chinese - enter C
                 English - enter E""");
         getUserTargetLanguage();
         System.out.println("Enter the word you would like to translate :");
@@ -71,22 +73,22 @@ public class LearnTheLanguage {
             translation = new EnglishToFrenchTranslator(wordToTranslate).getTranslatedWordInFrench();
             definition = new TranslationProcessor(wordToTranslate).fetchDefinitionForTranslatedWord();
             definition = englishDefinitionOutput+definition;
-        } else if (sourceLanguage.equals("p") && targetLanguage.equals("e")) {
-            translation = new PolishToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
-            definition = new TranslationProcessor(translation).fetchDefinitionForTranslatedWord();
-            definition = englishDefinitionOutput + definition;
-        } else if (sourceLanguage.equals("e") && targetLanguage.equalsIgnoreCase("p")) {
-            translation = new EnglishToPolishTranslator(wordToTranslate).getTranslatedWordInPolish();
-            definition = new TranslationProcessor(wordToTranslate).fetchDefinitionForTranslatedWord();
-            definition = englishDefinitionOutput+definition;
-        }else if(sourceLanguage.equals("t") && targetLanguage.equals("e")){
+        }else if(sourceLanguage.equals("p") && targetLanguage.equals("e")){
             translation = new PortugueseToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
             definition = new TranslationProcessor(wordToTranslate).fetchDefinitionForTranslatedWord();
             definition = englishDefinitionOutput+definition;
-        }else if(sourceLanguage.equals("e") && targetLanguage.equals("t")){
+        }else if(sourceLanguage.equals("e") && targetLanguage.equals("p")){
             translation = new EnglishToPortugueseTranslator(wordToTranslate).getTranslatedWordInPortuguese();
             definition = new TranslationProcessor(wordToTranslate).fetchDefinitionForTranslatedWord();
             definition = englishDefinitionOutput+definition;
+        }else if(sourceLanguage.equals("c")&&targetLanguage.equals("e")){
+            translation = new ChineseToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
+            definition = new TranslationProcessor(wordToTranslate).fetchDefinitionForTranslatedWord();
+            definition = englishDefinitionOutput+definition;
+        }else if(sourceLanguage.equals("e")&&targetLanguage.equals("c")) {
+            translation = new EnglishToChineseTranslator(wordToTranslate).getTranslatedWordInChinese();
+            definition = new TranslationProcessor(wordToTranslate).fetchDefinitionForTranslatedWord();
+            definition = englishDefinitionOutput + definition;
         }
         return translation+definition;
     }
