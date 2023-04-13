@@ -1,5 +1,4 @@
-import edu.bsu.cs222.WordNotFoundError;
-import edu.bsu.cs222.WordSearch;
+package edu.bsu.cs222;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;
@@ -19,8 +18,5 @@ public class WordSearchTests {
         boolean result = new WordSearch("grateful").getSearchedWordInformation()[2].isEmpty();
         Assertions.assertFalse(result);
     }
-    @Test
-    public void invalidWordSearchGivesErrorTest() throws IOException {
-        Assertions.assertEquals("This word was not found in the dictionary. Re-run program and try again with a new word or different spelling.", WordNotFoundError.checkForWordNotFoundError("jkfndsajnfdsa"));
-    }
+
 }

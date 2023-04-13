@@ -2,7 +2,7 @@ package edu.bsu.cs222;
 import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
-public class WordNotFoundError {
+public class ErrorHandler {
     public static Error throwWordNotFoundError(){
         throw new Error("This word was not found in the dictionary. Re-run program and try again with a new word or different spelling.");
     }
@@ -16,12 +16,11 @@ public class WordNotFoundError {
             throw new Error("No network connection. Check connection and re-run program to try again.");
         }
     }
-    public static String checkForWordNotFoundError(String wordSearch) throws IOException{
-        String definition;
+    public static void checkForWordNotFoundError(String wordSearch) throws IOException{
         try{
-            definition = new DefinitionParser(new APIConnection(wordSearch).getDefinitionsInputStream()).parseForDefinition();
-        }catch(Error e){
-            return e.getMessage();
-        }return definition;
+            String definition = new DefinitionParser(wordSearch).parseForDefinition();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

@@ -2,7 +2,7 @@ package edu.bsu.cs222.translators;
 
 import com.jayway.jsonpath.JsonPath;
 import edu.bsu.cs222.TranslationConnection;
-import edu.bsu.cs222.WordNotFoundError;
+import edu.bsu.cs222.ErrorHandler;
 import net.minidev.json.JSONArray;
 
 import java.io.IOException;
@@ -36,7 +36,7 @@ public class FrenchToEnglishTranslator {
         HashMap<String, String> result = JsonPath.parse(translationResponse).json();
         JSONArray jsonResultArray = JsonPath.read(result, "$..translatedText");
         if(jsonResultArray.isEmpty()){
-            return WordNotFoundError.throwWordNotFoundError().getMessage();
+            return ErrorHandler.throwWordNotFoundError().getMessage();
 
         }
         return jsonResultArray.get(0).toString();

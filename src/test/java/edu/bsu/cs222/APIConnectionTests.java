@@ -1,3 +1,5 @@
+package edu.bsu.cs222;
+
 import edu.bsu.cs222.APIConnection;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

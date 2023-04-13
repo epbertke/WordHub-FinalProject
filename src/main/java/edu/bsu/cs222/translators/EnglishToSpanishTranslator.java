@@ -1,7 +1,7 @@
 package edu.bsu.cs222.translators;
 import com.jayway.jsonpath.JsonPath;
 import edu.bsu.cs222.TranslationConnection;
-import edu.bsu.cs222.WordNotFoundError;
+import edu.bsu.cs222.ErrorHandler;
 import net.minidev.json.JSONArray;
 import java.io.IOException;
 import java.net.URI;
@@ -34,7 +34,7 @@ public class EnglishToSpanishTranslator {
             JSONArray jsonResultArray = JsonPath.read(result, "$..translatedText");
             String responseWord = jsonResultArray.get(0).toString();
             if(jsonResultArray.get(0).toString().equals(englishWordToTranslateToSpanish)){
-                WordNotFoundError.throwWordNotFoundError();
+                ErrorHandler.throwWordNotFoundError();
             }
             return responseWord;
         }catch(Error e){

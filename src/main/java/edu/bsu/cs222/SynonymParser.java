@@ -5,16 +5,15 @@ import java.io.IOException;
 import java.io.InputStream;
 public class SynonymParser {
     private final InputStream synonymsInputStream;
-    public SynonymParser(InputStream json) {
-        synonymsInputStream = json;
+    public SynonymParser(String wordSearch) throws IOException {
+        this.synonymsInputStream = new APIConnection(wordSearch).getSynonymsInputStream();
     }
     public String parseForSynonyms() throws IOException {
         JSONArray result = JsonPath.parse(synonymsInputStream).json();
         JSONArray jsonResultArray = JsonPath.read(result, "$..syns");
         synonymsInputStream.close();
         if (jsonResultArray.isEmpty()) {
-            synonymsInputStream.close();
-            WordNotFoundError.throwWordNotFoundError();
+            ErrorHandler.throwWordNotFoundError();
         }
         return jsonResultArray.get(0).toString();
     }

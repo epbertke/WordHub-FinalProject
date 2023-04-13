@@ -7,10 +7,9 @@ public class WordSearch {
     }
     public String[] getSearchedWordInformation() throws IOException {
         String[] searchedWordArray = new String[3];
-        APIConnection wordConnection = new APIConnection(searchedWord);
         searchedWordArray[0] = searchedWord;
-        searchedWordArray[1] = new DefinitionParser(wordConnection.getDefinitionsInputStream()).parseForDefinition();
-        searchedWordArray[2] = new SynonymParser(wordConnection.getSynonymsInputStream()).parseForSynonyms();
+        searchedWordArray[1] = new DefinitionParser(searchedWord).parseForDefinition();
+        searchedWordArray[2] = new SynonymParser(searchedWord).parseForSynonyms();
         return searchedWordArray;
     }
 }

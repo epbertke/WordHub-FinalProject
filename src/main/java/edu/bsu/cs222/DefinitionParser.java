@@ -5,16 +5,15 @@ import java.io.IOException;
 import java.io.InputStream;
 public class DefinitionParser {
     private final InputStream definitionsInputStream;
-    public DefinitionParser(InputStream json) {
-        this.definitionsInputStream = json;
+    public DefinitionParser(String wordSearch) throws IOException {
+        definitionsInputStream = new APIConnection(wordSearch).getDefinitionsInputStream();
     }
     public String parseForDefinition() throws IOException {
         JSONArray result = JsonPath.parse(definitionsInputStream).json();
         JSONArray jsonResultArray = JsonPath.read(result, "$..shortdef");
         definitionsInputStream.close();
-        if(jsonResultArray.isEmpty()){
-            definitionsInputStream.close();
-            WordNotFoundError.throwWordNotFoundError();
+        if(jsonResultArray.isEmpty()) {
+            ErrorHandler.throwWordNotFoundError();
         }
         return jsonResultArray.get(0).toString();
     }

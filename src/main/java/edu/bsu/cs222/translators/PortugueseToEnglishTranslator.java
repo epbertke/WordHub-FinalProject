@@ -38,7 +38,6 @@ public class PortugueseToEnglishTranslator {
         }catch (Error e) {
             return e.getMessage();
         }
-
     }
     public String getTranslatedWordInEnglish(){return wordTranslatedToEnglish;}
 }
