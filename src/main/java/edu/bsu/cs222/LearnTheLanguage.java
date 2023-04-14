@@ -11,6 +11,7 @@ public class LearnTheLanguage {
         requestSourceLanguage();
         requestTargetLanguage();
         getUserWordToTranslate();
+        ErrorHandler.checkForValidRequests(sourceLanguage, targetLanguage);
         new TranslationProcessor(sourceLanguage, targetLanguage, wordToTranslate).processUserRequest();
     }
     protected static void requestSourceLanguage() {

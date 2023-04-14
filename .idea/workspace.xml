@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Add tests">
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LanguageOutputFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LanguageOutputFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/FormatterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/FormatterTests.java" afterDir="false" />
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Remove unused import statements">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/ErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheLanguage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -434,7 +435,28 @@
       <option name="project" value="LOCAL" />
       <updated>1681430911874</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Remove unused import statements">
+      <created>1681431781834</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1681431781834</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Remove unused import statements">
+      <created>1681431791047</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1681431791047</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Remove unused import statements">
+      <created>1681433040985</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1681433040985</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -467,7 +489,9 @@
     <MESSAGE value="Added definition output for english to target language." />
     <MESSAGE value="Refactor language classes and Dictionary&#10;Refactor tests" />
     <MESSAGE value="Add tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add tests" />
+    <MESSAGE value="Update README.md" />
+    <MESSAGE value="Remove unused import statements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unused import statements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
