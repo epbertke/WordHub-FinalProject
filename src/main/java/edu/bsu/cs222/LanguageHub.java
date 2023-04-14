@@ -1,6 +1,5 @@
 package edu.bsu.cs222;
 import edu.bsu.cs222.translators.*;
-
 import java.io.IOException;
 public class LanguageHub {
     private final String sourceLanguage;

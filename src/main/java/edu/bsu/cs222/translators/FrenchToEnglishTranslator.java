@@ -1,10 +1,8 @@
 package edu.bsu.cs222.translators;
-
 import com.jayway.jsonpath.JsonPath;
 import edu.bsu.cs222.TranslationConnection;
 import edu.bsu.cs222.ErrorHandler;
 import net.minidev.json.JSONArray;
-
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -18,7 +16,6 @@ public class FrenchToEnglishTranslator {
     public FrenchToEnglishTranslator(String frenchWordToTranslateToEnglish) throws IOException, InterruptedException{
         this.frenchWordToTranslateToEnglish = frenchWordToTranslateToEnglish;
         this.wordTranslatedToEnglish = findWordTranslatedToEnglish(requestTranslation());
-
     }
     private String requestTranslation() throws IOException, InterruptedException{
         TranslationConnection.createLanguageList();
@@ -37,9 +34,8 @@ public class FrenchToEnglishTranslator {
         JSONArray jsonResultArray = JsonPath.read(result, "$..translatedText");
         if(jsonResultArray.isEmpty()){
             return ErrorHandler.throwWordNotFoundError().getMessage();
-
         }
-        return jsonResultArray.get(0).toString();
+        return jsonResultArray.get(0).toString().toLowerCase();
     }
   public String getTranslatedWordInEnglish(){return wordTranslatedToEnglish;}
 

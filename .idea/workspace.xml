@@ -4,39 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Added definition output for english to target language.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LanguageHub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LanguageOutputFormatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dictionary_words" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/DictionaryTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/ParserTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Add tests">
+      <changelist_data name="Ellie Bertke" email="elliebertke@gmail.com" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/DefinitionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/DefinitionParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/Dictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheLanguage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/RandomWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/RandomWord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/SynonymParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/SynonymParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/TranslationProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/TranslationProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/WordNotFoundError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/ErrorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/WordSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/ChineseToEnglishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/ChineseToEnglishTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToChineseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToChineseTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToFrenchTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToFrenchTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToGermanTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToGermanTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToSpanishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/EnglishToSpanishTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/ErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LanguageHub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LanguageHub.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/FrenchToEnglishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/FrenchToEnglishTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/GermanToEnglishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/GermanToEnglishTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/PortugueseToEnglishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/PortugueseToEnglishTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/SpanishToEnglishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/SpanishToEnglishTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/APIConnectionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/APIConnectionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FormatterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/FormatterTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ParserTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RandomWordTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/RandomWordTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TranslatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TranslatorTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WordSearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/WordSearchTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sample_data_definition" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sample_data_synonyms" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/APIConnectionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/APIConnectionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/DictionaryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/DictionaryTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TranslatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TranslatorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/WordSearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/WordSearchTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +103,7 @@
       <recent name="edu.bsu.cs222" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'LearnTheDictionary.test'">
+  <component name="RunManager" selected="Gradle.FormatterTests.outputFormatterFormatsSynonymTest">
     <configuration name="CLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.CLI" />
       <module name="LearnTheDictionary.main" />
@@ -138,7 +117,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RandomWordTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FormatterTests.outputFormatterFormatsSynonymTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -151,7 +130,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.RandomWordTests&quot;" />
+            <option value="&quot;edu.bsu.cs222.FormatterTests.outputFormatterFormatsSynonymTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -161,7 +140,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RandomWordTests.randomWordGeneratesRandomWordDefinitionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'edu.bsu.cs222'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -174,7 +153,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.RandomWordTests.randomWordGeneratesRandomWordDefinitionTest&quot;" />
+            <option value="&quot;edu.bsu.cs222.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -184,7 +163,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RandomWordTests.randomWordGeneratesRandomWordSynonymsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TranslatorTests.frenchToEnglishTranslatorGivesWordInEnglishTwo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -197,7 +176,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.RandomWordTests.randomWordGeneratesRandomWordSynonymsTest&quot;" />
+            <option value="&quot;edu.bsu.cs222.TranslatorTests.frenchToEnglishTranslatorGivesWordInEnglishTwo&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -207,7 +186,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'LearnTheDictionary.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WordSearchTests.noErrorIsFoundForValidWordTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -219,6 +198,8 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.bsu.cs222.WordSearchTests.noErrorIsFoundForValidWordTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -230,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'LearnTheDictionary.test'" />
+        <item itemvalue="Gradle.FormatterTests.outputFormatterFormatsSynonymTest" />
+        <item itemvalue="Gradle.TranslatorTests.frenchToEnglishTranslatorGivesWordInEnglishTwo" />
         <item itemvalue="Application.CLI" />
-        <item itemvalue="Gradle.RandomWordTests" />
-        <item itemvalue="Gradle.RandomWordTests.randomWordGeneratesRandomWordDefinitionTest" />
-        <item itemvalue="Gradle.RandomWordTests.randomWordGeneratesRandomWordSynonymsTest" />
+        <item itemvalue="Gradle.WordSearchTests.noErrorIsFoundForValidWordTest" />
+        <item itemvalue="Gradle.Tests in 'edu.bsu.cs222'" />
       </list>
     </recent_temporary>
   </component>
@@ -436,7 +417,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681317487549</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Refactor language classes and Dictionary&#10;Refactor tests">
+      <created>1681428259011</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1681428259011</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Refactor language classes and Dictionary&#10;Refactor tests">
+      <created>1681428266725</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1681428266725</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -467,7 +462,9 @@
     <MESSAGE value="Fixed French to English and English To French Translator." />
     <MESSAGE value="Fixed capitalization error causing test to fail" />
     <MESSAGE value="Added definition output for english to target language." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added definition output for english to target language." />
+    <MESSAGE value="Refactor language classes and Dictionary&#10;Refactor tests" />
+    <MESSAGE value="Add tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

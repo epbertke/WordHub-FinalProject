@@ -5,7 +5,10 @@ import java.io.IOException;
 public class DictionaryTests {
     @Test
     public void randomWordGeneratesRandomWordTest() throws IOException {
-        String randomWord = new RandomWord().generateRandomWord();
-        Assertions.assertFalse(randomWord.isEmpty());
+        Assertions.assertFalse(new RandomWord().generateRandomWord().isEmpty());
+    }
+    @Test
+    public void dictionaryFileIsProcessedTest() throws IOException {
+        Assertions.assertFalse(Dictionary.getWordsInDictionary().isEmpty());
     }
 }

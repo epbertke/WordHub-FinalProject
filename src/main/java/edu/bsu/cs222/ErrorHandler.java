@@ -16,11 +16,14 @@ public class ErrorHandler {
             throw new Error("No network connection. Check connection and re-run program to try again.");
         }
     }
-    public static void checkForWordNotFoundError(String wordSearch) throws IOException{
+    public static boolean checkForWordNotFoundError(String wordSearch) {
         try{
             String definition = new DefinitionParser(wordSearch).parseForDefinition();
+            if(!definition.isEmpty()){
+                return false;
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }
+        }return true;
     }
 }

@@ -18,5 +18,12 @@ public class WordSearchTests {
         boolean result = new WordSearch("grateful").getSearchedWordInformation()[2].isEmpty();
         Assertions.assertFalse(result);
     }
-
+    @Test
+    public void apiConnectionReturnsTrueWhenConnectedTest(){
+        Assertions.assertTrue(ErrorHandler.isNetworkConnected());
+    }
+    @Test
+    public void noErrorIsFoundForValidWordTest(){
+        Assertions.assertFalse(ErrorHandler.checkForWordNotFoundError("happy"));
+    }
 }
