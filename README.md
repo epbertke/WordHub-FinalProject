@@ -1,5 +1,7 @@
 # Learn The Dictionary 
 
+Ellie Bertke, Caleb Reyes, Nathaniel Grigsby
+
     Description :
 
     Allows the user to request a random word to learn or to search for an English word,
@@ -8,7 +10,6 @@
     Allows the user to translate words between English and five supported languages, 
     and the word, translation, and English definition are displayed.
 
-Ellie Bertke, Caleb Reyes, Nathaniel Grigsby
 
 ## Build Instructions :
   1. JsonPath and Gradle are required
