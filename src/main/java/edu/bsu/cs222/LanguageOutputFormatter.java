@@ -9,7 +9,7 @@ public class LanguageOutputFormatter {
         this.translation = translation;
         this.definition = new OutputFormatter().formatOutputForUser(definition);
     }
-    public void formatOutput(){
-        System.out.println( "\n"+"Original : "+originalWord+"\n"+"Translation : "+translation+"\n"+"Definition : "+definition);
+    public void formatOutput() {
+        System.out.println("\n" + "Original : " + originalWord + "\n" + "Translation : " + translation + "\n" + "Definition : " + definition);
     }
 }

@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Add tests">
-      <changelist_data name="Ellie Bertke" email="elliebertke@gmail.com" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/ErrorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LanguageHub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LanguageHub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/FrenchToEnglishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/translators/FrenchToEnglishTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sample_data_definition" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sample_data_synonyms" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/APIConnectionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/APIConnectionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/DictionaryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/DictionaryTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TranslatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TranslatorTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/WordSearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/WordSearchTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LanguageOutputFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LanguageOutputFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/FormatterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/FormatterTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +94,7 @@
       <recent name="edu.bsu.cs222" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FormatterTests.outputFormatterFormatsSynonymTest">
+  <component name="RunManager" selected="Application.CLI">
     <configuration name="CLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.CLI" />
       <module name="LearnTheDictionary.main" />
@@ -116,6 +107,29 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="FormatterTests.languageFormatterFormatsOutputTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.bsu.cs222.FormatterTests.languageFormatterFormatsOutputTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="FormatterTests.outputFormatterFormatsSynonymTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -140,7 +154,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'edu.bsu.cs222'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'LearnTheDictionary.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -152,8 +166,6 @@
         <option name="taskNames">
           <list>
             <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -186,36 +198,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WordSearchTests.noErrorIsFoundForValidWordTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.WordSearchTests.noErrorIsFoundForValidWordTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CLI" />
+        <item itemvalue="Gradle.Tests in 'LearnTheDictionary.test'" />
+        <item itemvalue="Gradle.FormatterTests.languageFormatterFormatsOutputTest" />
         <item itemvalue="Gradle.FormatterTests.outputFormatterFormatsSynonymTest" />
         <item itemvalue="Gradle.TranslatorTests.frenchToEnglishTranslatorGivesWordInEnglishTwo" />
-        <item itemvalue="Application.CLI" />
-        <item itemvalue="Gradle.WordSearchTests.noErrorIsFoundForValidWordTest" />
-        <item itemvalue="Gradle.Tests in 'edu.bsu.cs222'" />
       </list>
     </recent_temporary>
   </component>
@@ -431,7 +420,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681428266725</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Add tests">
+      <created>1681430903508</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1681430903508</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Add tests">
+      <created>1681430911874</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1681430911874</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
