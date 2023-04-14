@@ -1,5 +1,4 @@
 package edu.bsu.cs222;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 public class RandomWord {

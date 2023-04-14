@@ -1,11 +1,6 @@
 package edu.bsu.cs222;
-
-import edu.bsu.cs222.DefinitionParser;
-import edu.bsu.cs222.OutputFormatter;
-import edu.bsu.cs222.SynonymParser;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import java.io.FileInputStream;
 import java.io.IOException;
 public class ParserTests {
     @Test
