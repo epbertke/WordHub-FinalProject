@@ -1,9 +1,14 @@
 package edu.bsu.cs222;
-import edu.bsu.cs222.translator.translators.*;
+import edu.bsu.cs222.language.translator.translators.chinese.translators.ChineseToEnglishTranslator;
+import edu.bsu.cs222.language.translator.translators.english.translators.*;
+import edu.bsu.cs222.language.translator.translators.french.translators.FrenchToEnglishTranslator;
+import edu.bsu.cs222.language.translator.translators.german.translators.GermanToEnglishTranslator;
+import edu.bsu.cs222.language.translator.translators.portuguese.translators.PortugueseToEnglishTranslator;
+import edu.bsu.cs222.language.translator.translators.spanish.translators.SpanishToEnglishTranslator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;
-public class TranslatorTests {
+public class EnglishTranslatorTests {
     @Test
     public void invalidWordSearchGivesErrorTest() throws IOException, InterruptedException {
         Assertions.assertEquals("This word was not found in the dictionary. Re-run program and try again with a new word or different spelling.", new EnglishToSpanishTranslator("dlkfaoec").getTranslatedWordInSpanish());
@@ -59,7 +64,4 @@ public class TranslatorTests {
         EnglishToChineseTranslator translator = new EnglishToChineseTranslator("weather");
         Assertions.assertEquals("天气", translator.getTranslatedWordInChinese());
     }
-
-
-
 }

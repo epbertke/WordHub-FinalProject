@@ -1,6 +1,7 @@
-package edu.bsu.cs222.translator.translators;
+package edu.bsu.cs222.language.translator.translators.french.translators;
 import com.jayway.jsonpath.JsonPath;
 import edu.bsu.cs222.ErrorHandler;
+import edu.bsu.cs222.language.translator.TranslationConnection;
 import net.minidev.json.JSONArray;
 import java.io.IOException;
 import java.net.URI;
@@ -8,7 +9,6 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.HashMap;
-
 public class FrenchToEnglishTranslator {
     private final String frenchWordToTranslateToEnglish;
     private final String wordTranslatedToEnglish;

@@ -1,7 +1,8 @@
-package edu.bsu.cs222.translator.translators;
+package edu.bsu.cs222.language.translator.translators.chinese.translators;
 
 import com.jayway.jsonpath.JsonPath;
 import edu.bsu.cs222.ErrorHandler;
+import edu.bsu.cs222.language.translator.TranslationConnection;
 import net.minidev.json.JSONArray;
 
 import java.io.IOException;
@@ -30,7 +31,7 @@ public class ChineseToEnglishTranslator {
             HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
             return response.body();
         }
-        public String findWordTranslatedToEnglish(String translationResponse){
+        private String findWordTranslatedToEnglish(String translationResponse){
             try{
                 HashMap<String, String> result = JsonPath.parse(translationResponse).json();
                 JSONArray jsonResultArray = JsonPath.read(result, "$..translatedText");
@@ -38,7 +39,7 @@ public class ChineseToEnglishTranslator {
                 if(jsonResultArray.get(0).toString().equals(chineseWordToTranslateToEnglish)){
                     ErrorHandler.throwWordNotFoundError();
                 }
-                return responseWord;
+                return responseWord.toLowerCase();
             }catch(Error e){
                 return e.getMessage();
             }

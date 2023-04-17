@@ -1,7 +1,11 @@
-package edu.bsu.cs222.translator.translators;
+package edu.bsu.cs222.language.translator;
 import edu.bsu.cs222.english.dictionary.DefinitionParser;
-import edu.bsu.cs222.translator.LanguageHub;
-import edu.bsu.cs222.translator.LanguageOutputFormatter;
+import edu.bsu.cs222.language.translator.translators.chinese.translators.ChineseToEnglishTranslator;
+import edu.bsu.cs222.language.translator.translators.english.translators.*;
+import edu.bsu.cs222.language.translator.translators.french.translators.FrenchToEnglishTranslator;
+import edu.bsu.cs222.language.translator.translators.german.translators.GermanToEnglishTranslator;
+import edu.bsu.cs222.language.translator.translators.portuguese.translators.PortugueseToEnglishTranslator;
+import edu.bsu.cs222.language.translator.translators.spanish.translators.SpanishToEnglishTranslator;
 
 import java.io.IOException;
 

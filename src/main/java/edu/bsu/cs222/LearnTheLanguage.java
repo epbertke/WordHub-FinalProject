@@ -1,6 +1,6 @@
 package edu.bsu.cs222;
 
-import edu.bsu.cs222.translator.translators.TranslationProcessor;
+import edu.bsu.cs222.language.translator.TranslationProcessor;
 
 import java.io.IOException;
 import static edu.bsu.cs222.ErrorHandler.checkForValidRequests;

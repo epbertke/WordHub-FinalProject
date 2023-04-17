@@ -1,4 +1,4 @@
-package edu.bsu.cs222.translator.translators;
+package edu.bsu.cs222.language.translator;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
