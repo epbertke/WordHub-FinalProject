@@ -6,7 +6,7 @@ public class OutputFormatter {
         this.outputArray = output;
     }
     public OutputFormatter(){}
-    protected String formOutput() {
+    public String formOutput() {
         return "\n"+"Your word : "+outputArray[0]+"\n"+"Your definition : "+formatOutputForUser(outputArray[1])+"\n"+"Synonyms : "+formatOutputForUser(getSynonymsOutput());
     }
     private String getSynonymsOutput() {

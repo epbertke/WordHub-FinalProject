@@ -1,7 +1,6 @@
-package edu.bsu.cs222.translators;
+package edu.bsu.cs222.translator.translators;
 
 import com.jayway.jsonpath.JsonPath;
-import edu.bsu.cs222.TranslationConnection;
 import edu.bsu.cs222.ErrorHandler;
 import net.minidev.json.JSONArray;
 
@@ -32,7 +31,7 @@ public class EnglishToGermanTranslator {
         return response.body();
 
     }
-     private String findWordTranslatedToGerman(String translationResponse) {
+     public String findWordTranslatedToGerman(String translationResponse) {
          try {
              HashMap<String, String> result = JsonPath.parse(translationResponse).json();
              JSONArray jsonResultArray = JsonPath.read(result, "$..translatedText");

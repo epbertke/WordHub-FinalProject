@@ -1,4 +1,4 @@
-package edu.bsu.cs222;
+package edu.bsu.cs222.english.dictionary;
 import java.io.IOException;
 public class WordSearch {
     private final String searchedWord;

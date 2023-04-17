@@ -1,9 +1,11 @@
 package edu.bsu.cs222;
+
+import edu.bsu.cs222.english.dictionary.DefinitionParser;
+
 import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Objects;
-
 public class ErrorHandler {
     public static Error throwWordNotFoundError(){
         throw new Error("This word was not found in the dictionary. Re-run program and try again with a new word or different spelling.");
@@ -18,7 +20,7 @@ public class ErrorHandler {
             throw new Error("No network connection. Check connection and re-run program to try again.");
         }
     }
-    protected static boolean checkForWordNotFoundError(String wordSearch) {
+    public static boolean checkForWordNotFoundError(String wordSearch) {
         try{
             String definition = new DefinitionParser(wordSearch).parseForDefinition();
             if(!definition.isEmpty()){
@@ -41,7 +43,7 @@ public class ErrorHandler {
         }
         if(!validTarget||!validSource){
             System.err.println("This is not a valid translation request.");
-            LearnTheLanguage.start();
+            LearnTheLanguage.startForCLI();
         }
     }
 }

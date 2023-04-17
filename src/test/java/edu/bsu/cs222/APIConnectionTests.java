@@ -1,4 +1,5 @@
 package edu.bsu.cs222;
+import edu.bsu.cs222.english.dictionary.APIConnection;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;

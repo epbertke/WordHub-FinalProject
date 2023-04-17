@@ -1,4 +1,6 @@
-package edu.bsu.cs222;
+package edu.bsu.cs222.translator;
+
+import edu.bsu.cs222.OutputFormatter;
 
 public class LanguageOutputFormatter {
     private final String originalWord;
@@ -12,4 +14,5 @@ public class LanguageOutputFormatter {
     public void formatOutput() {
         System.out.println("\n" + "Original : " + originalWord + "\n" + "Translation : " + translation + "\n" + "Definition : " + definition);
     }
+
 }

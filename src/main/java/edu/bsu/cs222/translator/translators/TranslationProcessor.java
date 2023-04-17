@@ -1,5 +1,8 @@
-package edu.bsu.cs222;
-import edu.bsu.cs222.translators.*;
+package edu.bsu.cs222.translator.translators;
+import edu.bsu.cs222.english.dictionary.DefinitionParser;
+import edu.bsu.cs222.translator.LanguageHub;
+import edu.bsu.cs222.translator.LanguageOutputFormatter;
+
 import java.io.IOException;
 
 public class TranslationProcessor {
@@ -11,7 +14,7 @@ public class TranslationProcessor {
         this.targetLanguage = target;
         this.wordToTranslate = wordSearch;
     }
-    protected void processUserRequest() throws IOException, InterruptedException {
+    public void processUserRequest() throws IOException, InterruptedException {
         if (sourceLanguage.equals("s") && targetLanguage.equals("e")) {
             new LanguageOutputFormatter(wordToTranslate, new SpanishToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish(), fetchDefinitionForTranslatedWord()).formatOutput();
         } else if (sourceLanguage.equalsIgnoreCase("e") && targetLanguage.equalsIgnoreCase("s")) {

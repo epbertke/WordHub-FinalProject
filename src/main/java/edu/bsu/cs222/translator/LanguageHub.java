@@ -1,5 +1,6 @@
-package edu.bsu.cs222;
-import edu.bsu.cs222.translators.*;
+package edu.bsu.cs222.translator;
+import edu.bsu.cs222.english.dictionary.DefinitionParser;
+import edu.bsu.cs222.translator.translators.*;
 import java.io.IOException;
 public class LanguageHub {
     private final String sourceLanguage;
@@ -9,7 +10,7 @@ public class LanguageHub {
         this.sourceLanguage = source;
         this.wordToTranslate = wordSearch;
     }
-    protected String findDefinitionForWord() throws IOException, InterruptedException {
+    public String findDefinitionForWord() throws IOException, InterruptedException {
         switch (sourceLanguage) {
             case "s" -> translatedWord = new SpanishToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
             case "g" -> translatedWord = new GermanToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
@@ -19,4 +20,5 @@ public class LanguageHub {
         }
         return new DefinitionParser(translatedWord).parseForDefinition();
     }
+
 }

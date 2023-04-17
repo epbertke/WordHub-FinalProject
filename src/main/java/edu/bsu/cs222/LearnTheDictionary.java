@@ -1,29 +1,27 @@
 package edu.bsu.cs222;
+import edu.bsu.cs222.english.dictionary.RandomWord;
+import edu.bsu.cs222.english.dictionary.WordSearch;
+
 import java.io.IOException;
 import java.util.Objects;
 import java.util.Scanner;
 public class LearnTheDictionary {
-    protected static void start() throws IOException{
-        printWelcomeMenu();
-        fetchOutputForUser();
+    private static String userInput;
+    public LearnTheDictionary(String userStartInput){
+        userInput = userStartInput;
     }
-    private static void printWelcomeMenu() {
-        System.out.println("-".repeat(24)+"\n"+ "Learn The Dictionary"+"\n"+"-".repeat(24));
-        System.out.println("""
-                To translate a word - Press T
-                
-                If you would like to learn a random word - Press R
-                If you would like to search a specific word; Enter the word
-                    """);
+    public static void startForClI() throws IOException{
+        CLIMenu.printWelcomeMenu();
+        fetchCLIOutputForUser();
     }
-    protected static void fetchOutputForUser() throws IOException {
+    protected static void fetchCLIOutputForUser() throws IOException {
         try{
             if(!ErrorHandler.isNetworkConnected()){
                 ErrorHandler.isNetworkConnected();
             }
-            String userInput = getUserInput().toLowerCase().strip();
+            userInput = getUserInput().toLowerCase().strip();
             if(Objects.equals(userInput, "t")){
-                LearnTheLanguage.start();
+                LearnTheLanguage.startForCLI();
             }else if(Objects.equals(userInput, "r")){
                 System.out.println(new OutputFormatter(new RandomWord().getRandomWordInformation()).formOutput());
             }else{

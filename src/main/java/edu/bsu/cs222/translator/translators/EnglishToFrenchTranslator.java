@@ -1,7 +1,7 @@
-package edu.bsu.cs222.translators;
+package edu.bsu.cs222.translator.translators;
 
 import com.jayway.jsonpath.JsonPath;
-import edu.bsu.cs222.TranslationConnection;
+import edu.bsu.cs222.ErrorHandler;
 import net.minidev.json.JSONArray;
 
 import java.io.IOException;
@@ -11,13 +11,12 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.HashMap;
 
-public class EnglishToPortugueseTranslator {
-    private final String englishWordToTranslateToPortuguese;
-    private final String wordTranslatedToPortuguese;
-    public EnglishToPortugueseTranslator(String englishWordToTranslateToPortuguese) throws IOException, InterruptedException{
-        this.englishWordToTranslateToPortuguese = englishWordToTranslateToPortuguese;
-        this.wordTranslatedToPortuguese = findWordTranslatedToPortuguese(requestTranslation());
-
+public class EnglishToFrenchTranslator{
+    private final String englishWordToTranslateToFrench;
+    private final String wordTranslatedToFrench;
+    public EnglishToFrenchTranslator(String englishWordToTranslateToFrench) throws IOException, InterruptedException{
+        this.englishWordToTranslateToFrench = englishWordToTranslateToFrench;
+        this.wordTranslatedToFrench = findWordTranslatedToFrench(requestTranslation());
     }
     private String requestTranslation() throws IOException, InterruptedException {
         TranslationConnection.createLanguageList();
@@ -26,22 +25,25 @@ public class EnglishToPortugueseTranslator {
                 .header("content-type", "application/x-www-form-urlencoded")
                 .header("X-RapidAPI-Key", "f263b8ed6amshcf56c5fd7c784c4p128de1jsna14a7e815ea4")
                 .header("X-RapidAPI-Host", "text-translator2.p.rapidapi.com")
-                .method("POST", HttpRequest.BodyPublishers.ofString("source_language=en&target_language=pt&text="+englishWordToTranslateToPortuguese))
+                .method("POST", HttpRequest.BodyPublishers.ofString("source_language=en&target_language=fr&text="+englishWordToTranslateToFrench))
                 .build();
         HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
         return response.body();
     }
-
-    private String findWordTranslatedToPortuguese(String translationResponse){
+    public String findWordTranslatedToFrench(String translationResponse){
         try{
             HashMap<String, String> result = JsonPath.parse(translationResponse).json();
             JSONArray jsonResultArray = JsonPath.read(result, "$..translatedText");
-            return jsonResultArray.get(0).toString().toLowerCase();
+            String responseWord = jsonResultArray.get(0).toString();
+            if(jsonResultArray.get(0).toString().equals(englishWordToTranslateToFrench)){
+                ErrorHandler.throwWordNotFoundError();
+            }
+            return responseWord;
         }catch(Error e){
             return e.getMessage();
         }
     }
-    public String getTranslatedWordInPortuguese(){
-        return this.wordTranslatedToPortuguese;
+    public String getTranslatedWordInFrench(){
+        return wordTranslatedToFrench;
     }
 }

@@ -1,4 +1,5 @@
-package edu.bsu.cs222;
+package edu.bsu.cs222.english.dictionary;
+import edu.bsu.cs222.ErrorHandler;
 import java.io.IOException;
 import java.util.ArrayList;
 public class RandomWord {
