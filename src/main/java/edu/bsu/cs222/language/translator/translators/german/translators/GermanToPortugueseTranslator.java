@@ -11,10 +11,10 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.HashMap;
 public class GermanToPortugueseTranslator {
-    private final String frenchWordToTranslateToPortuguese;
+    private final String germanWordToTranslateToPortuguese;
     private final String wordTranslatedToPortuguese;
     public GermanToPortugueseTranslator(String userWordToTranslate) throws IOException, InterruptedException {
-        this.frenchWordToTranslateToPortuguese = userWordToTranslate;
+        this.germanWordToTranslateToPortuguese = userWordToTranslate;
         this.wordTranslatedToPortuguese = findWordTranslatedToPortuguese(requestTranslation());
     }
     private String requestTranslation() throws IOException, InterruptedException {
@@ -24,7 +24,7 @@ public class GermanToPortugueseTranslator {
                 .header("content-type", "application/x-www-form-urlencoded")
                 .header("X-RapidAPI-Key", "f263b8ed6amshcf56c5fd7c784c4p128de1jsna14a7e815ea4")
                 .header("X-RapidAPI-Host", "text-translator2.p.rapidapi.com")
-                .method("POST", HttpRequest.BodyPublishers.ofString("source_language=fr&target_language=pt&text="+frenchWordToTranslateToPortuguese))
+                .method("POST", HttpRequest.BodyPublishers.ofString("source_language=de&target_language=pt&text="+germanWordToTranslateToPortuguese))
                 .build();
         HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
         return response.body();
@@ -34,7 +34,7 @@ public class GermanToPortugueseTranslator {
             HashMap<String, String> result = JsonPath.parse(translationResponse).json();
             JSONArray jsonResultArray = JsonPath.read(result, "$..translatedText");
             String responseWord = jsonResultArray.get(0).toString();
-            if(jsonResultArray.get(0).toString().equals(frenchWordToTranslateToPortuguese)){
+            if(jsonResultArray.get(0).toString().equals(germanWordToTranslateToPortuguese)){
                 ErrorHandler.throwWordNotFoundError();
             }
             return responseWord.toLowerCase();

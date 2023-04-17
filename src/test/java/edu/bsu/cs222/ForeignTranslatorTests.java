@@ -4,6 +4,10 @@ import edu.bsu.cs222.language.translator.translators.chinese.translators.Chinese
 import edu.bsu.cs222.language.translator.translators.chinese.translators.ChineseToPortugueseTranslator;
 import edu.bsu.cs222.language.translator.translators.chinese.translators.ChineseToSpanishTranslator;
 import edu.bsu.cs222.language.translator.translators.french.translators.*;
+import edu.bsu.cs222.language.translator.translators.german.translators.GermanToChineseTranslator;
+import edu.bsu.cs222.language.translator.translators.german.translators.GermanToFrenchTranslator;
+import edu.bsu.cs222.language.translator.translators.german.translators.GermanToPortugueseTranslator;
+import edu.bsu.cs222.language.translator.translators.german.translators.GermanToSpanishTranslator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;
@@ -39,5 +43,21 @@ public class ForeignTranslatorTests {
     @Test
     public void frenchToPortugueseTranslatorGivesWordInPortugueseTest() throws IOException, InterruptedException {
         Assertions.assertEquals("tempo", new FrenchToPortugueseTranslator("temps").getTranslatedWordInPortuguese());
+    }
+    @Test
+    public void germanToChineseTranslatorGivesWordInChineseTest() throws IOException, InterruptedException {
+        Assertions.assertEquals("时间", new GermanToChineseTranslator("zeit").getTranslatedWordInChinese());
+    }
+    @Test
+    public void germanToFrenchTranslatorGivesWordInGermanTest() throws IOException, InterruptedException {
+        Assertions.assertEquals("temps", new GermanToFrenchTranslator("zeit").getTranslatedWordInFrench());
+    }
+    @Test
+    public void germanToSpanishTranslatorGivesWordInSpanishTest() throws IOException, InterruptedException {
+        Assertions.assertEquals("tiempo", new GermanToSpanishTranslator("zeit").getTranslatedWordInSpanish());
+    }
+    @Test
+    public void germanToPortugueseTranslatorGivesWordInPortugueseTest() throws IOException, InterruptedException {
+        Assertions.assertEquals("tempo", new GermanToPortugueseTranslator("zeit").getTranslatedWordInPortuguese());
     }
 }
