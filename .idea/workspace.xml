@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Refactor LearnTheLanguage, LanguageHub, and TranslationProcessor&#10;To work with new language translators">
-      <changelist_data name="Ellie Bertke" email="elliebertke@gmail.com" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUIController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUIStarter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ltlgui.fxml" afterDir="false" />
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Configure JavaFx, &#10;Add GUI SceneBuilder outline">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/LearnTheDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/ErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUIStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUIStarter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/OutputFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/OutputFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ltlgui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ltlgui.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -569,7 +569,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681778493662</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Configure JavaFx, &#10;Add GUI SceneBuilder outline">
+      <created>1681793593538</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1681793593538</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Configure JavaFx, &#10;Add GUI SceneBuilder outline">
+      <created>1681793603010</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1681793603010</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -584,7 +598,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add initial classes and tests&#10;Classes added were DefinitionParser, RandomWord, APIConnection, LearnTheDictionary, and CLI. Comments were added on what still needs completed for iteration 1." />
     <MESSAGE value="Add OutputFormatter and WordNotFoundError&#10;Refactor tests" />
     <MESSAGE value="Added Formatter Tests for Synonym and Definition." />
     <MESSAGE value="Remove un-needed method from WordNotFoundError." />
@@ -609,7 +622,8 @@
     <MESSAGE value="Add Chinese and French translators and tests for them" />
     <MESSAGE value="Add German translators and tests" />
     <MESSAGE value="Refactor LearnTheLanguage, LanguageHub, and TranslationProcessor&#10;To work with new language translators" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor LearnTheLanguage, LanguageHub, and TranslationProcessor&#10;To work with new language translators" />
+    <MESSAGE value="Configure JavaFx, &#10;Add GUI SceneBuilder outline" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configure JavaFx, &#10;Add GUI SceneBuilder outline" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

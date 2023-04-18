@@ -1,19 +1,22 @@
 package edu.bsu.cs222;
+import edu.bsu.cs222.english.dictionary.RandomWord;
+import edu.bsu.cs222.english.dictionary.WordSearch;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+
+import java.io.IOException;
+
 public class GUIController {
     @FXML
     private TextField searchField;
     @FXML
     private TextArea ltdOutputArea;
     @FXML
-    private Button searchButton;
-    @FXML
-    private Button randomButton;
-    @FXML
     private TextField translationSearch;
+    @FXML
+    private TextArea ltlOutputArea;
     @FXML
     private Button englishTarget;
     @FXML
@@ -38,5 +41,39 @@ public class GUIController {
     private Button portugueseSearch;
     @FXML
     private Button chineseSearch;
+    @FXML
+    private Button translateButton;
+    @FXML
+    private void getWordSearchInputIfProvided(){
+        if(searchField.getText().isBlank()){
+            ErrorHandler.throwSearchNotProvidedError();
+        }else{
+            GUIStarter.wordSearch = searchField.getText().strip().toLowerCase();
+        }
+    }
+    @FXML
+    private void getTranslatorInputIfProvided(){
+        if(translationSearch.getText().isBlank()){
+            ErrorHandler.throwSearchNotProvidedError();
+        }else{
+            GUIStarter.translationSearch = translationSearch.getText().toLowerCase();
+        }
+    }
+    @FXML
+    private void displayWordSearchOutput() throws IOException {
+        ltdOutputArea.setText(" ");
+        try{
+            getWordSearchInputIfProvided();
+            ltdOutputArea.appendText(new OutputFormatter(new WordSearch(GUIStarter.wordSearch).getSearchedWordInformation()).formOutput());
+        }catch(Error e){
+            ltdOutputArea.appendText(e.getMessage());
+        }
+    }
+    @FXML
+    private void displayRandomWordOutput() throws IOException {
+        ltdOutputArea.setText(" ");
+        ltdOutputArea.appendText(new OutputFormatter(new RandomWord().getRandomWordInformation()).formOutput());
+    }
+
 
 }

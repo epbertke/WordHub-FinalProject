@@ -9,12 +9,16 @@ import java.io.IOException;
 import java.net.URL;
 
 public class GUIStarter extends Application {
+    public static String wordSearch;
+    public static String translationSearch;
+    public static char sourceLanguage;
+    public static char targetLanguage;
     @Override
     public void start(Stage stage) throws IOException {
         try{
             URL url = new File("src/main/resources/ltlgui.fxml").toURI().toURL();
             Parent root = FXMLLoader.load(url);
-            Scene scene = new Scene(root, 600, 902);
+            Scene scene = new Scene(root, 600, 796);
             stage.setTitle("--- ***WordHub*** ----------------------------------- ***LearnTheLanguage*** ---");
             stage.setScene(scene);
             stage.show();
@@ -23,4 +27,5 @@ public class GUIStarter extends Application {
         }
     }
     public static void main(String[] args) { launch(args); }
+
 }

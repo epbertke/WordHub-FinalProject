@@ -5,8 +5,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="902.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
-   <Label fx:id="LTDLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="600.0" text="Search an English word, or click to learn a random word below :">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="796.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bsu.cs222.GUIController">
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="600.0" text="Search an English word, or click to learn a random word below :">
       <padding>
          <Insets top="10.0" />
       </padding>
@@ -20,14 +20,14 @@
       </VBox.margin>
    </TextField>
    <HBox prefHeight="41.0" prefWidth="600.0">
-      <Button fx:id="searchButton" mnemonicParsing="false" text="Search">
+      <Button mnemonicParsing="false" onAction="#displayWordSearchOutput" onMouseClicked="#displayWordSearchOutput" text="Search">
          <HBox.margin>
             <Insets left="250.0" />
          </HBox.margin>
       </Button>
-      <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Random !" />
+      <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#displayRandomWordOutput" onMouseClicked="#displayRandomWordOutput" text="Random !" />
    </HBox>
-   <TextArea fx:id="ltdOutputArea" editable="false" prefHeight="262.0" prefWidth="600.0" />
+   <TextArea fx:id="ltdOutputArea" editable="false" prefHeight="166.0" prefWidth="600.0" />
    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="600.0" text="To translate a word, type the word below and specify your languages below :">
       <font>
          <Font size="15.0" />
@@ -114,7 +114,7 @@
             </font>
          </Button>
       </VBox>
-      <Button mnemonicParsing="false" prefHeight="29.0" prefWidth="195.0" text="Translate !">
+      <Button fx:id="translateButton" mnemonicParsing="false" prefHeight="29.0" prefWidth="195.0" text="Translate !">
          <font>
             <Font size="15.0" />
          </font>
@@ -123,5 +123,5 @@
          </HBox.margin>
       </Button>
    </HBox>
-   <TextArea editable="false" prefHeight="280.0" prefWidth="600.0" />
+   <TextArea fx:id="ltlOutputArea" editable="false" prefHeight="280.0" prefWidth="600.0" />
 </VBox>

@@ -46,4 +46,7 @@ public class ErrorHandler {
             LearnTheLanguage.startForCLI();
         }
     }
+    public static Error throwSearchNotProvidedError(){
+        throw new Error("No search was provided.");
+    }
 }
