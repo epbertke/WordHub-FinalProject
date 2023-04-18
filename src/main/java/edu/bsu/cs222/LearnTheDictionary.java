@@ -14,6 +14,7 @@ public class LearnTheDictionary {
         CLIMenu.printWelcomeMenu();
         fetchCLIOutputForUser();
     }
+
     protected static void fetchCLIOutputForUser() throws IOException {
         try{
             if(!ErrorHandler.isNetworkConnected()){
