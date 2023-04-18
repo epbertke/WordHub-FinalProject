@@ -19,7 +19,6 @@ public class LearnTheLanguage {
         targetLanguage = CLIMenu.requestTargetLanguage();
         wordToTranslate = CLIMenu.getUserWordToTranslate();
         checkForValidRequests(sourceLanguage, targetLanguage);
-        new TranslationProcessor(sourceLanguage, targetLanguage, wordToTranslate).processUserRequest();
+        System.out.println(new TranslationProcessor(sourceLanguage, targetLanguage, wordToTranslate).processUserRequest());
     }
-
 }

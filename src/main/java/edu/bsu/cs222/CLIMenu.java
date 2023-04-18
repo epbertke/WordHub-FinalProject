@@ -1,7 +1,5 @@
 package edu.bsu.cs222;
-
 import java.util.Scanner;
-
 public class CLIMenu {
     protected static void printExitStatement() {
         System.out.println("\n" + "-".repeat(40) + "\n" + "Re-run program to learn another word" + "\n" + "-".repeat(40) + "\n");

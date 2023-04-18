@@ -1,49 +1,46 @@
 package edu.bsu.cs222.language.translator;
 import edu.bsu.cs222.english.dictionary.DefinitionParser;
 import edu.bsu.cs222.language.translator.translators.chinese.translators.ChineseToEnglishTranslator;
-import edu.bsu.cs222.language.translator.translators.english.translators.*;
 import edu.bsu.cs222.language.translator.translators.french.translators.FrenchToEnglishTranslator;
 import edu.bsu.cs222.language.translator.translators.german.translators.GermanToEnglishTranslator;
 import edu.bsu.cs222.language.translator.translators.portuguese.translators.PortugueseToEnglishTranslator;
 import edu.bsu.cs222.language.translator.translators.spanish.translators.SpanishToEnglishTranslator;
-
 import java.io.IOException;
-
 public class TranslationProcessor {
     private final String sourceLanguage;
     private final String targetLanguage;
     private final String wordToTranslate;
+    private String translatedWord;
+    private String translationOutputForUser;
     public TranslationProcessor(String source, String target, String wordSearch) {
         this.sourceLanguage = source;
         this.targetLanguage = target;
         this.wordToTranslate = wordSearch;
     }
-    public void processUserRequest() throws IOException, InterruptedException {
-        if (sourceLanguage.equals("s") && targetLanguage.equals("e")) {
-            new LanguageOutputFormatter(wordToTranslate, new SpanishToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish(), fetchDefinitionForTranslatedWord()).formatOutput();
-        } else if (sourceLanguage.equalsIgnoreCase("e") && targetLanguage.equalsIgnoreCase("s")) {
-            new LanguageOutputFormatter(wordToTranslate, new EnglishToSpanishTranslator(wordToTranslate).getTranslatedWordInSpanish(), fetchDefinitionForTranslatedWord()).formatOutput();
-        } else if (sourceLanguage.equals("g") && targetLanguage.equals("e")) {
-            new LanguageOutputFormatter(wordToTranslate, new GermanToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish(), fetchDefinitionForTranslatedWord()).formatOutput();
-        } else if (sourceLanguage.equalsIgnoreCase("e") && targetLanguage.equalsIgnoreCase("g")) {
-            new LanguageOutputFormatter(wordToTranslate, new EnglishToGermanTranslator(wordToTranslate).getTranslatedWordInGerman(), fetchDefinitionForTranslatedWord()).formatOutput();
-        } else if (sourceLanguage.equals("f") && targetLanguage.equals("e")) {
-            new LanguageOutputFormatter(wordToTranslate, new FrenchToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish(), fetchDefinitionForTranslatedWord()).formatOutput();
-        } else if (sourceLanguage.equalsIgnoreCase("e") && targetLanguage.equalsIgnoreCase("f")) {
-            new LanguageOutputFormatter(wordToTranslate, new EnglishToFrenchTranslator(wordToTranslate).getTranslatedWordInFrench(), fetchDefinitionForTranslatedWord()).formatOutput();
-        } else if (sourceLanguage.equals("c") && targetLanguage.equals("e")) {
-            new LanguageOutputFormatter(wordToTranslate, new ChineseToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish(), fetchDefinitionForTranslatedWord()).formatOutput();
-        } else if (sourceLanguage.equals("e") && targetLanguage.equalsIgnoreCase("c")) {
-            new LanguageOutputFormatter(wordToTranslate, new EnglishToChineseTranslator(wordToTranslate).getTranslatedWordInChinese(), fetchDefinitionForTranslatedWord()).formatOutput();
-        } else if (sourceLanguage.equals("p") && targetLanguage.equals("e")) {
-            new LanguageOutputFormatter(wordToTranslate, new PortugueseToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish(), fetchDefinitionForTranslatedWord()).formatOutput();
-        } else if (sourceLanguage.equals("e") && targetLanguage.equals("p")) {
-            new LanguageOutputFormatter(wordToTranslate, new EnglishToPortugueseTranslator(wordToTranslate).getTranslatedWordInPortuguese(), fetchDefinitionForTranslatedWord()).formatOutput();
+    public String processUserRequest() throws IOException, InterruptedException {
+        switch (sourceLanguage) {
+            case "s" -> translationOutputForUser = new LanguageHub(sourceLanguage, targetLanguage, wordToTranslate).spanishWordTranslation();
+            case "g" -> translationOutputForUser = new LanguageHub(sourceLanguage, targetLanguage, wordToTranslate).germanWordTranslation();
+            case "e" -> translationOutputForUser = new LanguageHub(sourceLanguage, targetLanguage, wordToTranslate).englishWordTranslation();
+            case "p" -> translationOutputForUser = new LanguageHub(sourceLanguage, targetLanguage, wordToTranslate).portugueseWordTranslation();
+            case "c" -> translationOutputForUser = new LanguageHub(sourceLanguage, targetLanguage, wordToTranslate).chineseWordTranslation();
+            case "f" -> translationOutputForUser = new LanguageHub(sourceLanguage, targetLanguage, wordToTranslate).frenchWordTranslation();
         }
+        return translationOutputForUser;
     }
-    private String fetchDefinitionForTranslatedWord() throws IOException, InterruptedException {
-        if(sourceLanguage.equals("e")){
-            return new DefinitionParser(wordToTranslate).parseForDefinition();
-        }return new LanguageHub(sourceLanguage, wordToTranslate).findDefinitionForWord();
+    public TranslationProcessor(String source, String wordSearch) {
+        this.sourceLanguage = source;
+        this.wordToTranslate = wordSearch;
+        this.targetLanguage = null;
+    }
+    public String findDefinitionForWord() throws IOException, InterruptedException {
+        switch (sourceLanguage) {
+            case "s" -> translatedWord = new SpanishToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
+            case "g" -> translatedWord = new GermanToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
+            case "f" -> translatedWord = new FrenchToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
+            case "c" -> translatedWord = new ChineseToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
+            case "p" -> translatedWord = new PortugueseToEnglishTranslator(wordToTranslate).getTranslatedWordInEnglish();
+        }
+        return new DefinitionParser(translatedWord).parseForDefinition();
     }
 }
