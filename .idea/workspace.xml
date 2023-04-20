@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Configure JavaFx, &#10;Add GUI SceneBuilder outline">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/ErrorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUIStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUIStarter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/OutputFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/OutputFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ltlgui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ltlgui.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/ForeignTranslatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/ForeignTranslatorTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +116,7 @@
       <recent name="edu.bsu.cs222.language.translator.translators.german.translators" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Final-epbertke-caleb.reyes-nathaniel.grigsby [run]">
+  <component name="RunManager" selected="Gradle.ForeignTranslatorTests">
     <configuration name="CLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.CLI" />
       <module name="LearnTheDictionary.main" />
@@ -144,6 +139,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EnglishTranslatorTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.bsu.cs222.EnglishTranslatorTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Final-epbertke-caleb.reyes-nathaniel.grigsby [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -165,7 +183,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ForeignTranslatorTests.germanToChineseTranslatorGivesWordInChineseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ForeignTranslatorTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -178,7 +196,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.ForeignTranslatorTests.germanToChineseTranslatorGivesWordInChineseTest&quot;" />
+            <option value="&quot;edu.bsu.cs222.ForeignTranslatorTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -188,7 +206,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ForeignTranslatorTests.germanToFrenchTranslatorGivesWordInGermanTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ForeignTranslatorTests.chineseToSpanishTranslatorGivesWordInSpanishTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -201,30 +219,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.ForeignTranslatorTests.germanToFrenchTranslatorGivesWordInGermanTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ForeignTranslatorTests.germanToSpanishTranslatorGivesWordInSpanishTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.ForeignTranslatorTests.germanToSpanishTranslatorGivesWordInSpanishTest&quot;" />
+            <option value="&quot;edu.bsu.cs222.ForeignTranslatorTests.chineseToSpanishTranslatorGivesWordInSpanishTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -237,18 +232,18 @@
     <list>
       <item itemvalue="Application.GUIStarter" />
       <item itemvalue="Application.CLI" />
+      <item itemvalue="Gradle.EnglishTranslatorTests" />
+      <item itemvalue="Gradle.ForeignTranslatorTests" />
+      <item itemvalue="Gradle.ForeignTranslatorTests.chineseToSpanishTranslatorGivesWordInSpanishTest" />
       <item itemvalue="Gradle.Final-epbertke-caleb.reyes-nathaniel.grigsby [run]" />
-      <item itemvalue="Gradle.ForeignTranslatorTests.germanToChineseTranslatorGivesWordInChineseTest" />
-      <item itemvalue="Gradle.ForeignTranslatorTests.germanToFrenchTranslatorGivesWordInGermanTest" />
-      <item itemvalue="Gradle.ForeignTranslatorTests.germanToSpanishTranslatorGivesWordInSpanishTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ForeignTranslatorTests" />
+        <item itemvalue="Gradle.EnglishTranslatorTests" />
+        <item itemvalue="Gradle.ForeignTranslatorTests.chineseToSpanishTranslatorGivesWordInSpanishTest" />
         <item itemvalue="Gradle.Final-epbertke-caleb.reyes-nathaniel.grigsby [run]" />
         <item itemvalue="Application.CLI" />
-        <item itemvalue="Gradle.ForeignTranslatorTests.germanToChineseTranslatorGivesWordInChineseTest" />
-        <item itemvalue="Gradle.ForeignTranslatorTests.germanToFrenchTranslatorGivesWordInGermanTest" />
-        <item itemvalue="Gradle.ForeignTranslatorTests.germanToSpanishTranslatorGivesWordInSpanishTest" />
       </list>
     </recent_temporary>
   </component>
