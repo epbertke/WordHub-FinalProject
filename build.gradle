@@ -24,10 +24,10 @@ test {
 }
 
 application {
-    mainClass = 'edu.bsu.cs222.GUIStarter'
+    mainClass = 'edu.bsu.cs222.GUI.GUIStarter'
 }
 
 javafx {
     version = '18.0.2'
-    modules = ['javafx.controls', 'javafx.fxml', 'javafx.web', 'javafx.media']
+    modules = ['javafx.controls', 'javafx.fxml', 'javafx.web', 'javafx.media', 'javafx.base']
 }

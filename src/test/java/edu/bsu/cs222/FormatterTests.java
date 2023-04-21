@@ -1,4 +1,5 @@
 package edu.bsu.cs222;
+import edu.bsu.cs222.main.CLI.OutputFormatter;
 import edu.bsu.cs222.english.dictionary.DefinitionParser;
 import edu.bsu.cs222.english.dictionary.SynonymParser;
 import edu.bsu.cs222.language.translator.LanguageOutputFormatter;

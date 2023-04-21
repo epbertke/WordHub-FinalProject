@@ -1,4 +1,5 @@
-package edu.bsu.cs222;
+package edu.bsu.cs222.main.CLI;
+import edu.bsu.cs222.ErrorHandler;
 import edu.bsu.cs222.english.dictionary.RandomWord;
 import edu.bsu.cs222.english.dictionary.WordSearch;
 

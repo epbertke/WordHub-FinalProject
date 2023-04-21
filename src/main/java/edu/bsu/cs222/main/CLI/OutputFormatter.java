@@ -1,4 +1,4 @@
-package edu.bsu.cs222;
+package edu.bsu.cs222.main.CLI;
 import java.util.Objects;
 public class OutputFormatter {
     private  String[] outputArray = new String[3];

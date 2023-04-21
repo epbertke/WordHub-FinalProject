@@ -1,7 +1,6 @@
 package edu.bsu.cs222;
-
+import edu.bsu.cs222.main.CLI.LearnTheLanguage;
 import edu.bsu.cs222.english.dictionary.DefinitionParser;
-
 import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
@@ -30,7 +29,7 @@ public class ErrorHandler {
             throw new RuntimeException(e);
         }return true;
     }
-    protected static void checkForValidRequests(String sourceLanguage, String targetLanguage) throws IOException, InterruptedException {
+    public static void checkForValidRequests(String sourceLanguage, String targetLanguage) throws IOException, InterruptedException {
         String[] languageList = {"e", "s", "g", "c", "f"};
         boolean validSource = false;
         boolean validTarget = false;
@@ -46,7 +45,7 @@ public class ErrorHandler {
             LearnTheLanguage.startForCLI();
         }
     }
-    public static Error throwSearchNotProvidedError(){
+    public static void throwSearchNotProvidedError(){
         throw new Error("No search was provided.");
     }
 }

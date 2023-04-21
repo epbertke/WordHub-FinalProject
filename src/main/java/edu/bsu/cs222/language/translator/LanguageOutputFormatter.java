@@ -1,7 +1,5 @@
 package edu.bsu.cs222.language.translator;
-
-import edu.bsu.cs222.OutputFormatter;
-
+import edu.bsu.cs222.main.CLI.OutputFormatter;
 public class LanguageOutputFormatter {
     private final String originalWord;
     private final String translation;

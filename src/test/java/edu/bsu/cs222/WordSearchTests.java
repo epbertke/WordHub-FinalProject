@@ -6,8 +6,7 @@ import java.io.IOException;
 public class WordSearchTests {
     @Test
     public void wordSearchGivesWordSearchedInResultArrayTest() throws IOException {
-        boolean result = new WordSearch("grateful").getSearchedWordInformation()[0].isEmpty();
-        Assertions.assertFalse(result);
+        Assertions.assertFalse(new WordSearch("grateful").getSearchedWordInformation()[0].isEmpty());
     }
     @Test
     public void wordSearchGivesDefinitionOfWordTest() throws IOException {

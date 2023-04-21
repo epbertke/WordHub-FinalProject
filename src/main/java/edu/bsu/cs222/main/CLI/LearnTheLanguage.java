@@ -1,10 +1,7 @@
-package edu.bsu.cs222;
-
+package edu.bsu.cs222.main.CLI;
+import edu.bsu.cs222.ErrorHandler;
 import edu.bsu.cs222.language.translator.TranslationProcessor;
-
 import java.io.IOException;
-import static edu.bsu.cs222.ErrorHandler.checkForValidRequests;
-
 public class LearnTheLanguage {
     private static String sourceLanguage;
     private static String targetLanguage;
@@ -14,11 +11,11 @@ public class LearnTheLanguage {
         targetLanguage = userTargetLanguage;
         wordToTranslate = userWordToTranslate;
     }
-    protected static void startForCLI() throws IOException, InterruptedException {
+    public static void startForCLI() throws IOException, InterruptedException {
         sourceLanguage = CLIMenu.requestSourceLanguage();
         targetLanguage = CLIMenu.requestTargetLanguage();
         wordToTranslate = CLIMenu.getUserWordToTranslate();
-        checkForValidRequests(sourceLanguage, targetLanguage);
+        ErrorHandler.checkForValidRequests(sourceLanguage, targetLanguage);
         System.out.println(new TranslationProcessor(sourceLanguage, targetLanguage, wordToTranslate).processUserRequest());
     }
 }
