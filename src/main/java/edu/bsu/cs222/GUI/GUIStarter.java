@@ -45,6 +45,8 @@ public class GUIStarter extends Application {
     private void configureOutputFields(){
         lTDOutputArea.setEditable(false);
         lTLOutputArea.setEditable(false);
+        lTDOutputArea.setWrapText(true);
+        lTLOutputArea.setWrapText(true);
     }
     private Pane createRoot() {
         VBox root = new VBox();

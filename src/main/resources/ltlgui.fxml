@@ -27,8 +27,8 @@
       </Button>
       <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Random !" />
    </HBox>
-   <TextArea prefHeight="166.0" prefWidth="600.0" wrapText="true" />
-   <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="600.0">
+   <TextArea editable="false" prefHeight="166.0" prefWidth="600.0" wrapText="true" />
+   <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="600.0" wrapText="true">
       <font>
          <Font size="15.0" />
       </font>
