@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Add translator functionality to GUI" />
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Added French to English and English to French Translator. It is non-functioning at the moment but will be fixed in the next hour.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_11_23__3_15_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_11_23__3_15_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_11_23__9_09_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_11_23__9_09_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ltlgui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ltlgui.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,17 +35,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="LearnTheDictionary" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="LearnTheDictionary" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="LearnTheDictionary" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="application" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -49,8 +45,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaFXApplication" />
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -63,24 +57,8 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="83bb9d54-5161-467b-bad5-c1984ab22cac" />
-        <option name="url" value="https://github.com/bsu-cs222-spring23-dll/Final-epbertke-caleb.reyes-nathaniel.grigsby.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2MkXL9tO6nM93uZ26Pdv8GcwAlR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -94,47 +72,25 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last.edited.regexp&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/elliebertke/Desktop/Final-epbertke-caleb.reyes-nathaniel.grigsby&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Caleb Reyes/Downloads/javafx-sdk-19.0.2.1/lib&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15332031&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.55517244&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pathVariables&quot;
   }
 }</component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators" />
-      <recent name="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators" />
-      <recent name="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/german/translators" />
-      <recent name="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/french/translators" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="edu.bsu.cs222.GUI" />
-      <recent name="edu.bsu.cs222" />
-      <recent name="edu.bsu.cs222.language.translator.translators.portuguese.translators" />
-      <recent name="edu.bsu.cs222.language.translator.translators.german.translators" />
-    </key>
   </component>
-  <component name="RunManager" selected="Gradle.Final-epbertke-caleb.reyes-nathaniel.grigsby [run]">
-    <configuration name="GUIStarter" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="corretto-18" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.GUI.GUIStarter" />
-      <module name="LearnTheDictionary.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="edu.bsu.cs222.main.CLI.CLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.main.CLI.CLI" />
+  <component name="RunManager" selected="Application.GUIStarter">
+    <configuration name="CLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.CLI" />
       <module name="LearnTheDictionary.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.bsu.cs222.CLI.*" />
+          <option name="PATTERN" value="edu.bsu.cs222.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,28 +98,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Final-epbertke-caleb.reyes-nathaniel.grigsby [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--scan --info" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="run" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="GUIStarter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.GUI.GUIStarter" />
+      <module name="LearnTheDictionary.main" />
+      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules javafx.fxml,javafx.controls,javafx.graphics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.bsu.cs222.GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="ForeignTranslatorTests.germanToChineseTranslatorGivesWordInChineseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="EnglishToSpanishTranslatorTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -176,7 +125,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.ForeignTranslatorTests.germanToChineseTranslatorGivesWordInChineseTest&quot;" />
+            <option value="&quot;EnglishToSpanishTranslatorTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -186,7 +135,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ForeignTranslatorTests.germanToFrenchTranslatorGivesWordInGermanTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TranslatorTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -199,7 +148,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.ForeignTranslatorTests.germanToFrenchTranslatorGivesWordInGermanTest&quot;" />
+            <option value="&quot;TranslatorTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -209,7 +158,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="WordSearchTests.wordSearchGivesWordSearchedInResultArrayTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TranslatorTests.englishToGermanTranslatorGivesWordInGerman" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -222,7 +171,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.WordSearchTests.wordSearchGivesWordSearchedInResultArrayTest&quot;" />
+            <option value="&quot;TranslatorTests.englishToGermanTranslatorGivesWordInGerman&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -233,20 +182,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.CLI" />
       <item itemvalue="Application.GUIStarter" />
-      <item itemvalue="Application.edu.bsu.cs222.main.CLI.CLI" />
-      <item itemvalue="Gradle.WordSearchTests.wordSearchGivesWordSearchedInResultArrayTest" />
-      <item itemvalue="Gradle.Final-epbertke-caleb.reyes-nathaniel.grigsby [run]" />
-      <item itemvalue="Gradle.ForeignTranslatorTests.germanToChineseTranslatorGivesWordInChineseTest" />
-      <item itemvalue="Gradle.ForeignTranslatorTests.germanToFrenchTranslatorGivesWordInGermanTest" />
+      <item itemvalue="Gradle.EnglishToSpanishTranslatorTests" />
+      <item itemvalue="Gradle.TranslatorTests" />
+      <item itemvalue="Gradle.TranslatorTests.englishToGermanTranslatorGivesWordInGerman" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Final-epbertke-caleb.reyes-nathaniel.grigsby [run]" />
-        <item itemvalue="Application.edu.bsu.cs222.main.CLI.CLI" />
-        <item itemvalue="Gradle.WordSearchTests.wordSearchGivesWordSearchedInResultArrayTest" />
-        <item itemvalue="Gradle.ForeignTranslatorTests.germanToChineseTranslatorGivesWordInChineseTest" />
-        <item itemvalue="Gradle.ForeignTranslatorTests.germanToFrenchTranslatorGivesWordInGermanTest" />
+        <item itemvalue="Application.GUIStarter" />
+        <item itemvalue="Application.CLI" />
+        <item itemvalue="Gradle.TranslatorTests.englishToGermanTranslatorGivesWordInGerman" />
+        <item itemvalue="Gradle.TranslatorTests" />
+        <item itemvalue="Gradle.EnglishToSpanishTranslatorTests" />
       </list>
     </recent_temporary>
   </component>
@@ -258,6 +206,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678312502837</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Add initial classes and tests&#10;Classes added were DefinitionParser, RandomWord, APIConnection, LearnTheDictionary, and CLI. Comments were added on what still needs completed for iteration 1.">
+      <created>1678511041395</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678511041395</updated>
     </task>
     <task id="LOCAL-00002" summary="Add OutputFormatter and WordNotFoundError&#10;Refactor tests">
       <created>1679308465707</created>
@@ -413,196 +368,7 @@
       <option name="project" value="LOCAL" />
       <updated>1679596815602</updated>
     </task>
-    <task id="LOCAL-00024" summary="Fixed French to English and English To French Translator.">
-      <created>1680801251571</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1680801251571</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Fixed capitalization error causing test to fail">
-      <created>1680802027849</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1680802027849</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Fixed capitalization error causing test to fail">
-      <created>1680802037033</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1680802037033</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Added definition output for english to target language.">
-      <created>1681317487549</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1681317487549</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Refactor language classes and Dictionary&#10;Refactor tests">
-      <created>1681428259011</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1681428259011</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Refactor language classes and Dictionary&#10;Refactor tests">
-      <created>1681428266725</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1681428266725</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Add tests">
-      <created>1681430903508</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1681430903508</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Add tests">
-      <created>1681430911874</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1681430911874</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Remove unused import statements">
-      <created>1681431781834</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1681431781834</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Remove unused import statements">
-      <created>1681431791047</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1681431791047</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Remove unused import statements">
-      <created>1681433040985</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1681433040985</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Add translation key error">
-      <created>1681434605539</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1681434605539</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Add translation key error">
-      <created>1681434611201</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1681434611201</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Refactor classes and add CLIMenu class">
-      <created>1681760648418</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1681760648418</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Refactor classes and add CLIMenu class">
-      <created>1681760653802</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1681760653802</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Add Chinese and French translators and tests for them">
-      <created>1681769429210</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1681769429210</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Add Chinese and French translators and tests for them">
-      <created>1681769436856</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1681769436856</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Add German translators and tests">
-      <created>1681769972216</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1681769972216</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Add German translators and tests">
-      <created>1681769978603</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1681769978603</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Refactor LearnTheLanguage, LanguageHub, and TranslationProcessor&#10;To work with new language translators">
-      <created>1681778482508</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1681778482508</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Refactor LearnTheLanguage, LanguageHub, and TranslationProcessor&#10;To work with new language translators">
-      <created>1681778493662</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1681778493662</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Configure JavaFx, &#10;Add GUI SceneBuilder outline">
-      <created>1681793593538</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1681793593538</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Configure JavaFx, &#10;Add GUI SceneBuilder outline">
-      <created>1681793603010</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1681793603010</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Add RandomWord and WordSearch functionality to GUI">
-      <created>1681796355279</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1681796355279</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Add RandomWord and WordSearch functionality to GUI">
-      <created>1681796362649</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1681796362649</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Add translator functionality to GUI">
-      <created>1682119749576</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1682119749576</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Add translator functionality to GUI">
-      <created>1682119980178</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1682119980178</updated>
-    </task>
-    <option name="localTasksCounter" value="51" />
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -617,6 +383,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add initial classes and tests&#10;Classes added were DefinitionParser, RandomWord, APIConnection, LearnTheDictionary, and CLI. Comments were added on what still needs completed for iteration 1." />
+    <MESSAGE value="Add OutputFormatter and WordNotFoundError&#10;Refactor tests" />
+    <MESSAGE value="Added Formatter Tests for Synonym and Definition." />
     <MESSAGE value="Remove un-needed method from WordNotFoundError." />
     <MESSAGE value="Remove 2 not needed methods from WordNotFoundError" />
     <MESSAGE value="Refactor output format" />
@@ -627,37 +396,6 @@
     <MESSAGE value="Refactor Dictionary class to reduce duplication" />
     <MESSAGE value="Remove unnecessary method in Dictionary class" />
     <MESSAGE value="Add Spanish Translator Classes and Tests" />
-    <MESSAGE value="Fixed French to English and English To French Translator." />
-    <MESSAGE value="Fixed capitalization error causing test to fail" />
-    <MESSAGE value="Added definition output for english to target language." />
-    <MESSAGE value="Refactor language classes and Dictionary&#10;Refactor tests" />
-    <MESSAGE value="Add tests" />
-    <MESSAGE value="Update README.md" />
-    <MESSAGE value="Remove unused import statements" />
-    <MESSAGE value="Add translation key error" />
-    <MESSAGE value="Refactor classes and add CLIMenu class" />
-    <MESSAGE value="Add Chinese and French translators and tests for them" />
-    <MESSAGE value="Add German translators and tests" />
-    <MESSAGE value="Refactor LearnTheLanguage, LanguageHub, and TranslationProcessor&#10;To work with new language translators" />
-    <MESSAGE value="Configure JavaFx, &#10;Add GUI SceneBuilder outline" />
-    <MESSAGE value="Add RandomWord and WordSearch functionality to GUI" />
-    <MESSAGE value="Add translator functionality to GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add translator functionality to GUI" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/english/dictionary/WordSearch.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/bsu/cs222/english/dictionary/APIConnection.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="Add Spanish Translator Classes and Tests" />
   </component>
 </project>

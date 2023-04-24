@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
+
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="736.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bsu.cs222.GUI.GUIStarter">
-   <Label alignment="CENTER" prefHeight="17.0" prefWidth="600.0" >
+   <Label alignment="CENTER" prefHeight="17.0" prefWidth="600.0">
       <padding>
          <Insets top="10.0" />
       </padding>
@@ -25,8 +27,8 @@
       </Button>
       <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Random !" />
    </HBox>
-   <TextArea prefHeight="166.0" prefWidth="600.0" />
-   <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="600.0" >
+   <TextArea prefHeight="166.0" prefWidth="600.0" wrapText="true" />
+   <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="600.0">
       <font>
          <Font size="15.0" />
       </font>
@@ -69,7 +71,7 @@
          <Insets top="10.0" />
       </VBox.margin>
    </HBox>
-   <TextArea editable="false" prefHeight="280.0" prefWidth="600.0" />
+   <TextArea editable="false" prefHeight="280.0" prefWidth="600.0" wrapText="true" />
    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="29.0" prefWidth="122.0" text="Translate ! " textAlignment="CENTER">
       <font>
          <Font size="15.0" />
