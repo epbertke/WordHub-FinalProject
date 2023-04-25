@@ -125,7 +125,6 @@ public class GUIStarter extends Application {
         container.getChildren().addAll(clearTop, clearBottom);
         return container;
     }
-
     private void configureTopButton(){
         clearTop.setOnAction(event -> {
             GUIController.clearLTDText();
