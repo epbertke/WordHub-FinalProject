@@ -13,10 +13,10 @@ import java.net.http.HttpResponse;
 import java.util.HashMap;
 
 public class PortugueseToChineseTranslator {
-    private final String germanWordToTranslateToChinese;
+    private final String portugueseWordToTranslateToChinese;
     private final String wordTranslatedToChinese;
     public PortugueseToChineseTranslator(String userWordToTranslate) throws IOException, InterruptedException {
-        this.germanWordToTranslateToChinese = userWordToTranslate;
+        this.portugueseWordToTranslateToChinese = userWordToTranslate;
         this.wordTranslatedToChinese = findWordTranslatedToChinese(requestTranslation());
     }
     private String requestTranslation() throws IOException, InterruptedException {
@@ -26,7 +26,7 @@ public class PortugueseToChineseTranslator {
                 .header("content-type", "application/x-www-form-urlencoded")
                 .header("X-RapidAPI-Key", "f263b8ed6amshcf56c5fd7c784c4p128de1jsna14a7e815ea4")
                 .header("X-RapidAPI-Host", "text-translator2.p.rapidapi.com")
-                .method("POST", HttpRequest.BodyPublishers.ofString("source_language=de&target_language=zh&text="+germanWordToTranslateToChinese))
+                .method("POST", HttpRequest.BodyPublishers.ofString("source_language=pt&target_language=zh&text="+portugueseWordToTranslateToChinese))
                 .build();
         HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
         return response.body();
@@ -36,7 +36,7 @@ public class PortugueseToChineseTranslator {
             HashMap<String, String> result = JsonPath.parse(translationResponse).json();
             JSONArray jsonResultArray = JsonPath.read(result, "$..translatedText");
             String responseWord = jsonResultArray.get(0).toString();
-            if(jsonResultArray.get(0).toString().equals(germanWordToTranslateToChinese)){
+            if(jsonResultArray.get(0).toString().equals(portugueseWordToTranslateToChinese)){
                 ErrorHandler.throwWordNotFoundError();
             }
             return responseWord.toLowerCase();

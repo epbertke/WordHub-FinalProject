@@ -12,11 +12,11 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.HashMap;
 public class SpanishToGermanTranslator {
-    private final String germanWordToTranslateToSpanish;
-    private final String wordTranslatedToSpanish;
+    private final String spanishWordToTranslateToGerman;
+    private final String wordTranslatedToGerman;
     public SpanishToGermanTranslator(String userWordToTranslate) throws IOException, InterruptedException {
-        this.germanWordToTranslateToSpanish = userWordToTranslate;
-        this.wordTranslatedToSpanish = findWordTranslatedToGerman(requestTranslation());
+        this.spanishWordToTranslateToGerman = userWordToTranslate;
+        this.wordTranslatedToGerman = findWordTranslatedToGerman(requestTranslation());
     }
     private String requestTranslation() throws IOException, InterruptedException {
         TranslationConnection.createLanguageList();
@@ -25,7 +25,7 @@ public class SpanishToGermanTranslator {
                 .header("content-type", "application/x-www-form-urlencoded")
                 .header("X-RapidAPI-Key", "f263b8ed6amshcf56c5fd7c784c4p128de1jsna14a7e815ea4")
                 .header("X-RapidAPI-Host", "text-translator2.p.rapidapi.com")
-                .method("POST", HttpRequest.BodyPublishers.ofString("source_language=de&target_language=es&text="+germanWordToTranslateToSpanish))
+                .method("POST", HttpRequest.BodyPublishers.ofString("source_language=es&target_language=de&text="+spanishWordToTranslateToGerman))
                 .build();
         HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
         return response.body();
@@ -35,7 +35,7 @@ public class SpanishToGermanTranslator {
             HashMap<String, String> result = JsonPath.parse(translationResponse).json();
             JSONArray jsonResultArray = JsonPath.read(result, "$..translatedText");
             String responseWord = jsonResultArray.get(0).toString();
-            if(jsonResultArray.get(0).toString().equals(germanWordToTranslateToSpanish)){
+            if(jsonResultArray.get(0).toString().equals(spanishWordToTranslateToGerman)){
                 ErrorHandler.throwWordNotFoundError();
             }
             return responseWord.toLowerCase();
@@ -44,6 +44,6 @@ public class SpanishToGermanTranslator {
         }
     }
     public String getTranslatedWordInGerman(){
-        return wordTranslatedToSpanish;
+        return wordTranslatedToGerman;
     }
 }
