@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Wraps the output text in GUI">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Fixed Portuguese and Spanish translator classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUI/GUIStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUI/GUIStarter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToChineseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToChineseTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToFrenchTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToFrenchTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToGermanTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToGermanTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToSpanishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToSpanishTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToChineseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToChineseTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToFrenchTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToFrenchTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToGermanTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToGermanTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToPortugueseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToPortugueseTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ltlgui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ltlgui.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,13 +79,13 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GUIStarter">
+  <component name="RunManager" selected="Application.CLI">
     <configuration name="CLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.CLI" />
+      <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.main.CLI.CLI" />
       <module name="LearnTheDictionary.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.bsu.cs222.*" />
+          <option name="PATTERN" value="edu.bsu.cs222.main.CLI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,21 +93,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GUIStarter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="edu.bsu.cs222.GUI.GUIStarter" />
-      <module name="LearnTheDictionary.main" />
-      <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules javafx.fxml,javafx.controls,javafx.graphics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.bsu.cs222.GUI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EnglishToSpanishTranslatorTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DictionaryTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -131,7 +106,53 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;EnglishToSpanishTranslatorTests&quot;" />
+            <option value="&quot;edu.bsu.cs222.DictionaryTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="FormatterTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.bsu.cs222.FormatterTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ParserTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.bsu.cs222.ParserTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -154,30 +175,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TranslatorTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TranslatorTests.englishToGermanTranslatorGivesWordInGerman" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;TranslatorTests.englishToGermanTranslatorGivesWordInGerman&quot;" />
+            <option value="&quot;edu.bsu.cs222.TranslatorTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -189,18 +187,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.CLI" />
-      <item itemvalue="Application.GUIStarter" />
-      <item itemvalue="Gradle.EnglishToSpanishTranslatorTests" />
       <item itemvalue="Gradle.TranslatorTests" />
-      <item itemvalue="Gradle.TranslatorTests.englishToGermanTranslatorGivesWordInGerman" />
+      <item itemvalue="Gradle.DictionaryTests" />
+      <item itemvalue="Gradle.FormatterTests" />
+      <item itemvalue="Gradle.ParserTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GUIStarter" />
         <item itemvalue="Application.CLI" />
-        <item itemvalue="Gradle.TranslatorTests.englishToGermanTranslatorGivesWordInGerman" />
         <item itemvalue="Gradle.TranslatorTests" />
-        <item itemvalue="Gradle.EnglishToSpanishTranslatorTests" />
+        <item itemvalue="Gradle.ParserTests" />
+        <item itemvalue="Gradle.FormatterTests" />
+        <item itemvalue="Gradle.DictionaryTests" />
       </list>
     </recent_temporary>
   </component>
@@ -381,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682364760801</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Fixed Portuguese and Spanish translator classes">
+      <created>1682441288020</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1682441288020</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -410,6 +415,7 @@
     <MESSAGE value="Remove unnecessary method in Dictionary class" />
     <MESSAGE value="Add Spanish Translator Classes and Tests" />
     <MESSAGE value="Wraps the output text in GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wraps the output text in GUI" />
+    <MESSAGE value="Fixed Portuguese and Spanish translator classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Portuguese and Spanish translator classes" />
   </component>
 </project>
