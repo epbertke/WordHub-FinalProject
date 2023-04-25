@@ -30,7 +30,7 @@ public class ErrorHandler {
         }return true;
     }
     public static void checkForValidRequests(String sourceLanguage, String targetLanguage) throws IOException, InterruptedException {
-        String[] languageList = {"e", "s", "g", "c", "f"};
+        String[] languageList = {"e", "s", "g", "c", "f", "p"};
         boolean validSource = false;
         boolean validTarget = false;
         for(String language : languageList){
