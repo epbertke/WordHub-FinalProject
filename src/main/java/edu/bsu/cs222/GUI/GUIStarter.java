@@ -15,6 +15,8 @@ public class GUIStarter extends Application {
     private final Button search = new Button("Search");
     private final Button random = new Button("Random !");
     private final Button translate = new Button("Translate");
+    private final Button clearTop = new Button("Clear Top Text");
+    private final Button clearBottom = new Button("Clear Bottom Text");
     protected static final TextField wordSearchInputField = new TextField();
     protected static final TextField translateInputField = new TextField();
     protected static final TextArea lTLOutputArea = new TextArea();
@@ -34,6 +36,8 @@ public class GUIStarter extends Application {
         configureTranslateButton();
         configureSearchButton();
         configureRandomButton();
+        configureTopButton();
+        configureBottomButton();
         configure(stage);
     }
     private void configure(Stage stage){
@@ -51,7 +55,7 @@ public class GUIStarter extends Application {
     private Pane createRoot() {
         VBox root = new VBox();
         root.setPrefSize(600, 796);
-        root.getChildren().addAll(dictionaryLabel, wordSearchInputField, createDictionaryButtonHBox(), lTDOutputArea, translationLabel, translateInputField, createTranslatorHBox(), lTLOutputArea, createTranslateButtonBox());
+        root.getChildren().addAll(dictionaryLabel, wordSearchInputField, createDictionaryButtonHBox(), lTDOutputArea, translationLabel, translateInputField, createTranslatorHBox(), lTLOutputArea, createTranslateButtonBox(), createClearButtonBox());
         return root;
     }
     private void configureComboBoxes() {
@@ -113,5 +117,24 @@ public class GUIStarter extends Application {
         container.setPadding(new Insets(10));
         container.getChildren().addAll(translate);
         return container;
+    }
+    private HBox createClearButtonBox(){
+        HBox container = new HBox();
+        container.setAlignment(BASELINE_CENTER);
+        container.setPadding(new Insets(10));
+        container.getChildren().addAll(clearTop, clearBottom);
+        return container;
+    }
+
+    private void configureTopButton(){
+        clearTop.setOnAction(event -> {
+            GUIController.clearLTDText();
+        });
+
+    }
+    private void configureBottomButton(){
+        clearBottom.setOnAction(event -> {
+            GUIController.clearLTLText();
+        });
     }
 }

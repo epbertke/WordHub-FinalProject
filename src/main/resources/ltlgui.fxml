@@ -28,6 +28,11 @@
       <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Random !" />
    </HBox>
    <TextArea editable="false" prefHeight="166.0" prefWidth="600.0" wrapText="true" />
+   <TextField prefHeight="38.0" prefWidth="600.0" promptText="Word To Translate">
+      <VBox.margin>
+         <Insets bottom="5.0" left="150.0" right="150.0" top="5.0" />
+      </VBox.margin>
+   </TextField>
    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="600.0" wrapText="true">
       <font>
          <Font size="15.0" />
@@ -42,18 +47,13 @@
          <Insets top="10.0" />
       </VBox.margin>
    </Label>
-   <TextField prefHeight="38.0" prefWidth="600.0" promptText="Word To Translate">
-      <VBox.margin>
-         <Insets bottom="5.0" left="150.0" right="150.0" top="5.0" />
-      </VBox.margin>
-   </TextField>
    <HBox prefHeight="29.0" prefWidth="600.0">
       <Label prefHeight="17.0" prefWidth="84.0" text="Translate to :">
          <HBox.margin>
             <Insets left="10.0" />
          </HBox.margin>
       </Label>
-      <ComboBox prefHeight="420.0" prefWidth="175.0" visibleRowCount="6">
+      <ComboBox prefHeight="27.0" prefWidth="132.0" visibleRowCount="6">
          <HBox.margin>
             <Insets left="5.0" right="10.0" />
          </HBox.margin>
@@ -62,7 +62,7 @@
          <HBox.margin>
             <Insets left="10.0" right="5.0" />
          </HBox.margin></Label>
-      <ComboBox prefHeight="420.0" prefWidth="175.0" visibleRowCount="6">
+      <ComboBox prefHeight="27.0" prefWidth="132.0" visibleRowCount="6">
       <HBox.margin>
          <Insets left="10.0" />
       </HBox.margin>
@@ -71,7 +71,7 @@
          <Insets top="10.0" />
       </VBox.margin>
    </HBox>
-   <TextArea editable="false" prefHeight="280.0" prefWidth="600.0" wrapText="true" />
+   <TextArea fx:id="" editable="false" prefHeight="280.0" prefWidth="600.0" wrapText="true" />
    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="29.0" prefWidth="122.0" text="Translate ! " textAlignment="CENTER">
       <font>
          <Font size="15.0" />
@@ -79,4 +79,10 @@
       <VBox.margin>
          <Insets left="240.0" top="10.0" />
       </VBox.margin></Button>
+   <HBox alignment="BASELINE_CENTER" prefHeight="37.0" prefWidth="500.0">
+      <children>
+         <Button mnemonicParsing="false" text="Clear Top Text" />
+         <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" text="Clear Bottom Text" />
+      </children>
+   </HBox>
 </VBox>

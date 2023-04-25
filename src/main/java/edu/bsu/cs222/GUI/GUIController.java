@@ -12,6 +12,7 @@ public class GUIController extends GUIStarter{
     private final static TextField searchField = GUIStarter.wordSearchInputField;
     private final static TextArea ltdOutputArea = GUIStarter.lTDOutputArea;
     private final static TextArea ltlOutputArea = GUIStarter.lTLOutputArea;
+
     protected static void checkIfSearchIsProvided(){
         if(searchField.getText().isBlank()){
             ErrorHandler.throwSearchNotProvidedError();
@@ -43,4 +44,12 @@ public class GUIController extends GUIStarter{
             ErrorHandler.throwSearchNotProvidedError();
         }
     }
+
+    protected static void clearLTDText(){
+        ltdOutputArea.clear();
+    }
+    protected static void clearLTLText(){
+        ltlOutputArea.clear();
+    }
+
 }
