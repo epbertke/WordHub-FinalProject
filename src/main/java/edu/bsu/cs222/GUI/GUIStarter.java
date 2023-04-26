@@ -41,7 +41,7 @@ public class GUIStarter extends Application {
         configure(stage);
     }
     private void configure(Stage stage){
-        stage.setTitle("--- ***WordHub*** ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- ***LearnTheLanguage*** ---");
+        stage.setTitle("--- ***WordHub*** ---------------------------------- ***LearnTheLanguage*** ---");
         stage.setScene(new Scene(createRoot()));
         stage.sizeToScene();
         stage.show();
@@ -126,14 +126,10 @@ public class GUIStarter extends Application {
         return container;
     }
     private void configureTopButton(){
-        clearTop.setOnAction(event -> {
-            GUIController.clearLTDText();
-        });
+        clearTop.setOnAction(event -> GUIController.clearLTDText());
 
     }
     private void configureBottomButton(){
-        clearBottom.setOnAction(event -> {
-            GUIController.clearLTLText();
-        });
+        clearBottom.setOnAction(event -> GUIController.clearLTLText());
     }
 }

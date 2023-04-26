@@ -10,6 +10,6 @@ public class LanguageOutputFormatter {
         this.definition = new OutputFormatter().formatOutputForUser(definition);
     }
     public String formatOutput() {
-        return "Original : " + originalWord + "\n" + "Translation : " + translation + "\n" + "Definition : " + definition;
+        return "Original : " + originalWord + "\n" + "\n" + "Translation : " + translation + "\n" + "\n" + "Definition : " + definition;
     }
 }

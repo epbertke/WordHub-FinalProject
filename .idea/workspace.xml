@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Refactor ForeignTranslatorTests to be monads.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/ErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUI/GUIStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUI/GUIStarter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last.edited.regexp": "",
     "last_opened_file_path": "C:/Users/reyes/IdeaProjects/Final-epbertke-caleb.reyes-nathaniel.grigsby.git",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.55517244",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.spelling"
@@ -93,7 +92,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GUIStarter">
+  <component name="RunManager" selected="Gradle.Final-epbertke-caleb.reyes-nathaniel.grigsby [run]">
     <configuration name="GUIStarter" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-18 (2)" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -103,6 +102,27 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Final-epbertke-caleb.reyes-nathaniel.grigsby [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="ForeignTranslatorTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -173,29 +193,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TranslatorTests.englishToPortugueseTranslatorGivesWordInPortuguese" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.TranslatorTests.englishToPortugueseTranslatorGivesWordInPortuguese&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="TranslatorTests.portugueseToEnglishTranslatorGivesWordInEnglish" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -221,19 +218,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.GUIStarter" />
+      <item itemvalue="Gradle.Final-epbertke-caleb.reyes-nathaniel.grigsby [run]" />
       <item itemvalue="Gradle.ForeignTranslatorTests" />
-      <item itemvalue="Gradle.TranslatorTests.englishToPortugueseTranslatorGivesWordInPortuguese" />
       <item itemvalue="Gradle.TranslatorTests.portugueseToEnglishTranslatorGivesWordInEnglish" />
       <item itemvalue="Gradle.TranslatorTests.EnglishToChineseTranslatorGivesWordInChinese" />
       <item itemvalue="Gradle.TranslatorTests.chineseToEnglishTranslatorGivesWordInEnglish" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Final-epbertke-caleb.reyes-nathaniel.grigsby [run]" />
         <item itemvalue="Gradle.ForeignTranslatorTests" />
         <item itemvalue="Gradle.TranslatorTests.EnglishToChineseTranslatorGivesWordInChinese" />
         <item itemvalue="Gradle.TranslatorTests.chineseToEnglishTranslatorGivesWordInEnglish" />
         <item itemvalue="Gradle.TranslatorTests.portugueseToEnglishTranslatorGivesWordInEnglish" />
-        <item itemvalue="Gradle.TranslatorTests.englishToPortugueseTranslatorGivesWordInPortuguese" />
       </list>
     </recent_temporary>
   </component>
