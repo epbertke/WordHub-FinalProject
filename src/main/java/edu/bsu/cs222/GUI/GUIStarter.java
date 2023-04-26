@@ -54,7 +54,7 @@ public class GUIStarter extends Application {
     }
     private Pane createRoot() {
         VBox root = new VBox();
-        root.setPrefSize(600, 796);
+        root.setPrefSize(600, 700);
         root.getChildren().addAll(dictionaryLabel, wordSearchInputField, createDictionaryButtonHBox(), lTDOutputArea, translationLabel, translateInputField, createTranslatorHBox(), lTLOutputArea, createTranslateButtonBox(), createClearButtonBox());
         return root;
     }

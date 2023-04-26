@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Refactor ForeignTranslatorTests to be monads.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Fix more formatting errors">
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUI/GUIStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUI/GUIStarter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +29,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="LearnTheDictionary" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LearnTheDictionary" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LearnTheDictionary" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -439,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682538042410</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Fix more formatting errors">
+      <created>1682547582482</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1682547582482</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -471,6 +488,7 @@
     <MESSAGE value="Fixed Portuguese and Spanish translator classes" />
     <MESSAGE value="Added Clear Top and Bottom Text buttons" />
     <MESSAGE value="Refactor ForeignTranslatorTests to be monads." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor ForeignTranslatorTests to be monads." />
+    <MESSAGE value="Fix more formatting errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix more formatting errors" />
   </component>
 </project>
