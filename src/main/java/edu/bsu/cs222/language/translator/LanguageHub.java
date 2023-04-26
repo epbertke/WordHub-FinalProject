@@ -46,7 +46,7 @@ public class LanguageHub {
     }
     protected String chineseWordTranslation() throws IOException, InterruptedException {
         switch (targetLanguage) {
-            case "s" -> translationOutput = new LanguageOutputFormatter(wordToTranslate, new ChineseToSpanishTranslator(wordToTranslate).getTranslatedWordInSpanish(), fetchDefinitionForTranslatedWord()).formatOutput();
+            case "c" -> translationOutput = new LanguageOutputFormatter(wordToTranslate, new ChineseToSpanishTranslator(wordToTranslate).getTranslatedWordInSpanish(), fetchDefinitionForTranslatedWord()).formatOutput();
             case "g" -> translationOutput = new LanguageOutputFormatter(wordToTranslate, new ChineseToGermanTranslator(wordToTranslate).getTranslatedWordInGerman(), fetchDefinitionForTranslatedWord()).formatOutput();
             case "p" -> translationOutput = new LanguageOutputFormatter(wordToTranslate, new ChineseToPortugueseTranslator(wordToTranslate).getTranslatedWordInPortuguese(), fetchDefinitionForTranslatedWord()).formatOutput();
             case "f" -> translationOutput = new LanguageOutputFormatter(wordToTranslate, new ChineseToFrenchTranslator(wordToTranslate).getTranslatedWordInFrench(), fetchDefinitionForTranslatedWord()).formatOutput();

@@ -15,54 +15,45 @@ public class TranslatorTests {
     }
     @Test
     public void englishToSpanishTranslatorGivesWordInSpanishTest() throws IOException, InterruptedException {
-        EnglishToSpanishTranslator translator = new EnglishToSpanishTranslator("blue");
-        Assertions.assertEquals("azul", translator.getTranslatedWordInSpanish());
+        Assertions.assertEquals("blue", new EnglishToSpanishTranslator("azul").getTranslatedWordInSpanish());
     }
     @Test
     public void spanishToEnglishTranslatorGivesWordInEnglishTest() throws IOException, InterruptedException {
-        SpanishToEnglishTranslator translator = new SpanishToEnglishTranslator("hola");
-        Assertions.assertEquals("hello", translator.getTranslatedWordInEnglish());
+        Assertions.assertEquals("hola", new SpanishToEnglishTranslator("hello").getTranslatedWordInEnglish());
     }
     @Test
     public void englishToGermanTranslatorGivesWordInGermanTest() throws IOException, InterruptedException{
-        EnglishToGermanTranslator translator = new EnglishToGermanTranslator("car");
-        Assertions.assertEquals("auto", translator.getTranslatedWordInGerman());
+        Assertions.assertEquals("car", new EnglishToGermanTranslator("auto").getTranslatedWordInGerman());
     }
     @Test
     public void germanToEnglishTranslatorGivesWordInEnglishTest() throws IOException, InterruptedException{
-        GermanToEnglishTranslator translator = new GermanToEnglishTranslator("kurz");
-        Assertions.assertEquals("short", translator.getTranslatedWordInEnglish());
+        Assertions.assertEquals("kurz", new GermanToEnglishTranslator("short").getTranslatedWordInEnglish());
     }
     @Test
     public void englishToFrenchTranslatorGivesWordInFrenchTest() throws IOException, InterruptedException{
-        EnglishToFrenchTranslator translator = new EnglishToFrenchTranslator("car");
-        Assertions.assertEquals("voiture", translator.getTranslatedWordInFrench());
+        Assertions.assertEquals("car", new EnglishToFrenchTranslator("voiture").getTranslatedWordInFrench());
+
 
     }
     @Test
     public void frenchToEnglishTranslatorGivesWordInEnglishTest() throws IOException, InterruptedException{
-        FrenchToEnglishTranslator translator = new FrenchToEnglishTranslator("Non");
-        Assertions.assertEquals("no", translator.getTranslatedWordInEnglish());
+        Assertions.assertEquals("Non", new FrenchToEnglishTranslator("no").getTranslatedWordInEnglish());
     }
     @Test
     public void englishToPortugueseTranslatorGivesWordInPortuguese() throws IOException, InterruptedException {
-        EnglishToPortugueseTranslator translator = new EnglishToPortugueseTranslator("blue");
-        Assertions.assertEquals("azul", translator.getTranslatedWordInPortuguese());
+        Assertions.assertEquals("blue", new EnglishToPortugueseTranslator("azul").getTranslatedWordInPortuguese());
     }
     @Test
     public void portugueseToEnglishTranslatorGivesWordInEnglish() throws IOException, InterruptedException {
-        PortugueseToEnglishTranslator translator = new PortugueseToEnglishTranslator("azul");
-        Assertions.assertEquals("blue", translator.getTranslatedWordInEnglish());
+        Assertions.assertEquals("azul", new PortugueseToEnglishTranslator("blue").getTranslatedWordInEnglish());
     }
     @Test
     public void chineseToEnglishTranslatorGivesWordInEnglish() throws IOException, InterruptedException {
-        ChineseToEnglishTranslator translator = new ChineseToEnglishTranslator("天气");
-        Assertions.assertEquals("weather", translator.getTranslatedWordInEnglish());
+        Assertions.assertEquals("天气", new ChineseToEnglishTranslator("weather").getTranslatedWordInEnglish());
     }
     @Test
     public void EnglishToChineseTranslatorGivesWordInChinese() throws IOException, InterruptedException {
-        EnglishToChineseTranslator translator = new EnglishToChineseTranslator("weather");
-        Assertions.assertEquals("天气", translator.getTranslatedWordInChinese());
+        Assertions.assertEquals("weather", new EnglishToChineseTranslator("天气").getTranslatedWordInChinese());
     }
     @Test
     public void chineseToFrenchTranslatorGivesWordInFrenchTest() throws IOException, InterruptedException {

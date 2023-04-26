@@ -23,7 +23,7 @@ public class GermanToChineseTranslator {
                 .header("content-type", "application/x-www-form-urlencoded")
                 .header("X-RapidAPI-Key", "f263b8ed6amshcf56c5fd7c784c4p128de1jsna14a7e815ea4")
                 .header("X-RapidAPI-Host", "text-translator2.p.rapidapi.com")
-                .method("POST", HttpRequest.BodyPublishers.ofString("source_language=de&target_language=zh&text="+germanWordToTranslateToChinese))
+                .method("POST", HttpRequest.BodyPublishers.ofString("source_language=de&target_language=zh-CN&text="+germanWordToTranslateToChinese))
                 .build();
         HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
         return response.body();
