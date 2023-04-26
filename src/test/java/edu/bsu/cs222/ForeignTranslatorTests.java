@@ -22,7 +22,7 @@ import java.io.IOException;
 public class ForeignTranslatorTests {
     @Test
     public void chineseToFrenchTranslatorGivesWordInFrenchTest() throws IOException, InterruptedException {
-        Assertions.assertEquals("temps", new ChineseToFrenchTranslator("").getTranslatedWordInFrench());
+        Assertions.assertEquals("temps", new ChineseToFrenchTranslator("天气").getTranslatedWordInFrench());
     }
     @Test
     public void chineseToGermanTranslatorGivesWordInGermanTest() throws IOException, InterruptedException {

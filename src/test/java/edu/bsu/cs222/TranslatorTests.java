@@ -15,45 +15,45 @@ public class TranslatorTests {
     }
     @Test
     public void englishToSpanishTranslatorGivesWordInSpanishTest() throws IOException, InterruptedException {
-        Assertions.assertEquals("blue", new EnglishToSpanishTranslator("azul").getTranslatedWordInSpanish());
+        Assertions.assertEquals("azul", new EnglishToSpanishTranslator("blue").getTranslatedWordInSpanish());
     }
     @Test
     public void spanishToEnglishTranslatorGivesWordInEnglishTest() throws IOException, InterruptedException {
-        Assertions.assertEquals("hola", new SpanishToEnglishTranslator("hello").getTranslatedWordInEnglish());
+        Assertions.assertEquals("hello", new SpanishToEnglishTranslator("hola").getTranslatedWordInEnglish());
     }
     @Test
     public void englishToGermanTranslatorGivesWordInGermanTest() throws IOException, InterruptedException{
-        Assertions.assertEquals("car", new EnglishToGermanTranslator("auto").getTranslatedWordInGerman());
+        Assertions.assertEquals("auto", new EnglishToGermanTranslator("car").getTranslatedWordInGerman());
     }
     @Test
     public void germanToEnglishTranslatorGivesWordInEnglishTest() throws IOException, InterruptedException{
-        Assertions.assertEquals("kurz", new GermanToEnglishTranslator("short").getTranslatedWordInEnglish());
+        Assertions.assertEquals("short", new GermanToEnglishTranslator("kurz").getTranslatedWordInEnglish());
     }
     @Test
     public void englishToFrenchTranslatorGivesWordInFrenchTest() throws IOException, InterruptedException{
-        Assertions.assertEquals("car", new EnglishToFrenchTranslator("voiture").getTranslatedWordInFrench());
+        Assertions.assertEquals("voiture", new EnglishToFrenchTranslator("car").getTranslatedWordInFrench());
 
 
     }
     @Test
     public void frenchToEnglishTranslatorGivesWordInEnglishTest() throws IOException, InterruptedException{
-        Assertions.assertEquals("Non", new FrenchToEnglishTranslator("no").getTranslatedWordInEnglish());
+        Assertions.assertEquals("no", new FrenchToEnglishTranslator("Non").getTranslatedWordInEnglish());
     }
     @Test
     public void englishToPortugueseTranslatorGivesWordInPortuguese() throws IOException, InterruptedException {
-        Assertions.assertEquals("blue", new EnglishToPortugueseTranslator("azul").getTranslatedWordInPortuguese());
+        Assertions.assertEquals("azul", new EnglishToPortugueseTranslator("blue").getTranslatedWordInPortuguese());
     }
     @Test
     public void portugueseToEnglishTranslatorGivesWordInEnglish() throws IOException, InterruptedException {
-        Assertions.assertEquals("azul", new PortugueseToEnglishTranslator("blue").getTranslatedWordInEnglish());
+        Assertions.assertEquals("blue", new PortugueseToEnglishTranslator("azul").getTranslatedWordInEnglish());
     }
     @Test
     public void chineseToEnglishTranslatorGivesWordInEnglish() throws IOException, InterruptedException {
-        Assertions.assertEquals("天气", new ChineseToEnglishTranslator("weather").getTranslatedWordInEnglish());
+        Assertions.assertEquals("weather", new ChineseToEnglishTranslator("天气").getTranslatedWordInEnglish());
     }
     @Test
     public void EnglishToChineseTranslatorGivesWordInChinese() throws IOException, InterruptedException {
-        Assertions.assertEquals("weather", new EnglishToChineseTranslator("天气").getTranslatedWordInChinese());
+        Assertions.assertEquals("天气", new EnglishToChineseTranslator("weather").getTranslatedWordInChinese());
     }
     @Test
     public void chineseToFrenchTranslatorGivesWordInFrenchTest() throws IOException, InterruptedException {
