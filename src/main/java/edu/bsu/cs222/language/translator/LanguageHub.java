@@ -19,11 +19,11 @@ public class LanguageHub {
     }
     protected String englishWordTranslation() throws IOException, InterruptedException {
         switch (targetLanguage) {
-            case "c" : translationOutput = new LanguageOutputFormatter(wordToTranslate, new EnglishToChineseTranslator(wordToTranslate).getTranslatedWordInChinese(), fetchDefinitionForTranslatedWord()).formatOutput();
-            case "g" : translationOutput = new LanguageOutputFormatter(wordToTranslate, new EnglishToGermanTranslator(wordToTranslate).getTranslatedWordInGerman(), fetchDefinitionForTranslatedWord()).formatOutput();
-            case "p" : translationOutput = new LanguageOutputFormatter(wordToTranslate, new EnglishToPortugueseTranslator(wordToTranslate).getTranslatedWordInPortuguese(), fetchDefinitionForTranslatedWord()).formatOutput();
-            case "f" : translationOutput = new LanguageOutputFormatter(wordToTranslate, new EnglishToFrenchTranslator(wordToTranslate).getTranslatedWordInFrench(), fetchDefinitionForTranslatedWord()).formatOutput();
-            case "s" : translationOutput = new LanguageOutputFormatter(wordToTranslate, new EnglishToSpanishTranslator(wordToTranslate).getTranslatedWordInSpanish(), fetchDefinitionForTranslatedWord()).formatOutput();
+            case "c" -> translationOutput = new LanguageOutputFormatter(wordToTranslate, new EnglishToChineseTranslator(wordToTranslate).getTranslatedWordInChinese(), fetchDefinitionForTranslatedWord()).formatOutput();
+            case "g" -> translationOutput = new LanguageOutputFormatter(wordToTranslate, new EnglishToGermanTranslator(wordToTranslate).getTranslatedWordInGerman(), fetchDefinitionForTranslatedWord()).formatOutput();
+            case "p" -> translationOutput = new LanguageOutputFormatter(wordToTranslate, new EnglishToPortugueseTranslator(wordToTranslate).getTranslatedWordInPortuguese(), fetchDefinitionForTranslatedWord()).formatOutput();
+            case "f" -> translationOutput = new LanguageOutputFormatter(wordToTranslate, new EnglishToFrenchTranslator(wordToTranslate).getTranslatedWordInFrench(), fetchDefinitionForTranslatedWord()).formatOutput();
+            case "s" -> translationOutput = new LanguageOutputFormatter(wordToTranslate, new EnglishToSpanishTranslator(wordToTranslate).getTranslatedWordInSpanish(), fetchDefinitionForTranslatedWord()).formatOutput();
         } return translationOutput;
     }
     protected String spanishWordTranslation() throws IOException, InterruptedException {
