@@ -7,8 +7,9 @@ import java.net.URLConnection;
 import java.util.Objects;
 public class ErrorHandler {
     public static Error throwWordNotFoundError(){
-        throw new Error("This word was not found in the dictionary. Re-run program and try again with a new word or different spelling.");
+        throw new Error("This word was not found. Re-run program and try again with a new word or different spelling.");
     }
+
     public static boolean isNetworkConnected() {
         try {
             URL url = new URL("http://www.google.com");
