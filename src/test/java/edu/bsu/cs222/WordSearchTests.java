@@ -10,13 +10,11 @@ public class WordSearchTests {
     }
     @Test
     public void wordSearchGivesDefinitionOfWordTest() throws IOException {
-        boolean result = new WordSearch("grateful").getSearchedWordInformation()[1].isEmpty();
-        Assertions.assertFalse(result);
+        Assertions.assertFalse(new WordSearch("grateful").getSearchedWordInformation()[1].isEmpty());
     }
     @Test
     public void wordSearchGivesSynonymsOfWordTest() throws IOException {
-        boolean result = new WordSearch("grateful").getSearchedWordInformation()[2].isEmpty();
-        Assertions.assertFalse(result);
+        Assertions.assertFalse(new WordSearch("grateful").getSearchedWordInformation()[2].isEmpty());
     }
     @Test
     public void apiConnectionReturnsTrueWhenConnectedTest(){

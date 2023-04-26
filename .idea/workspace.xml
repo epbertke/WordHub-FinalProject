@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Refactor ForeignTranslatorTests to be monads.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/LanguageHub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/LanguageHub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/french/translators/FrenchToChineseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/french/translators/FrenchToChineseTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/german/translators/GermanToChineseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/german/translators/GermanToChineseTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToChineseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToChineseTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/ForeignTranslatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/ForeignTranslatorTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TranslatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TranslatorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/WordSearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/WordSearchTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +78,6 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last.edited.regexp": "",
     "last_opened_file_path": "C:/Users/reyes/IdeaProjects/Final-epbertke-caleb.reyes-nathaniel.grigsby.git",
     "project.structure.last.edited": "Libraries",
@@ -423,7 +416,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682448151176</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Refactor ForeignTranslatorTests to be monads.">
+      <created>1682538015144</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1682538015144</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Refactor ForeignTranslatorTests to be monads.">
+      <created>1682538042410</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1682538042410</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
