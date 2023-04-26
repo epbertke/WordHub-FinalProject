@@ -7,7 +7,7 @@ public class OutputFormatter {
     }
     public OutputFormatter(){}
     public String formOutput() {
-        return "\n"+"Your word : "+outputArray[0]+"\n"+"\n"+"Your definition : "+formatOutputForUser(outputArray[1])+"\n"+"\n"+"Synonyms : "+formatOutputForUser(getSynonymsOutput());
+        return "\n"+"Your word :      "+outputArray[0]+"\n"+"\n"+"Your definition :      "+formatOutputForUser(outputArray[1])+"\n"+"\n"+"Synonyms :      "+formatOutputForUser(getSynonymsOutput())+"\n";
     }
     private String getSynonymsOutput() {
         if(Objects.equals(outputArray[2], "null") ||outputArray[2]==null){

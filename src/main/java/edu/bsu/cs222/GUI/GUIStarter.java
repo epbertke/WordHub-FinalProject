@@ -126,14 +126,10 @@ public class GUIStarter extends Application {
         return container;
     }
     private void configureTopButton(){
-        clearTop.setOnAction(event -> {
-            GUIController.clearLTDText();
-        });
+        clearTop.setOnAction(event -> GUIController.clearLTDText());
 
     }
     private void configureBottomButton(){
-        clearBottom.setOnAction(event -> {
-            GUIController.clearLTLText();
-        });
+        clearBottom.setOnAction(event -> GUIController.clearLTLText());
     }
 }

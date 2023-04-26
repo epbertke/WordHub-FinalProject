@@ -71,7 +71,7 @@
          <Insets top="10.0" />
       </VBox.margin>
    </HBox>
-   <TextArea fx:id="" editable="false" prefHeight="280.0" prefWidth="600.0" wrapText="true" />
+   <TextArea editable="false" prefHeight="280.0" prefWidth="600.0" wrapText="true" />
    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="29.0" prefWidth="122.0" text="Translate ! " textAlignment="CENTER">
       <font>
          <Font size="15.0" />
@@ -80,9 +80,7 @@
          <Insets left="240.0" top="10.0" />
       </VBox.margin></Button>
    <HBox alignment="BASELINE_CENTER" prefHeight="37.0" prefWidth="500.0">
-      <children>
-         <Button mnemonicParsing="false" text="Clear Top Text" />
-         <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" text="Clear Bottom Text" />
-      </children>
+      <Button mnemonicParsing="false" text="Clear Top Text"/>
+      <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" text="Clear Bottom Text"/>
    </HBox>
 </VBox>

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Refactor ForeignTranslatorTests to be monads.">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/ForeignTranslatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/ForeignTranslatorTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TranslatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TranslatorTests.java" afterDir="false" />
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Refactor tests to all pass.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUI/GUIStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUI/GUIStarter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ltlgui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ltlgui.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +30,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="LearnTheDictionary" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LearnTheDictionary" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="LearnTheDictionary" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -94,7 +103,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TranslatorTests.EnglishToChineseTranslatorGivesWordInChinese">
+  <component name="RunManager" selected="Gradle.Recent_Changes [run]">
     <configuration name="GUIStarter" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-18 (2)" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -104,6 +113,50 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="ForeignTranslatorTests.chineseToFrenchTranslatorGivesWordInFrenchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.bsu.cs222.ForeignTranslatorTests.chineseToFrenchTranslatorGivesWordInFrenchTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Recent_Changes [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="TranslatorTests.EnglishToChineseTranslatorGivesWordInChinese" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -151,52 +204,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TranslatorTests.englishToPortugueseTranslatorGivesWordInPortuguese" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.TranslatorTests.englishToPortugueseTranslatorGivesWordInPortuguese&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TranslatorTests.frenchToEnglishTranslatorGivesWordInEnglishTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.TranslatorTests.frenchToEnglishTranslatorGivesWordInEnglishTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="TranslatorTests.portugueseToEnglishTranslatorGivesWordInEnglish" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -222,19 +229,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.GUIStarter" />
-      <item itemvalue="Gradle.TranslatorTests.englishToPortugueseTranslatorGivesWordInPortuguese" />
-      <item itemvalue="Gradle.TranslatorTests.frenchToEnglishTranslatorGivesWordInEnglishTest" />
+      <item itemvalue="Gradle.ForeignTranslatorTests.chineseToFrenchTranslatorGivesWordInFrenchTest" />
+      <item itemvalue="Gradle.Recent_Changes [run]" />
       <item itemvalue="Gradle.TranslatorTests.portugueseToEnglishTranslatorGivesWordInEnglish" />
       <item itemvalue="Gradle.TranslatorTests.EnglishToChineseTranslatorGivesWordInChinese" />
       <item itemvalue="Gradle.TranslatorTests.chineseToEnglishTranslatorGivesWordInEnglish" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Recent_Changes [run]" />
+        <item itemvalue="Gradle.ForeignTranslatorTests.chineseToFrenchTranslatorGivesWordInFrenchTest" />
         <item itemvalue="Gradle.TranslatorTests.EnglishToChineseTranslatorGivesWordInChinese" />
         <item itemvalue="Gradle.TranslatorTests.chineseToEnglishTranslatorGivesWordInEnglish" />
         <item itemvalue="Gradle.TranslatorTests.portugueseToEnglishTranslatorGivesWordInEnglish" />
-        <item itemvalue="Gradle.TranslatorTests.englishToPortugueseTranslatorGivesWordInPortuguese" />
-        <item itemvalue="Gradle.TranslatorTests.frenchToEnglishTranslatorGivesWordInEnglishTest" />
       </list>
     </recent_temporary>
   </component>
@@ -443,7 +450,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682538042410</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Refactor tests to all pass.">
+      <created>1682539273341</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1682539273341</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Refactor tests to all pass.">
+      <created>1682539279278</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1682539279278</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -475,6 +496,7 @@
     <MESSAGE value="Fixed Portuguese and Spanish translator classes" />
     <MESSAGE value="Added Clear Top and Bottom Text buttons" />
     <MESSAGE value="Refactor ForeignTranslatorTests to be monads." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor ForeignTranslatorTests to be monads." />
+    <MESSAGE value="Refactor tests to all pass." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor tests to all pass." />
   </component>
 </project>
