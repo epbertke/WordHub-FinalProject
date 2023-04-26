@@ -13,7 +13,7 @@ Ellie Bertke, Caleb Reyes, Nathaniel Grigsby
 
 ## Build Instructions :
   1. JsonPath and Gradle are required
-  2. Clone project into intelliJ and run from the CLI or GUIStarter Class.
+  2. Clone project into intelliJ and run from the CLI or run from GUIStarter Class to use the GUI.
 
 ###### Note : Compiler warning - actual value of parameter 'min' is always '0', but it functions that way.
         
