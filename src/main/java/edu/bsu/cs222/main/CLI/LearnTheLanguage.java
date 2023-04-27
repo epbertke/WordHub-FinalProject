@@ -2,7 +2,7 @@ package edu.bsu.cs222.main.CLI;
 import edu.bsu.cs222.GUI.ErrorHandler;
 import edu.bsu.cs222.language.translator.TranslationProcessor;
 import java.io.IOException;
-public class LearnTheLanguage {
+public class LearnTheLanguage extends CLIMenu{
     private static String sourceLanguage;
     private static String targetLanguage;
     private static String wordToTranslate;
