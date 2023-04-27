@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Add tests for all public methods">
+    <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Add test for startForCLI in LearnTheLanguage class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/main/CLI/LearnTheLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/main/CLI/LearnTheLanguage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TranslatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TranslatorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUI/GUIStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUI/GUIStarter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ltlgui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ltlgui.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +104,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TranslatorTests.cliStarterRequestsSourceLanguageFirstTest">
+  <component name="RunManager" selected="Gradle.Final-epbertke-caleb.reyes-nathaniel.grigsby [run]">
     <configuration name="GUIStarter" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-18 (2)" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -115,25 +115,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FormatterTests.languageOutputFormatterFormatsOutputTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Final-epbertke-caleb.reyes-nathaniel.grigsby [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.FormatterTests.languageOutputFormatterFormatsOutputTest&quot;" />
+            <option value="run" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
@@ -232,19 +230,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.GUIStarter" />
+      <item itemvalue="Gradle.Final-epbertke-caleb.reyes-nathaniel.grigsby [run]" />
       <item itemvalue="Gradle.TranslatorTests.cliStarterRequestsSourceLanguageFirstTest" />
-      <item itemvalue="Gradle.FormatterTests.languageOutputFormatterFormatsOutputTest" />
       <item itemvalue="Gradle.FormatterTests.outputFormatterFormatsOutputTest" />
       <item itemvalue="Gradle.TranslatorTests.errorHandlerReturnsTrueIfLanguagesAreValid" />
       <item itemvalue="Gradle.TranslatorTests.errorHandlerThrowsInvalidTranslationRequestError" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Final-epbertke-caleb.reyes-nathaniel.grigsby [run]" />
         <item itemvalue="Gradle.TranslatorTests.cliStarterRequestsSourceLanguageFirstTest" />
         <item itemvalue="Gradle.TranslatorTests.errorHandlerReturnsTrueIfLanguagesAreValid" />
         <item itemvalue="Gradle.TranslatorTests.errorHandlerThrowsInvalidTranslationRequestError" />
         <item itemvalue="Gradle.FormatterTests.outputFormatterFormatsOutputTest" />
-        <item itemvalue="Gradle.FormatterTests.languageOutputFormatterFormatsOutputTest" />
       </list>
     </recent_temporary>
   </component>
@@ -467,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682555405184</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Add test for startForCLI in LearnTheLanguage class">
+      <created>1682559974025</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1682559974025</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -501,7 +506,8 @@
     <MESSAGE value="Refactor ForeignTranslatorTests to be monads." />
     <MESSAGE value="Fix more formatting errors" />
     <MESSAGE value="Add tests for all public methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add tests for all public methods" />
+    <MESSAGE value="Add test for startForCLI in LearnTheLanguage class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add test for startForCLI in LearnTheLanguage class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -14,7 +14,7 @@
          <Font size="15.0" />
       </font>
    </Label>
-   <TextField prefHeight="37.0" prefWidth="469.0" promptText="Word To Search">
+   <TextField prefHeight="37.0" maxWidth="250.0" promptText="Word To Search">
       <VBox.margin>
          <Insets left="150.0" right="150.0" />
       </VBox.margin>
@@ -28,7 +28,7 @@
       <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Random !" />
    </HBox>
    <TextArea editable="false" prefHeight="166.0" prefWidth="600.0" wrapText="true" />
-   <TextField prefHeight="38.0" prefWidth="600.0" promptText="Word To Translate">
+   <TextField prefHeight="38.0" maxWidth="250.0" promptText="Word To Translate">
       <VBox.margin>
          <Insets bottom="5.0" left="150.0" right="150.0" top="5.0" />
       </VBox.margin>
@@ -71,7 +71,7 @@
          <Insets top="10.0" />
       </VBox.margin>
    </HBox>
-   <TextArea fx:id="" editable="false" prefHeight="280.0" prefWidth="600.0" wrapText="true" />
+   <TextArea editable="false" prefHeight="280.0" prefWidth="250.0" wrapText="true" />
    <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="29.0" prefWidth="122.0" text="Translate ! " textAlignment="CENTER">
       <font>
          <Font size="15.0" />
@@ -80,9 +80,7 @@
          <Insets left="240.0" top="10.0" />
       </VBox.margin></Button>
    <HBox alignment="BASELINE_CENTER" prefHeight="37.0" prefWidth="500.0">
-      <children>
-         <Button mnemonicParsing="false" text="Clear Top Text" />
-         <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" text="Clear Bottom Text" />
-      </children>
+      <Button mnemonicParsing="false" text="Clear Top Text"/>
+      <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" text="Clear Bottom Text"/>
    </HBox>
 </VBox>

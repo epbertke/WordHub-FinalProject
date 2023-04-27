@@ -55,7 +55,7 @@ public class GUIStarter extends Application {
     private Pane createRoot() {
         VBox root = new VBox();
         root.setPrefSize(600, 700);
-        root.getChildren().addAll(dictionaryLabel, wordSearchInputField, createDictionaryButtonHBox(), lTDOutputArea, translationLabel, translateInputField, createTranslatorHBox(), lTLOutputArea, createTranslateButtonBox(), createClearButtonBox());
+        root.getChildren().addAll(dictionaryLabel, configureDictionaryInputField(), createDictionaryButtonHBox(), lTDOutputArea, translationLabel, configureTranslateInputField(), createTranslatorHBox(), lTLOutputArea, createTranslateButtonBox(), createClearButtonBox());
         return root;
     }
     private void configureComboBoxes() {
@@ -75,6 +75,20 @@ public class GUIStarter extends Application {
         container.setPadding(new Insets(10));
         container.getChildren().addAll(targetLabel, targetLanguageSelector, sourceLabel, sourceLanguageSelector);
         return container;
+    }
+    private HBox configureTranslateInputField(){
+        HBox hBox = new HBox();
+        translateInputField.setMaxWidth(350);
+        hBox.getChildren().add(translateInputField);
+        hBox.setAlignment(CENTER);
+        return hBox;
+    }
+    private HBox configureDictionaryInputField(){
+        HBox hBox = new HBox();
+        wordSearchInputField.setMaxWidth(350);
+        hBox.getChildren().add(wordSearchInputField);
+        hBox.setAlignment(CENTER);
+        return hBox;
     }
     private void configureSearchButton() {
         search.setOnAction(event -> {
