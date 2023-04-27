@@ -1,6 +1,6 @@
 package edu.bsu.cs222.english.dictionary;
 import com.jayway.jsonpath.JsonPath;
-import edu.bsu.cs222.ErrorHandler;
+import edu.bsu.cs222.main.CLI.ErrorHandler;
 import net.minidev.json.JSONArray;
 import java.io.IOException;
 import java.io.InputStream;

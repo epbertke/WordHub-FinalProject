@@ -5,7 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8e26b78-33fc-4340-b2a2-343255a84b4c" name="Changes" comment="Fix more formatting errors">
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUI/GUIStarter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUI/GUIStarter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUI/ErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/ErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/main/CLI/ErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUI/GUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/GUI/GUIController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/english/dictionary/DefinitionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/english/dictionary/DefinitionParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/english/dictionary/RandomWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/english/dictionary/RandomWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/english/dictionary/SynonymParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/english/dictionary/SynonymParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/chinese/translators/ChineseToEnglishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/chinese/translators/ChineseToEnglishTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/chinese/translators/ChineseToFrenchTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/chinese/translators/ChineseToFrenchTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/chinese/translators/ChineseToGermanTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/chinese/translators/ChineseToGermanTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/chinese/translators/ChineseToPortugueseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/chinese/translators/ChineseToPortugueseTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/chinese/translators/ChineseToSpanishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/chinese/translators/ChineseToSpanishTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/english/translators/EnglishToChineseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/english/translators/EnglishToChineseTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/english/translators/EnglishToFrenchTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/english/translators/EnglishToFrenchTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/english/translators/EnglishToGermanTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/english/translators/EnglishToGermanTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/english/translators/EnglishToSpanishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/english/translators/EnglishToSpanishTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/french/translators/FrenchToChineseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/french/translators/FrenchToChineseTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/french/translators/FrenchToEnglishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/french/translators/FrenchToEnglishTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/french/translators/FrenchToGermanTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/french/translators/FrenchToGermanTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/french/translators/FrenchToPortugueseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/french/translators/FrenchToPortugueseTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/french/translators/FrenchToSpanishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/french/translators/FrenchToSpanishTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/german/translators/GermanToChineseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/german/translators/GermanToChineseTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/german/translators/GermanToEnglishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/german/translators/GermanToEnglishTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/german/translators/GermanToFrenchTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/german/translators/GermanToFrenchTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/german/translators/GermanToPortugueseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/german/translators/GermanToPortugueseTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/german/translators/GermanToSpanishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/german/translators/GermanToSpanishTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToChineseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToChineseTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToFrenchTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToFrenchTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToGermanTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToGermanTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToSpanishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/portuguese/translators/PortugueseToSpanishTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToChineseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToChineseTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToEnglishTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToEnglishTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToFrenchTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToFrenchTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToGermanTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToGermanTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToPortugueseTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/language/translator/translators/spanish/translators/SpanishToPortugueseTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/main/CLI/LearnTheDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/main/CLI/LearnTheDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/main/CLI/LearnTheLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/bsu/cs222/main/CLI/LearnTheLanguage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/DictionaryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/DictionaryTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/FormatterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/FormatterTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TranslatorTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/TranslatorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/WordSearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/bsu/cs222/WordSearchTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,24 +125,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last.edited.regexp": "",
-    "last_opened_file_path": "C:/Users/reyes/IdeaProjects/Final-epbertke-caleb.reyes-nathaniel.grigsby.git",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.55517244",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.spelling"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last.edited.regexp&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/reyes/IdeaProjects/Final-epbertke-caleb.reyes-nathaniel.grigsby.git&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.55517244&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.spelling&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Final-epbertke-caleb.reyes-nathaniel.grigsby [run]">
+  <component name="RunManager" selected="Gradle.TranslatorTests.errorHandlerReturnsTrueIfLanguagesAreValid">
     <configuration name="GUIStarter" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-18 (2)" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -113,28 +153,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Final-epbertke-caleb.reyes-nathaniel.grigsby [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="run" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ForeignTranslatorTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FormatterTests.chineseToGermanTranslatorGivesWordInGermanTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -147,7 +166,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.ForeignTranslatorTests&quot;" />
+            <option value="&quot;edu.bsu.cs222.FormatterTests.chineseToGermanTranslatorGivesWordInGermanTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -157,7 +176,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TranslatorTests.EnglishToChineseTranslatorGivesWordInChinese" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FormatterTests.languageOutputFormatterFormatsOutputTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -170,7 +189,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.TranslatorTests.EnglishToChineseTranslatorGivesWordInChinese&quot;" />
+            <option value="&quot;edu.bsu.cs222.FormatterTests.languageOutputFormatterFormatsOutputTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -180,7 +199,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TranslatorTests.chineseToEnglishTranslatorGivesWordInEnglish" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FormatterTests.outputFormatterFormatsOutputTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -193,7 +212,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.TranslatorTests.chineseToEnglishTranslatorGivesWordInEnglish&quot;" />
+            <option value="&quot;edu.bsu.cs222.FormatterTests.outputFormatterFormatsOutputTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -203,7 +222,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TranslatorTests.portugueseToEnglishTranslatorGivesWordInEnglish" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TranslatorTests.errorHandlerReturnsTrueIfLanguagesAreValid" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -216,7 +235,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;edu.bsu.cs222.TranslatorTests.portugueseToEnglishTranslatorGivesWordInEnglish&quot;" />
+            <option value="&quot;edu.bsu.cs222.TranslatorTests.errorHandlerReturnsTrueIfLanguagesAreValid&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TranslatorTests.errorHandlerThrowsInvalidTranslationRequestError" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;edu.bsu.cs222.TranslatorTests.errorHandlerThrowsInvalidTranslationRequestError&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -228,19 +270,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.GUIStarter" />
-      <item itemvalue="Gradle.Final-epbertke-caleb.reyes-nathaniel.grigsby [run]" />
-      <item itemvalue="Gradle.ForeignTranslatorTests" />
-      <item itemvalue="Gradle.TranslatorTests.portugueseToEnglishTranslatorGivesWordInEnglish" />
-      <item itemvalue="Gradle.TranslatorTests.EnglishToChineseTranslatorGivesWordInChinese" />
-      <item itemvalue="Gradle.TranslatorTests.chineseToEnglishTranslatorGivesWordInEnglish" />
+      <item itemvalue="Gradle.FormatterTests.chineseToGermanTranslatorGivesWordInGermanTest" />
+      <item itemvalue="Gradle.FormatterTests.languageOutputFormatterFormatsOutputTest" />
+      <item itemvalue="Gradle.FormatterTests.outputFormatterFormatsOutputTest" />
+      <item itemvalue="Gradle.TranslatorTests.errorHandlerReturnsTrueIfLanguagesAreValid" />
+      <item itemvalue="Gradle.TranslatorTests.errorHandlerThrowsInvalidTranslationRequestError" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Final-epbertke-caleb.reyes-nathaniel.grigsby [run]" />
-        <item itemvalue="Gradle.ForeignTranslatorTests" />
-        <item itemvalue="Gradle.TranslatorTests.EnglishToChineseTranslatorGivesWordInChinese" />
-        <item itemvalue="Gradle.TranslatorTests.chineseToEnglishTranslatorGivesWordInEnglish" />
-        <item itemvalue="Gradle.TranslatorTests.portugueseToEnglishTranslatorGivesWordInEnglish" />
+        <item itemvalue="Gradle.TranslatorTests.errorHandlerReturnsTrueIfLanguagesAreValid" />
+        <item itemvalue="Gradle.TranslatorTests.errorHandlerThrowsInvalidTranslationRequestError" />
+        <item itemvalue="Gradle.FormatterTests.outputFormatterFormatsOutputTest" />
+        <item itemvalue="Gradle.FormatterTests.languageOutputFormatterFormatsOutputTest" />
+        <item itemvalue="Gradle.FormatterTests.chineseToGermanTranslatorGivesWordInGermanTest" />
       </list>
     </recent_temporary>
   </component>

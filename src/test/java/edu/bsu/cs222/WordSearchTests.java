@@ -1,5 +1,6 @@
 package edu.bsu.cs222;
 import edu.bsu.cs222.english.dictionary.WordSearch;
+import edu.bsu.cs222.main.CLI.ErrorHandler;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;

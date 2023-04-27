@@ -1,4 +1,5 @@
 package edu.bsu.cs222;
+import edu.bsu.cs222.GUI.ErrorHandler;
 import edu.bsu.cs222.language.translator.translators.chinese.translators.*;
 import edu.bsu.cs222.language.translator.translators.english.translators.*;
 import edu.bsu.cs222.language.translator.translators.french.translators.*;
@@ -102,5 +103,9 @@ public class TranslatorTests {
     @Test
     public void germanToPortugueseTranslatorGivesWordInPortugueseTest() throws IOException, InterruptedException {
         Assertions.assertEquals("tempo", new GermanToPortugueseTranslator("zeit").getTranslatedWordInPortuguese());
+    }
+    @Test
+    public void errorHandlerReturnsTrueIfLanguagesAreValid() throws IOException, InterruptedException {
+        Assertions.assertTrue(ErrorHandler.checkForValidRequests("s", "e"));
     }
 }

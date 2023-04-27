@@ -1,5 +1,5 @@
 package edu.bsu.cs222.main.CLI;
-import edu.bsu.cs222.ErrorHandler;
+import edu.bsu.cs222.GUI.ErrorHandler;
 import edu.bsu.cs222.language.translator.TranslationProcessor;
 import java.io.IOException;
 public class LearnTheLanguage {

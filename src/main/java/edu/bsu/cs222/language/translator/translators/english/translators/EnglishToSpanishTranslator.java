@@ -1,6 +1,6 @@
 package edu.bsu.cs222.language.translator.translators.english.translators;
 import com.jayway.jsonpath.JsonPath;
-import edu.bsu.cs222.ErrorHandler;
+import edu.bsu.cs222.main.CLI.ErrorHandler;
 import edu.bsu.cs222.language.translator.TranslationConnection;
 import net.minidev.json.JSONArray;
 import java.io.IOException;

@@ -13,4 +13,8 @@ public class DictionaryTests {
     public void dictionaryFileIsProcessedTest() throws IOException {
         Assertions.assertFalse(Dictionary.getWordsInDictionary().isEmpty());
     }
+    @Test
+    public void randomWordInformationIsFoundTest() throws IOException {
+        Assertions.assertFalse(new RandomWord().getRandomWordInformation()[0].isEmpty());
+    }
 }

@@ -3,7 +3,6 @@ import edu.bsu.cs222.main.CLI.OutputFormatter;
 import edu.bsu.cs222.english.dictionary.DefinitionParser;
 import edu.bsu.cs222.english.dictionary.SynonymParser;
 import edu.bsu.cs222.language.translator.LanguageOutputFormatter;
-import edu.bsu.cs222.language.translator.translators.chinese.translators.ChineseToGermanTranslator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.io.IOException;
@@ -21,7 +20,22 @@ public class FormatterTests {
         Assertions.assertTrue(new LanguageOutputFormatter("one", "two", "three").formatOutput().startsWith("O"));
     }
     @Test
-    public void chineseToGermanTranslatorGivesWordInGermanTest() throws IOException, InterruptedException {
-        Assertions.assertEquals("wetter", new ChineseToGermanTranslator("天气").getTranslatedWordInGerman());
+    public void outputFormatterFormatsOutputTest(){
+        Assertions.assertEquals("""
+
+                Your word : cat
+
+                Your definition : dog
+
+                Synonyms : mouse""", new OutputFormatter(new String[] {"cat", "dog", "mouse"}).formOutput());
+    }
+    @Test
+    public void languageOutputFormatterFormatsOutputTest(){
+        Assertions.assertEquals("""
+                Original : cat
+
+                Translation : dog
+
+                Definition : mouse""", new LanguageOutputFormatter("cat", "dog", "mouse").formatOutput());
     }
 }
