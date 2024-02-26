@@ -16,4 +16,8 @@ Ellie Bertke, Caleb Reyes, Nathaniel Grigsby
   2. Clone project into intelliJ and run from the CLI or run from GUIStarter Class to use the GUI.
 
 ###### Note : Compiler warning - actual value of parameter 'min' is always '0', but it functions that way.
+
+[HOW TO USE.pdf](https://github.com/epbertke/WordHub-FinalProject/files/14409201/HOW.TO.USE.pdf)
+
+
         
